@@ -57,6 +57,18 @@ export default function Footer() {
                 {SITE.email}
               </a>
             </li>
+            {SITE.whatsapp && (
+              <li>
+                <a
+                  href={`https://wa.me/${SITE.whatsapp}`}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="hover:text-warm-white"
+                >
+                  WhatsApp
+                </a>
+              </li>
+            )}
             <li>
               <a href={SITE.youtube} target="_blank" rel="noreferrer noopener" className="hover:text-warm-white">
                 YouTube — Movement by Design

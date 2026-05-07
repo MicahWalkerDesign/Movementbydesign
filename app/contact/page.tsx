@@ -84,11 +84,9 @@ export default function ContactPage() {
                   {[
                     '1:1 personal training',
                     'small group training',
-                    'manual therapy',
                     'online coaching',
-                    'nutrition habits',
-                    'injury prevention',
-                    'special populations exercise coaching',
+                    'health & special populations coaching',
+                    'movement support add-on',
                     'not sure yet',
                   ].map((opt) => (
                     <label
@@ -173,7 +171,15 @@ export default function ContactPage() {
                   </span>
                 </li>
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
-                  <span className="text-charcoal/90">Manual Therapy</span>
+                  <span className="text-charcoal/90">Online Coaching</span>
+                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">
+                    From €120 / mo
+                  </span>
+                </li>
+                <li className="flex items-baseline justify-between py-2.5 gap-4">
+                  <span className="text-charcoal/90">
+                    Movement support <span className="text-muted-grey">(add-on)</span>
+                  </span>
                   <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">
                     €50 / 30 min
                   </span>
@@ -185,8 +191,23 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-sand border border-soft-border rounded-3xl p-7">
-              <h2 className="font-heading font-semibold text-deep-navy text-xl">Direct</h2>
-              <ul className="mt-4 space-y-2 text-charcoal/90">
+              <h2 className="font-heading font-semibold text-deep-navy text-xl">
+                Or book directly
+              </h2>
+              <p className="mt-3 text-sm text-charcoal/85 leading-relaxed">
+                Drop a Calendly / TidyCal embed in the marked slot below to give visitors
+                instant scheduling. Until then, the buttons below are the fastest path.
+              </p>
+
+              {/* Calendar embed slot — paste your provider's embed snippet here */}
+              <div
+                aria-hidden
+                className="mt-4 h-24 grid place-items-center rounded-2xl border border-dashed border-coastal-blue/40 text-xs uppercase tracking-label text-coastal-blue bg-warm-white/60"
+              >
+                Calendar embed slot
+              </div>
+
+              <ul className="mt-5 space-y-2 text-charcoal/90 text-sm">
                 <li>
                   Email:{' '}
                   <a
@@ -196,6 +217,19 @@ export default function ContactPage() {
                     {SITE.email}
                   </a>
                 </li>
+                {SITE.whatsapp && (
+                  <li>
+                    WhatsApp:{' '}
+                    <a
+                      className="text-coastal-blue hover:text-deep-navy underline-offset-4 hover:underline"
+                      href={`https://wa.me/${SITE.whatsapp}`}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      Send a message
+                    </a>
+                  </li>
+                )}
                 <li>
                   YouTube:{' '}
                   <a

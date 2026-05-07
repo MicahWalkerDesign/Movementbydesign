@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Sora } from 'next/font/google';
+import { Inter, Inter_Tight } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import StickyCTA from '@/components/StickyCTA';
 import JsonLd from '@/components/JsonLd';
 import { localBusinessSchema, personSchema } from '@/lib/seo';
 import { SITE } from '@/lib/site';
@@ -13,14 +14,14 @@ const inter = Inter({
   display: 'swap',
 });
 
-const sora = Sora({
+const interTight = Inter_Tight({
   subsets: ['latin'],
-  variable: '--font-sora',
+  variable: '--font-heading',
   display: 'swap',
 });
 
 export const viewport: Viewport = {
-  themeColor: '#FAF8F4',
+  themeColor: '#FBF7EF',
   width: 'device-width',
   initialScale: 1,
 };
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${sora.variable}`}>
+    <html lang="en" className={`${inter.variable} ${interTight.variable}`}>
       <body>
         <a
           href="#main"
@@ -58,8 +59,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <Header />
-        <main id="main">{children}</main>
+        <main id="main" className="pb-24 md:pb-0">
+          {children}
+        </main>
         <Footer />
+        <StickyCTA />
         <JsonLd data={localBusinessSchema()} />
         <JsonLd data={personSchema()} />
       </body>

@@ -17,7 +17,8 @@ export const PRICE_TIERS: PriceTier[] = [
     title: '1:1 Personal Training',
     price: '€90',
     unit: 'per hour',
-    blurb: 'Personalised 1:1 coaching with full attention to technique, programming and progression.',
+    blurb:
+      'Personalised 1:1 coaching with full attention to technique, programming and progression.',
     bullets: [
       'Tailored to your goals and history',
       'Indoor, outdoor or in-home where appropriate',
@@ -31,7 +32,8 @@ export const PRICE_TIERS: PriceTier[] = [
     title: 'Small Group Training',
     price: '€15–30',
     unit: 'per person, per hour',
-    blurb: 'Functional training in a small group of 3–6 — ideal for friends, families or small teams.',
+    blurb:
+      'Functional training in a small group of 3–6 — ideal for friends, families or small teams.',
     bullets: [
       '3–6 participants',
       'Functional training format',
@@ -41,17 +43,30 @@ export const PRICE_TIERS: PriceTier[] = [
     href: '/contact/',
   },
   {
-    title: 'Manual Therapy',
+    title: 'Online Coaching',
+    price: 'From €120',
+    unit: 'per month',
+    blurb:
+      'Remote programming, modifications, check-ins, education and accountability — built around your week.',
+    bullets: [
+      'Personalised programming',
+      'Habit and education support',
+      'Regular check-ins and adjustments',
+    ],
+    cta: 'Ask about online coaching',
+    href: '/online-coaching/',
+    footnote: 'Final monthly rate depends on cadence — confirmed on your intro call.',
+  },
+];
+
+/** Manual Therapy moved to a small add-on row beneath the main tiers. */
+export const ADD_ONS = [
+  {
+    title: 'Movement support add-on',
     price: '€50',
     unit: 'per 30 minutes',
-    blurb: 'Hands-on soft tissue and mobility work to support training, recovery and movement quality.',
-    bullets: [
-      'Often paired with coaching sessions',
-      'Focused, time-efficient format',
-      'Supports — not a replacement for — medical care',
-    ],
-    cta: 'Ask about a session',
-    href: '/contact/',
+    blurb:
+      'Soft tissue and mobility support to complement training. Available alongside coaching — not a replacement for medical care.',
   },
 ];
 
@@ -115,6 +130,30 @@ export default function Pricing({
                 <p className="mt-4 text-xs text-muted-grey">{t.footnote}</p>
               )}
             </article>
+          ))}
+        </div>
+
+        {/* Add-ons */}
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
+          {ADD_ONS.map((a) => (
+            <div
+              key={a.title}
+              className="bg-white border border-soft-border rounded-2xl p-6 flex flex-wrap items-baseline gap-4"
+            >
+              <div className="flex-1 min-w-[14rem]">
+                <span className="text-xs uppercase tracking-label text-coastal-blue">
+                  Add-on
+                </span>
+                <h3 className="mt-1 font-heading font-semibold text-deep-navy">{a.title}</h3>
+                <p className="mt-1 text-sm text-charcoal/85">{a.blurb}</p>
+              </div>
+              <div className="flex items-baseline gap-2">
+                <span className="font-heading text-2xl font-semibold text-deep-navy">
+                  {a.price}
+                </span>
+                <span className="text-sm text-muted-grey">{a.unit}</span>
+              </div>
+            </div>
           ))}
         </div>
 

@@ -6,6 +6,9 @@ export const SITE = {
   email: 'micah.walker@gmail.com',
   youtube: 'https://www.youtube.com/@MovementConsultant',
   linkedin: 'https://www.linkedin.com/in/micah-walker-246745101/',
+  // WhatsApp: replace with full international number (no +, no spaces) when available.
+  // Example: '34600000000' for +34 600 000 000. Leave empty to hide WhatsApp links.
+  whatsapp: '',
   locality: 'Salou',
   region: 'Tarragona',
   country: 'Spain',

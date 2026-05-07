@@ -9,21 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'deep-navy': '#102A43',
-        'coastal-blue': '#2F6F8F',
-        'coastal-blue-dark': '#235772',
-        sand: '#F4EBDD',
-        'warm-white': '#FAF8F4',
-        olive: '#7C8A5B',
-        terracotta: '#C96F4A',
-        charcoal: '#1F2933',
-        'muted-grey': '#667085',
-        'soft-border': '#E7DFD3',
-        'success-green': '#6F8F72',
+        // Premium coastal palette
+        'deep-navy': '#12313B',          // Deep coastal blue
+        'coastal-blue': '#1F5361',       // Grounded blue (primary CTA)
+        'coastal-blue-dark': '#12313B',  // hover -> deep
+        sand: '#F3E8D8',
+        'warm-white': '#FBF7EF',
+        olive: '#7E8F7A',                // Sage (semantic alias kept)
+        sage: '#7E8F7A',
+        terracotta: '#C77652',
+        charcoal: '#13292F',
+        'muted-grey': '#667A82',
+        'soft-border': '#E5D9C2',
+        'success-green': '#7E8F7A',
       },
       fontFamily: {
-        heading: ['var(--font-sora)', 'Montserrat', 'system-ui', 'sans-serif'],
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-heading)', 'Inter Tight', 'Satoshi', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         '2xl': '1rem',

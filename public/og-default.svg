@@ -1,28 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Movement by Design — Premium Personal Training in Salou">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F4EBDD"/>
-      <stop offset="100%" stop-color="#FAF8F4"/>
+      <stop offset="0%" stop-color="#F3E8D8"/>
+      <stop offset="100%" stop-color="#FBF7EF"/>
     </linearGradient>
     <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#2F6F8F"/>
-      <stop offset="100%" stop-color="#102A43"/>
+      <stop offset="0%" stop-color="#1F5361"/>
+      <stop offset="100%" stop-color="#12313B"/>
     </linearGradient>
     <radialGradient id="sun" cx="85%" cy="22%" r="20%">
-      <stop offset="0%" stop-color="#F6D9B6"/>
-      <stop offset="100%" stop-color="#F4EBDD" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#F1D6B5"/>
+      <stop offset="100%" stop-color="#F3E8D8" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <circle cx="1020" cy="140" r="180" fill="url(#sun)"/>
   <rect x="0" y="430" width="1200" height="70" fill="url(#sea)"/>
-  <path d="M0 470 L1200 470" stroke="#F4EBDD" stroke-opacity="0.3" stroke-width="2"/>
-  <g font-family="Inter, system-ui, sans-serif" fill="#102A43">
-    <text x="80" y="170" font-size="28" font-weight="600" letter-spacing="6" fill="#2F6F8F">MOVEMENT BY DESIGN</text>
-    <text x="80" y="290" font-size="78" font-weight="700" font-family="Sora, Inter, system-ui">Premium Personal Training</text>
-    <text x="80" y="370" font-size="78" font-weight="700" font-family="Sora, Inter, system-ui">in Salou &amp; Costa Daurada</text>
-    <text x="80" y="555" font-size="26" fill="#1F2933">Exercise science · Rehabilitation-informed · Special populations</text>
-    <text x="80" y="595" font-size="22" fill="#667085">English · German · Spanish learning</text>
+  <path d="M0 470 L1200 470" stroke="#F3E8D8" stroke-opacity="0.3" stroke-width="2"/>
+  <g font-family="Inter Tight, Inter, system-ui, sans-serif" fill="#12313B">
+    <text x="80" y="170" font-size="28" font-weight="600" letter-spacing="6" fill="#1F5361">MOVEMENT BY DESIGN</text>
+    <text x="80" y="290" font-size="78" font-weight="700">Personal training for people</text>
+    <text x="80" y="370" font-size="78" font-weight="700">who need more than a workout.</text>
+    <text x="80" y="555" font-size="26" fill="#13292F">Exercise Science · Rehab-informed · Performance</text>
+    <text x="80" y="595" font-size="22" fill="#667A82">Salou · Cambrils · Tarragona · Online · EN / DE</text>
   </g>
-  <rect x="80" y="200" width="50" height="4" rx="2" fill="#C96F4A"/>
+  <rect x="80" y="200" width="50" height="4" rx="2" fill="#C77652"/>
 </svg>
