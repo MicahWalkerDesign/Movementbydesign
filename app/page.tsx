@@ -35,20 +35,26 @@ const SERVICES = [
   {
     title: '1:1 Personal Training',
     text: 'Strength, movement quality, confidence, fitness and injury-conscious progression — designed around you.',
+    price: '€90',
+    unit: 'per hour',
     href: '/personal-training-salou/',
     cta: 'Personal training in Salou',
   },
   {
-    title: 'Health & Special Populations Coaching',
-    text: 'Adapted exercise for pregnancy, older adults, chronic conditions, cancer recovery, metabolic health and orthopaedic or neurological considerations — alongside medical guidance where appropriate.',
-    href: '/special-populations-exercise/',
-    cta: 'Special populations coaching',
+    title: 'Small Group Training',
+    text: 'Functional training in a small group of 3–6. Assemble your own group with friends, family or colleagues — or join the waiting list for the next available spot.',
+    price: '€15–30',
+    unit: 'per person, per hour',
+    href: '/contact/',
+    cta: 'Ask about a small group',
   },
   {
-    title: 'Online Health & Performance Coaching',
-    text: 'Remote programming, movement modifications, check-ins, habits, accountability and education — for clients in Spain and worldwide.',
-    href: '/online-coaching/',
-    cta: 'Online coaching',
+    title: 'Manual Therapy',
+    text: 'Soft tissue work for pain management and mobility — available alongside coaching or on its own.',
+    price: '€50',
+    unit: 'per 30 minutes',
+    href: '/contact/',
+    cta: 'Ask about a session',
   },
 ];
 
@@ -217,12 +223,11 @@ export default function HomePage() {
             <div className="md:col-span-7">
               <span className="eyebrow">Coaching options</span>
               <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
-                Three clear pathways
+                Three ways to work with me
               </h2>
               <p className="mt-5 prose-body max-w-prose">
-                A focused range of services — so it’s easy to know which one fits you.
-                Rehab-informed thinking runs through all of them, but the way you train it
-                depends on where you’re starting from.
+                A focused range of services with clear formats and clear rates — so it’s
+                easy to know which one fits you.
               </p>
             </div>
             <div className="md:col-span-5 md:justify-self-end">
@@ -237,7 +242,7 @@ export default function HomePage() {
               <article
                 key={s.title}
                 className={`card flex flex-col ${
-                  i === 1 ? 'md:scale-[1.015] border-coastal-blue/40' : ''
+                  i === 0 ? 'md:scale-[1.015] border-coastal-blue/40' : ''
                 }`}
               >
                 <span className="font-heading text-sm font-semibold text-coastal-blue">
@@ -247,6 +252,12 @@ export default function HomePage() {
                   {s.title}
                 </h3>
                 <p className="mt-3 text-charcoal/85 leading-relaxed">{s.text}</p>
+                <div className="mt-5 flex items-baseline gap-2">
+                  <span className="font-heading text-3xl font-semibold text-deep-navy">
+                    {s.price}
+                  </span>
+                  <span className="text-sm text-muted-grey">{s.unit}</span>
+                </div>
                 <div className="mt-6 pt-5 border-t border-soft-border">
                   <Link href={s.href} className="btn-ghost">
                     {s.cta} →
