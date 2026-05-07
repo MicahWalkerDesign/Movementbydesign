@@ -12,7 +12,7 @@ const ITEMS = [
     text: 'Worked alongside clinicians and digital health teams — comfortable with medical context, terminology and scope.',
   },
   {
-    title: 'Coaching since 2016',
+    title: 'Coaching since 2014',
     text: 'Long-term experience across personal training, group coaching, sports performance and workplace health.',
   },
   {

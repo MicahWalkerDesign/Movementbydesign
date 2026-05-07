@@ -9,6 +9,7 @@ import Method from '@/components/Method';
 import Proof from '@/components/Proof';
 import Testimonials from '@/components/Testimonials';
 import PhotoSlot from '@/components/PhotoSlot';
+import TrainingScience from '@/components/TrainingScience';
 import { buildMetadata, faqSchema, breadcrumbSchema } from '@/lib/seo';
 import { MEDICAL_DISCLAIMER, SITE } from '@/lib/site';
 
@@ -55,52 +56,6 @@ const SERVICES = [
     unit: 'per 30 minutes',
     href: '/contact/',
     cta: 'Ask about a session',
-  },
-];
-
-const PACKAGES = [
-  {
-    title: 'Foundation',
-    forWho: 'For people starting or returning.',
-    outcome:
-      'After 8–12 weeks: a clear baseline of strength, mobility and confidence — and a plan you can repeat without me.',
-    includes: [
-      'Initial consultation and movement review',
-      'Weekly training plan',
-      'Habit focus and education',
-      'Regular check-ins',
-    ],
-    href: '/contact/',
-    cta: 'Ask about Foundation',
-  },
-  {
-    title: 'Movement Reset',
-    forWho: 'For injury-conscious training and technique.',
-    outcome:
-      'After 8–12 weeks: better movement quality, fewer flare-ups, and capacity in the patterns that matter most to you.',
-    includes: [
-      '1:1 coaching with technique focus',
-      'Strength, mobility and tissue capacity work',
-      'Injury-prevention principles applied to your body',
-      'Progressive plan adapted around your history',
-    ],
-    href: '/contact/',
-    cta: 'Ask about Movement Reset',
-    highlight: true,
-  },
-  {
-    title: 'Performance & Longevity',
-    forWho: 'For higher-level strength, conditioning, habits and monitoring.',
-    outcome:
-      'After 8–12 weeks: measurable progress on strength, conditioning and consistency, and a plan that scales with life.',
-    includes: [
-      'Personalised performance programming',
-      'Nutrition habit and recovery support',
-      'Progress tracking and reviews',
-      'Ongoing plan adjustments',
-    ],
-    href: '/contact/',
-    cta: 'Ask about Performance & Longevity',
   },
 ];
 
@@ -311,68 +266,8 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 7. PACKAGES */}
-      <Section background="sand">
-        <div className="max-w-2xl">
-          <span className="eyebrow">Packages</span>
-          <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
-            Choose the level of support you need
-          </h2>
-          <p className="mt-5 prose-body max-w-prose">
-            Each package answers the same four questions: who is it for, what changes after
-            8–12 weeks, what’s included and how to start.
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {PACKAGES.map((p) => (
-            <article
-              key={p.title}
-              className={`card flex flex-col ${
-                p.highlight ? 'md:scale-[1.02] border-coastal-blue/40' : ''
-              }`}
-            >
-              {p.highlight && (
-                <span className="self-start text-xs uppercase tracking-label text-terracotta mb-2">
-                  Most popular
-                </span>
-              )}
-              <h3 className="font-heading font-semibold text-xl text-deep-navy">
-                {p.title}
-              </h3>
-              <p className="mt-2 text-sm text-muted-grey">{p.forWho}</p>
-
-              <p className="mt-5 text-xs uppercase tracking-label text-coastal-blue">
-                After 8–12 weeks
-              </p>
-              <p className="mt-1 text-charcoal/85 leading-relaxed text-[0.95rem]">
-                {p.outcome}
-              </p>
-
-              <p className="mt-5 text-xs uppercase tracking-label text-coastal-blue">
-                Includes
-              </p>
-              <ul className="mt-2 space-y-1.5 text-charcoal/85 text-[0.95rem]">
-                {p.includes.map((b) => (
-                  <li key={b} className="flex gap-2.5">
-                    <span
-                      aria-hidden
-                      className="mt-1.5 w-1.5 h-1.5 rounded-full bg-coastal-blue flex-none"
-                    />
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="mt-7 pt-5 border-t border-soft-border">
-                <Link href={p.href} className="btn-ghost">
-                  {p.cta} →
-                </Link>
-              </div>
-            </article>
-          ))}
-        </div>
-      </Section>
+      {/* 7. TRAINING SCIENCE — replaces packages */}
+      <TrainingScience />
 
       {/* 8. PRICING */}
       <Pricing background="warm-white" />
