@@ -1,0 +1,147 @@
+import type { Metadata } from 'next';
+import { SITE } from './site';
+
+type SeoArgs = {
+  title: string;
+  description: string;
+  path: string;
+  ogImage?: string;
+};
+
+export function buildMetadata({ title, description, path, ogImage }: SeoArgs): Metadata {
+  const url = `${SITE.url}${path}`;
+  const image = ogImage || `${SITE.url}/og-default.svg`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    metadataBase: new URL(SITE.url),
+    openGraph: {
+      type: 'website',
+      url,
+      siteName: SITE.name,
+      title,
+      description,
+      images: [{ url: image, width: 1200, height: 630, alt: SITE.name }],
+      locale: 'en_GB',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [image],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true },
+    },
+  };
+}
+
+export function localBusinessSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HealthAndBeautyBusiness',
+    name: SITE.name,
+    description: SITE.description,
+    url: SITE.url,
+    email: SITE.email,
+    image: `${SITE.url}/og-default.svg`,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: SITE.locality,
+      addressRegion: SITE.region,
+      addressCountry: 'ES',
+    },
+    areaServed: SITE.serviceAreas as unknown as string[],
+    availableLanguage: SITE.languages as unknown as string[],
+    founder: {
+      '@type': 'Person',
+      name: 'Micah Walker',
+      jobTitle: 'Exercise Science Personal Trainer and Health Coach',
+    },
+    sameAs: [SITE.youtube, SITE.linkedin],
+  };
+}
+
+export function personSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Micah Walker',
+    jobTitle: 'Exercise Science Personal Trainer and Health Coach',
+    worksFor: { '@type': 'Organization', name: SITE.name },
+    knowsLanguage: SITE.languages as unknown as string[],
+    sameAs: [SITE.youtube, SITE.linkedin],
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: SITE.locality,
+      addressRegion: SITE.region,
+      addressCountry: 'ES',
+    },
+  };
+}
+
+export function serviceSchema(name: string, description: string, path: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name,
+    description,
+    url: `${SITE.url}${path}`,
+    areaServed: SITE.serviceAreas as unknown as string[],
+    provider: {
+      '@type': 'HealthAndBeautyBusiness',
+      name: SITE.name,
+      url: SITE.url,
+    },
+  };
+}
+
+export function faqSchema(items: { q: string; a: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  };
+}
+
+export function breadcrumbSchema(crumbs: { name: string; path: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.name,
+      item: `${SITE.url}${c.path}`,
+    })),
+  };
+}
+
+export function articleSchema(args: {
+  title: string;
+  description: string;
+  path: string;
+  datePublished: string;
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: args.title,
+    description: args.description,
+    mainEntityOfPage: `${SITE.url}${args.path}`,
+    datePublished: args.datePublished,
+    author: { '@type': 'Person', name: 'Micah Walker' },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE.name,
+      logo: { '@type': 'ImageObject', url: `${SITE.url}/og-default.svg` },
+    },
+  };
+}

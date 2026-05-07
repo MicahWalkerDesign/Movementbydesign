@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --deep-navy: #102A43;
+  --coastal-blue: #2F6F8F;
+  --sand: #F4EBDD;
+  --warm-white: #FAF8F4;
+  --olive: #7C8A5B;
+  --terracotta: #C96F4A;
+  --charcoal: #1F2933;
+  --muted-grey: #667085;
+  --soft-border: #E7DFD3;
+  --success-green: #6F8F72;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--warm-white);
+  color: var(--deep-navy);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sora), system-ui, sans-serif;
+  color: var(--deep-navy);
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--coastal-blue);
+  color: white;
+}
+
+/* Focus ring for accessibility */
+:focus-visible {
+  outline: 2px solid var(--coastal-blue);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-coastal-blue text-white font-medium rounded-2xl px-7 py-4 transition-colors hover:bg-deep-navy focus-visible:outline-2 focus-visible:outline-coastal-blue focus-visible:outline-offset-2;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center bg-warm-white text-deep-navy border border-soft-border font-medium rounded-2xl px-7 py-4 transition-colors hover:bg-sand;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center text-coastal-blue font-medium underline-offset-4 hover:underline;
+  }
+  .eyebrow {
+    @apply text-xs font-semibold tracking-label uppercase text-coastal-blue;
+  }
+  .section {
+    @apply py-20 md:py-28;
+  }
+  .container-prose {
+    @apply mx-auto px-6 md:px-10 max-w-6xl;
+  }
+  .card {
+    @apply bg-white border border-soft-border rounded-2xl p-7 shadow-soft transition-all md:hover:shadow-lift md:hover:-translate-y-0.5;
+  }
+  .accent-line {
+    @apply block h-[3px] w-10 bg-terracotta rounded-full;
+  }
+  .prose-body p {
+    @apply text-charcoal/90 leading-relaxed;
+  }
+}
+
+/* Subtle hero gradient backdrop */
+.hero-grad {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(47,111,143,0.10), transparent 60%),
+    radial-gradient(800px 500px at -10% 110%, rgba(201,111,74,0.08), transparent 60%),
+    var(--sand);
+}
