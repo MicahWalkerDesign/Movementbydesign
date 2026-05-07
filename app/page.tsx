@@ -5,6 +5,7 @@ import Section from '@/components/Section';
 import FAQ from '@/components/FAQ';
 import YouTubeCard from '@/components/YouTubeCard';
 import JsonLd from '@/components/JsonLd';
+import Pricing from '@/components/Pricing';
 import { buildMetadata, faqSchema, breadcrumbSchema } from '@/lib/seo';
 import { MEDICAL_DISCLAIMER, SITE } from '@/lib/site';
 
@@ -465,8 +466,11 @@ export default function HomePage() {
         </div>
       </Section>
 
+      {/* PRICING */}
+      <Pricing background="sand" />
+
       {/* YOUTUBE */}
-      <Section background="sand">
+      <Section background="warm-white">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
             <span className="eyebrow">Education</span>
@@ -490,7 +494,7 @@ export default function HomePage() {
       </Section>
 
       {/* FAQ */}
-      <Section background="warm-white">
+      <Section background="sand">
         <div className="grid md:grid-cols-5 gap-10 items-start">
           <div className="md:col-span-2">
             <span className="eyebrow">FAQ</span>

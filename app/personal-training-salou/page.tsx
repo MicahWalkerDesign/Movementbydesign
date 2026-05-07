@@ -4,6 +4,7 @@ import ServiceHero from '@/components/ServiceHero';
 import Section from '@/components/Section';
 import RelatedServices from '@/components/RelatedServices';
 import CtaBlock from '@/components/CtaBlock';
+import Pricing from '@/components/Pricing';
 import JsonLd from '@/components/JsonLd';
 import {
   buildMetadata,
@@ -158,11 +159,18 @@ export default function PersonalTrainingSalouPage() {
         </div>
       </Section>
 
-      <Section background="sand">
+      <Pricing
+        background="sand"
+        eyebrow="Rates"
+        heading="Session rates"
+        intro="Clear, simple pricing. Pre-paid blocks and packages can be arranged on your intro call once we know what cadence suits you."
+      />
+
+      <Section background="warm-white">
         <RelatedServices excludeHref={PATH} />
       </Section>
 
-      <Section background="warm-white">
+      <Section background="sand">
         <p className="text-sm text-muted-grey leading-relaxed max-w-prose mb-10">
           {MEDICAL_DISCLAIMER}
         </p>

@@ -84,6 +84,7 @@ export default function ContactPage() {
                   {[
                     '1:1 personal training',
                     'small group training',
+                    'manual therapy',
                     'online coaching',
                     'nutrition habits',
                     'injury prevention',
@@ -154,6 +155,35 @@ export default function ContactPage() {
           </div>
 
           <aside className="md:col-span-2 space-y-6">
+            <div className="bg-white border border-soft-border rounded-3xl p-7">
+              <h2 className="font-heading font-semibold text-deep-navy text-xl">Session rates</h2>
+              <ul className="mt-4 divide-y divide-soft-border text-sm">
+                <li className="flex items-baseline justify-between py-2.5 gap-4">
+                  <span className="text-charcoal/90">1:1 Personal Training</span>
+                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">
+                    €90 / hr
+                  </span>
+                </li>
+                <li className="flex items-baseline justify-between py-2.5 gap-4">
+                  <span className="text-charcoal/90">
+                    Small Group <span className="text-muted-grey">(3–6)</span>
+                  </span>
+                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">
+                    €15–30 / hr pp
+                  </span>
+                </li>
+                <li className="flex items-baseline justify-between py-2.5 gap-4">
+                  <span className="text-charcoal/90">Manual Therapy</span>
+                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">
+                    €50 / 30 min
+                  </span>
+                </li>
+              </ul>
+              <p className="mt-3 text-xs text-muted-grey">
+                Pre-paid blocks and packages available on request.
+              </p>
+            </div>
+
             <div className="bg-sand border border-soft-border rounded-3xl p-7">
               <h2 className="font-heading font-semibold text-deep-navy text-xl">Direct</h2>
               <ul className="mt-4 space-y-2 text-charcoal/90">
