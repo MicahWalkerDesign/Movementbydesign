@@ -4,7 +4,7 @@ import Section from '@/components/Section';
 import FAQ from '@/components/FAQ';
 import YouTubeCard from '@/components/YouTubeCard';
 import JsonLd from '@/components/JsonLd';
-import Method from '@/components/Method';
+
 import Proof from '@/components/Proof';
 import Testimonials from '@/components/Testimonials';
 import PhotoSlot from '@/components/PhotoSlot';
@@ -145,17 +145,15 @@ export default function SpanishHome() {
         </div>
       </section>
 
-      {/* THIS IS FOR YOU IF (clay) */}
-      <Section background="clay">
+      {/* THIS IS FOR YOU IF */}
+      <Section background="sand">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5">
-            <span className="text-xs font-semibold tracking-label uppercase text-warm-white/85">
-              Esto es para ti si…
-            </span>
-            <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-warm-white">
+            <span className="eyebrow">Esto es para ti si…</span>
+            <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
               Coaching para cuerpos reales, historiales reales y vidas reales.
             </h2>
-            <p className="mt-5 text-warm-white/90 leading-relaxed max-w-prose">
+            <p className="mt-5 prose-body max-w-prose">
               La mayoría de planes de entrenamiento fallan cuando ignoran a la persona. Mi trabajo se construye en torno a las variables que los planes genéricos saltan — y a las cosas que de verdad mueven la aguja a largo plazo.
             </p>
           </div>
@@ -163,7 +161,7 @@ export default function SpanishHome() {
             {FOR_YOU.map((line) => (
               <li
                 key={line}
-                className="bg-warm-white border border-warm-white/10 rounded-2xl p-5 text-charcoal/90 leading-snug shadow-soft"
+                className="bg-white border border-soft-border rounded-2xl p-5 text-charcoal/90 leading-snug"
               >
                 {line}
               </li>
@@ -171,8 +169,6 @@ export default function SpanishHome() {
           </ul>
         </div>
       </Section>
-
-      <Method lang="es" />
 
       {/* SERVICES */}
       <section id="services" className="section bg-sand">
@@ -412,7 +408,7 @@ export default function SpanishHome() {
       <Section background="navy">
         <div className="grid md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-7">
-            <span className="text-xs font-semibold tracking-label uppercase text-warm-white/85">
+            <span className="eyebrow-light">
               Empieza aquí
             </span>
             <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-warm-white">
