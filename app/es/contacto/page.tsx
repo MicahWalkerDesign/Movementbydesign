@@ -16,6 +16,12 @@ export const metadata: Metadata = buildMetadata({
   alternatePath: '/contact/',
 });
 
+const waGreeting = encodeURIComponent('Hola Micah — me gustaría preguntar sobre tu coaching.');
+const waHref = `https://wa.me/${SITE.whatsapp}?text=${waGreeting}`;
+const formAction = SITE.formspreeId
+  ? `https://formspree.io/f/${SITE.formspreeId}`
+  : `mailto:${SITE.email}`;
+
 function Field({ label, name, type = 'text', required, placeholder }: { label: string; name: string; type?: string; required?: boolean; placeholder?: string }) {
   return (
     <div>
@@ -36,13 +42,34 @@ export default function ContactoPage() {
           <span className="eyebrow">Contacto</span>
           <span className="accent-line mt-3 mb-5" aria-hidden />
           <h1 className="font-heading font-semibold text-4xl md:text-5xl text-deep-navy max-w-4xl leading-[1.1]">
-            Reserva una llamada gratuita
+            Escríbeme
           </h1>
           <div className="mt-5 prose-body max-w-prose space-y-4">
-            <p>Cuéntame un poco sobre tus objetivos, ubicación y qué tipo de apoyo buscas.</p>
             <p>
-              Tanto si quieres entrenamiento personal en Salou, entrenamiento funcional al aire libre en Cambrils, coaching online, prevención de lesiones, coaching para poblaciones especiales o ayuda con hábitos saludables, te diré si puedo ayudarte y cuál sería el mejor siguiente paso.
+              La forma más rápida de contactarme es por WhatsApp — envíame un mensaje
+              cuando quieras y te respondo lo antes posible.
             </p>
+            <p>
+              O rellena el formulario de abajo y te respondo en menos de 24 horas.
+            </p>
+          </div>
+
+          {/* WhatsApp primary CTA — hero placement */}
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href={waHref}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="btn-primary inline-flex items-center gap-2.5"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden fill="currentColor">
+                <path d="M20.5 3.5A11 11 0 0 0 3.7 17.6L2 22l4.5-1.6A11 11 0 1 0 20.5 3.5Zm-8.5 18a9 9 0 0 1-4.6-1.3l-.3-.2-2.7 1 .9-2.6-.2-.3a9 9 0 1 1 6.9 3.4Zm5-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.1l-1 1c-.2.2-.4.3-.7.1a7.4 7.4 0 0 1-2.2-1.4 8 8 0 0 1-1.5-1.9c-.2-.3 0-.5.1-.6l.4-.5.3-.4c.1-.2 0-.3 0-.4l-.9-2.2c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.5.6.2 1.2.2 1.7.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3Z" />
+              </svg>
+              Escríbeme por WhatsApp
+            </a>
+            <a href={`mailto:${SITE.email}`} className="btn-secondary">
+              Email directo
+            </a>
           </div>
         </div>
       </section>
@@ -50,13 +77,18 @@ export default function ContactoPage() {
       <Section background="warm-white">
         <div className="grid md:grid-cols-5 gap-12 items-start">
           <div className="md:col-span-3">
+            <h2 className="font-heading font-semibold text-2xl text-deep-navy mb-6">
+              O envía un formulario de consulta
+            </h2>
             <form
-              action={`mailto:${SITE.email}`}
-              method="post"
-              encType="text/plain"
+              action={formAction}
+              method="POST"
               className="bg-white border border-soft-border rounded-3xl p-6 md:p-8 space-y-5"
               aria-label="Formulario de contacto"
             >
+              <input type="hidden" name="_subject" value="Nueva consulta de coaching — Movement by Design" />
+              <input type="hidden" name="_next" value={`${SITE.url}/es/contacto/`} />
+
               <div className="grid sm:grid-cols-2 gap-5">
                 <Field label="Nombre" name="name" required />
                 <Field label="Email" name="email" type="email" required />
@@ -106,15 +138,35 @@ export default function ContactoPage() {
               </div>
               <div className="flex flex-wrap gap-3 pt-2">
                 <button type="submit" className="btn-primary">Enviar consulta</button>
-                <a href={`mailto:${SITE.email}`} className="btn-secondary">O envíame un email directo</a>
               </div>
-              <p className="text-xs text-muted-grey">
-                Este formulario estático abre tu cliente de correo. Más adelante podemos integrar un servicio de formularios para que las consultas lleguen directamente a la bandeja de entrada.
-              </p>
             </form>
           </div>
 
           <aside className="md:col-span-2 space-y-6">
+            {/* WhatsApp card */}
+            <div className="bg-deep-navy rounded-3xl p-7 text-warm-white">
+              <span className="eyebrow-light">Contacto preferido</span>
+              <h2 className="mt-3 font-heading font-semibold text-xl">WhatsApp</h2>
+              <p className="mt-3 text-warm-white/80 text-sm leading-relaxed">
+                La forma más rápida de contactarme. Envíame un mensaje cuando quieras
+                — te respondo lo antes posible.
+              </p>
+              <a
+                href={waHref}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="mt-5 inline-flex items-center gap-2.5 bg-warm-white text-deep-navy font-medium rounded-2xl px-6 py-3 text-sm hover:bg-sand transition-colors w-full justify-center"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden fill="currentColor">
+                  <path d="M20.5 3.5A11 11 0 0 0 3.7 17.6L2 22l4.5-1.6A11 11 0 1 0 20.5 3.5Zm-8.5 18a9 9 0 0 1-4.6-1.3l-.3-.2-2.7 1 .9-2.6-.2-.3a9 9 0 1 1 6.9 3.4Zm5-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.1l-1 1c-.2.2-.4.3-.7.1a7.4 7.4 0 0 1-2.2-1.4 8 8 0 0 1-1.5-1.9c-.2-.3 0-.5.1-.6l.4-.5.3-.4c.1-.2 0-.3 0-.4l-.9-2.2c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.5.6.2 1.2.2 1.7.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3Z" />
+                </svg>
+                Abrir WhatsApp
+              </a>
+              <p className="mt-3 text-warm-white/60 text-xs text-center">
+                +34 665 518 632
+              </p>
+            </div>
+
             <div className="bg-white border border-soft-border rounded-3xl p-7">
               <h2 className="font-heading font-semibold text-deep-navy text-xl">Tarifas por sesión</h2>
               <ul className="mt-4 divide-y divide-soft-border text-sm">
@@ -123,9 +175,7 @@ export default function ContactoPage() {
                   <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">€90 / hora</span>
                 </li>
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
-                  <span className="text-charcoal/90">
-                    Grupo Reducido <span className="text-muted-grey">(3–6)</span>
-                  </span>
+                  <span className="text-charcoal/90">Grupo Reducido <span className="text-muted-grey">(3–6)</span></span>
                   <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">€15–30 / hora pp</span>
                 </li>
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
@@ -133,9 +183,7 @@ export default function ContactoPage() {
                   <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">Desde €120 / mes</span>
                 </li>
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
-                  <span className="text-charcoal/90">
-                    Apoyo de movimiento <span className="text-muted-grey">(add-on)</span>
-                  </span>
+                  <span className="text-charcoal/90">Apoyo de movimiento <span className="text-muted-grey">(add-on)</span></span>
                   <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">€50 / 30 min</span>
                 </li>
               </ul>
@@ -143,18 +191,9 @@ export default function ContactoPage() {
             </div>
 
             <div className="bg-sand border border-soft-border rounded-3xl p-7">
-              <h2 className="font-heading font-semibold text-deep-navy text-xl">O reserva directamente</h2>
-              <p className="mt-3 text-sm text-charcoal/85 leading-relaxed">
-                Próximamente integraremos un calendario embebido (Calendly / TidyCal). Mientras tanto, los botones de abajo son la vía más rápida.
-              </p>
-              <div aria-hidden className="mt-4 h-24 grid place-items-center rounded-2xl border border-dashed border-coastal-blue/40 text-xs uppercase tracking-label text-coastal-blue bg-warm-white/60">
-                Espacio para calendario
-              </div>
-              <ul className="mt-5 space-y-2 text-charcoal/90 text-sm">
+              <h2 className="font-heading font-semibold text-deep-navy text-xl">Otros canales</h2>
+              <ul className="mt-4 space-y-2 text-charcoal/90 text-sm">
                 <li>Email: <a className="text-coastal-blue hover:text-deep-navy underline-offset-4 hover:underline" href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
-                {SITE.whatsapp && (
-                  <li>WhatsApp: <a className="text-coastal-blue hover:text-deep-navy underline-offset-4 hover:underline" href={`https://wa.me/${SITE.whatsapp}`} target="_blank" rel="noreferrer noopener">Envía un mensaje</a></li>
-                )}
                 <li>YouTube: <a className="text-coastal-blue hover:text-deep-navy underline-offset-4 hover:underline" href={SITE.youtube} target="_blank" rel="noreferrer noopener">@MovementConsultant</a></li>
                 <li>LinkedIn: <a className="text-coastal-blue hover:text-deep-navy underline-offset-4 hover:underline" href={SITE.linkedin} target="_blank" rel="noreferrer noopener">Micah Walker</a></li>
               </ul>

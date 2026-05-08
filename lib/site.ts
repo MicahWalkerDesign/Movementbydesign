@@ -6,9 +6,13 @@ export const SITE = {
   email: 'micah.walker@gmail.com',
   youtube: 'https://www.youtube.com/@MovementConsultant',
   linkedin: 'https://www.linkedin.com/in/micah-walker-246745101/',
-  // WhatsApp: replace with full international number (no +, no spaces) when available.
-  // Example: '34600000000' for +34 600 000 000. Leave empty to hide WhatsApp links.
-  whatsapp: '',
+  // WhatsApp Business number — full international format, no + or spaces.
+  whatsapp: '34665518632',
+  // Formspree form ID — sign up free at formspree.io, create a form pointed at
+  // micah.walker@gmail.com, then paste the 8-char ID from the endpoint URL here.
+  // Example: if your endpoint is https://formspree.io/f/xabc1234, set 'xabc1234'.
+  // Leave empty to fall back to the mailto link.
+  formspreeId: '',
   locality: 'Salou',
   region: 'Tarragona',
   country: 'Spain',
