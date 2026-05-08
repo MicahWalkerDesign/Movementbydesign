@@ -32,7 +32,7 @@ const COPY = {
 export default function Testimonials({ lang = 'en' }: { lang?: Locale }) {
   const c = COPY[lang];
   return (
-    <section className="section bg-sand">
+    <section className="section bg-warm-white">
       <div className="container-prose">
         <div className="max-w-2xl">
           <span className="eyebrow">{c.eyebrow}</span>

@@ -171,7 +171,7 @@ export default function SpanishHome() {
       </Section>
 
       {/* SERVICES */}
-      <section id="services" className="section bg-sand">
+      <section id="services" className="section bg-warm-white">
         <div className="container-prose">
           <div className="grid md:grid-cols-12 gap-10 items-end">
             <div className="md:col-span-7">
@@ -222,7 +222,7 @@ export default function SpanishHome() {
       </section>
 
       {/* TRAINING IN MOTION */}
-      <Section background="warm-white">
+      <Section background="sand">
         <div className="max-w-2xl">
           <span className="eyebrow">En movimiento</span>
           <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
@@ -281,7 +281,7 @@ export default function SpanishHome() {
       <Proof lang="es" />
 
       {/* ABOUT PREVIEW */}
-      <Section background="warm-white">
+      <Section background="sand">
         <div className="grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-5">
             <PhotoSlot
@@ -319,7 +319,7 @@ export default function SpanishHome() {
       <Testimonials lang="es" />
 
       {/* EDUCATION HUB */}
-      <Section background="warm-white">
+      <Section background="sand">
         <div className="grid md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-6">
             <span className="eyebrow">Centro educativo</span>
@@ -345,7 +345,7 @@ export default function SpanishHome() {
       </Section>
 
       {/* SERVICE AREAS */}
-      <Section background="sand">
+      <Section background="warm-white">
         <PhotoSlot
           src="/images/training-environment.jpg"
           alt="Set de entrenamiento al aire libre — esterillas, kettlebells y sandbags listos en un parque costero"
@@ -387,7 +387,7 @@ export default function SpanishHome() {
       </Section>
 
       {/* FAQ */}
-      <Section background="warm-white">
+      <Section background="sand">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5">
             <span className="eyebrow">Preguntas frecuentes</span>

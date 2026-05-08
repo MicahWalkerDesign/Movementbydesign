@@ -181,7 +181,7 @@ export default function HomePage() {
       </Section>
 
       {/* 4. SERVICES — three pathways */}
-      <section id="services" className="section bg-sand">
+      <section id="services" className="section bg-warm-white">
         <div className="container-prose">
           <div className="grid md:grid-cols-12 gap-10 items-end">
             <div className="md:col-span-7">
@@ -234,7 +234,7 @@ export default function HomePage() {
       </section>
 
       {/* 4b. TRAINING IN MOTION — photo mosaic */}
-      <Section background="warm-white">
+      <Section background="sand">
         <div className="max-w-2xl">
           <span className="eyebrow">In motion</span>
           <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
@@ -300,7 +300,7 @@ export default function HomePage() {
       <Proof />
 
       {/* 6. ABOUT PREVIEW with photo */}
-      <Section background="warm-white">
+      <Section background="sand">
         <div className="grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-5">
             <PhotoSlot
@@ -344,7 +344,7 @@ export default function HomePage() {
       <Testimonials />
 
       {/* 10. EDUCATION / YOUTUBE */}
-      <Section background="warm-white">
+      <Section background="sand">
         <div className="grid md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-6">
             <span className="eyebrow">Education hub</span>
@@ -381,7 +381,7 @@ export default function HomePage() {
       </Section>
 
       {/* 11. SERVICE AREAS — moved low, condensed */}
-      <Section background="sand">
+      <Section background="warm-white">
         <PhotoSlot
           src="/images/training-environment.jpg"
           alt="Outdoor training set-up — mats, kettlebells and sandbags ready in a coastal park"
@@ -433,7 +433,7 @@ export default function HomePage() {
       </Section>
 
       {/* 12. FAQ */}
-      <Section background="warm-white">
+      <Section background="sand">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5">
             <span className="eyebrow">FAQ</span>
