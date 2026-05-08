@@ -226,6 +226,65 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 4b. TRAINING IN MOTION — photo mosaic */}
+      <Section background="warm-white">
+        <div className="max-w-2xl">
+          <span className="eyebrow">In motion</span>
+          <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
+            What training actually looks like
+          </h2>
+          <p className="mt-5 prose-body max-w-prose">
+            Functional training adapted to the person — strength, conditioning, agility and
+            mobility, mixed in the right proportions for your body and goals.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            {
+              src: '/images/training-strength.jpg',
+              alt: 'Outdoor pushups in plank position on training mats',
+              label: 'Strength',
+              caption: 'Push, pull, hinge, squat, carry — the patterns life demands.',
+            },
+            {
+              src: '/images/training-conditioning.jpg',
+              alt: 'Battle ropes conditioning session in a sunlit park',
+              label: 'Conditioning',
+              caption: 'Aerobic and mixed-energy work that supports recovery and energy.',
+            },
+            {
+              src: '/images/training-agility.jpg',
+              alt: 'Sandbag work over an agility ladder',
+              label: 'Agility',
+              caption: 'Coordination, balance, foot speed and movement skill.',
+            },
+            {
+              src: '/images/training-mobility.jpg',
+              alt: 'Side plank and rotation mobility drill on outdoor mats',
+              label: 'Mobility',
+              caption: 'Active range, joint control and tissue capacity.',
+            },
+          ].map((tile) => (
+            <figure key={tile.label} className="group">
+              <PhotoSlot
+                src={tile.src}
+                alt={tile.alt}
+                label={tile.label.toLowerCase()}
+                variant="portrait"
+                tone="sea"
+              />
+              <figcaption className="mt-3">
+                <span className="text-xs uppercase tracking-label text-coastal-blue">
+                  {tile.label}
+                </span>
+                <p className="mt-1 text-sm text-charcoal/85 leading-snug">{tile.caption}</p>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </Section>
+
       {/* 5. PROOF / CREDIBILITY */}
       <Proof />
 
