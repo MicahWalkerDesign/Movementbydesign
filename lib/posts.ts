@@ -213,6 +213,179 @@ export const POSTS: Post[] = [
       },
     ],
   },
+  {
+    slug: 'exercise-during-pregnancy',
+    title: 'Exercise During Pregnancy: A Trimester-by-Trimester Guide',
+    description:
+      'Safe, evidence-based exercise during pregnancy — trimester adaptations, pelvic floor foundations, and what to modify from a personal trainer in Salou.',
+    date: '2026-05-01',
+    readingTime: '9 min read',
+    intro:
+      'Pregnancy does not require you to stop moving. In fact, the evidence strongly supports staying active throughout — with appropriate adaptations and a coach who understands the physiology.',
+    body: [
+      {
+        heading: 'Why exercise matters more than ever during pregnancy',
+        paragraphs: [
+          'Current guidelines from ACOG, the CSEP Pregnancy Guidelines and NICE all advocate for regular moderate-intensity exercise throughout an uncomplicated pregnancy. The benefits are well-documented: reduced risk of gestational diabetes, better weight management, lower rates of pre-eclampsia, shorter active labour and significantly improved mood and sleep quality.',
+        ],
+      },
+      {
+        heading: 'General principles',
+        paragraphs: [
+          'Aim for moderate intensity — the talk test is a reliable guide. Target 150 minutes of moderate aerobic activity per week. Movement quality over load becomes more important than the kilos on the bar.',
+        ],
+        bullets: [
+          'Avoid supine work from the second trimester',
+          'Avoid contact sports and activities with fall risk',
+          'Introduce pelvic floor education from the first trimester',
+          'Learn to manage intra-abdominal pressure throughout',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'postpartum-exercise',
+    title: 'Postpartum Exercise: A Science-Based Guide to Returning to Training After Birth',
+    description:
+      'Evidence-based guide to returning to exercise after birth — pelvic floor, diastasis recti and progressive return to training with a personal trainer in Salou.',
+    date: '2026-05-02',
+    readingTime: '10 min read',
+    intro:
+      'The six-week clearance from your doctor is a starting point — not a green light to jump back into your previous training. Return to exercise after birth needs to be progressive, pelvic-floor-led and built around your actual recovery.',
+    body: [
+      {
+        heading: 'Why the six-week check is just the beginning',
+        paragraphs: [
+          'The standard postnatal check clears a woman for general activity. It does not assess pelvic floor function, abdominal wall integrity, load tolerance or readiness for impact. The 2019 return-to-running guidelines recommend waiting a minimum of twelve weeks before returning to running or high-impact activity.',
+        ],
+      },
+      {
+        heading: 'Red flag symptoms',
+        paragraphs: [
+          'A rehabilitation-informed trainer monitors for symptoms indicating the pace of return is too fast.',
+        ],
+        bullets: [
+          'Urinary or faecal leakage with exercise or impact',
+          'Pelvic heaviness or prolapse sensation',
+          'Coning or doming of the midline during trunk exercises',
+          'Pelvic or hip pain during exercise',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'exercise-with-meniscus-injury',
+    title: 'Exercise with Meniscus Injury: How to Keep Training Without Making It Worse',
+    description:
+      'How to exercise safely with meniscal knee damage. Evidence-based guidance from a rehabilitation-informed personal trainer in Salou on the Costa Daurada.',
+    date: '2026-05-03',
+    readingTime: '9 min read',
+    intro:
+      'A meniscal tear does not have to end your training life. With a properly adapted programme and a rehabilitation-informed approach, most people with meniscal knee damage can continue exercising, build meaningful strength and maintain long-term joint health.',
+    body: [
+      {
+        heading: 'What the meniscus does',
+        paragraphs: [
+          'The menisci act as shock absorbers, distribute compressive load and contribute to proprioception. Meniscal damage reduces proprioceptive signalling from the knee, which in turn increases injury risk for surrounding structures. Research is clear: exercise therapy is at least as effective as arthroscopic surgery for most degenerative meniscal tears.',
+        ],
+      },
+      {
+        heading: 'Exercise priorities',
+        paragraphs: ['A rehabilitation-informed personal trainer structures lower limb work around four key priorities.'],
+        bullets: [
+          'Quadriceps strength — the primary load-absorbers for the knee',
+          'Hamstring and hip strength — co-stabilisers often underestimated',
+          'Proprioception and neuromuscular control',
+          'Gradual load progression with pain-free ranges',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'exercise-with-herniated-disc',
+    title: 'Exercise with a Herniated Disc: Building Spinal Capacity Without Fear',
+    description:
+      'Safe, evidence-based exercise with a herniated disc. Rehabilitation-informed personal training in Salou — build spinal capacity, reduce pain and return to activity.',
+    date: '2026-05-04',
+    readingTime: '10 min read',
+    intro:
+      'A herniated disc diagnosis can feel like a sentence. It is not. With the right understanding of spinal mechanics, appropriate exercise selection and progressive loading, most people with a herniated disc can return to meaningful activity.',
+    body: [
+      {
+        heading: 'The evidence for exercise over rest',
+        paragraphs: [
+          'Bed rest was the standard recommendation for decades. The evidence has reversed this comprehensively. Exercise reduces pain, restores proprioceptive input to the spine and builds the muscular support structures around the lumbar vertebrae.',
+        ],
+      },
+      {
+        heading: 'Exercise priorities',
+        paragraphs: [],
+        bullets: [
+          'Walking — promotes disc nutrition through movement',
+          'Hip hinge patterns with neutral spine',
+          'Glute and hip strengthening',
+          'Core stability: dead bugs, pallof press, bird-dogs',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'exercise-with-diabetes',
+    title: 'Exercise with Type 2 Diabetes: The Most Powerful Tool You Are Probably Under-Using',
+    description:
+      'How to exercise safely and effectively with Type 2 diabetes. Evidence-based guidance on insulin sensitivity, blood glucose management and training in Salou.',
+    date: '2026-05-05',
+    readingTime: '10 min read',
+    intro:
+      'Exercise is not a lifestyle add-on for people with Type 2 diabetes. It is a pharmacologically significant intervention — one that improves insulin sensitivity, reduces HbA1c and lowers cardiovascular risk with an effectiveness comparable to medication in many cases.',
+    body: [
+      {
+        heading: 'Why exercise is so effective',
+        paragraphs: [
+          'During aerobic exercise, muscle cells can take up glucose through an insulin-independent pathway. Resistance training builds skeletal muscle mass — the primary site of insulin-stimulated glucose disposal. The combination of aerobic and resistance training consistently produces better glycaemic outcomes than either modality alone.',
+        ],
+      },
+      {
+        heading: 'Practical strategies',
+        paragraphs: [],
+        bullets: [
+          'Break up sitting time — a ten-minute walk after meals is highly effective',
+          'No more than two consecutive days without exercise',
+          'Two to three resistance training sessions per week',
+          'Consistency over intensity for glycaemic outcomes',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'exercise-autism-children',
+    title: 'Exercise for Children with Autism: Sensory-Friendly Movement That Builds Confidence',
+    description:
+      'Sensory-friendly movement and exercise for children with autism in Salou. Evidence-based, structured physical activity from a special populations coach on the Costa Daurada.',
+    date: '2026-05-06',
+    readingTime: '10 min read',
+    intro:
+      'Children with autism benefit enormously from structured physical activity — but the standard gym or sports setting is often poorly designed for their sensory and social needs. With the right environment and approach, movement can be transformative.',
+    body: [
+      {
+        heading: 'Understanding sensory processing in ASD',
+        paragraphs: [
+          'Sensory processing differences are a defining feature of ASD. A sensory-informed coach uses input strategically — deep pressure and proprioceptive loading at the start of a session can regulate the nervous system and improve focus for the work that follows.',
+        ],
+      },
+      {
+        heading: 'Principles of effective coaching',
+        paragraphs: [],
+        bullets: [
+          'Predictability and routine — consistent session structure',
+          'Clear, concrete instruction — show rather than tell',
+          'Task analysis and chaining — break movements into small steps',
+          'Positive reinforcement — specific, immediate feedback',
+          'Managing dysregulation with sensory strategies',
+        ],
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string) {

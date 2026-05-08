@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Section from '@/components/Section';
 import JsonLd from '@/components/JsonLd';
 import { buildMetadata, breadcrumbSchema } from '@/lib/seo';
-import { POSTS } from '@/lib/posts';
+import { POSTS_ES } from '@/lib/posts-es';
 
 const PATH = '/es/blog/';
 
@@ -24,7 +24,7 @@ const formatDate = (iso: string) =>
   });
 
 export default function BlogIndexEs() {
-  const posts = [...POSTS].sort((a, b) => +new Date(b.date) - +new Date(a.date));
+  const posts = [...POSTS_ES].sort((a, b) => +new Date(b.date) - +new Date(a.date));
 
   return (
     <>
@@ -46,7 +46,7 @@ export default function BlogIndexEs() {
           {posts.map((p) => (
             <li key={p.slug}>
               <Link
-                href={`/blog/${p.slug}/`}
+                href={`/es/blog/${p.slug}/`}
                 className="card flex flex-col h-full focus-visible:outline-coastal-blue"
               >
                 <span className="text-xs uppercase tracking-label text-coastal-blue">

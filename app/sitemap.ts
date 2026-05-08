@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { SITE } from '@/lib/site';
 import { POSTS } from '@/lib/posts';
+import { POSTS_ES } from '@/lib/posts-es';
 
 const STATIC_PATHS = [
   '/',
@@ -52,5 +53,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...esStaticEntries, ...blogEntries];
+  const esBlogEntries = POSTS_ES.map((post) => ({
+    url: `${SITE.url}/es/blog/${post.slug}/`,
+    lastModified: new Date(post.date),
+    changeFrequency: 'yearly' as const,
+    priority: 0.6,
+  }));
+
+  return [...staticEntries, ...esStaticEntries, ...blogEntries, ...esBlogEntries];
 }
