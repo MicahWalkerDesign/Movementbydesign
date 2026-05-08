@@ -32,7 +32,7 @@ const ITEMS: { quote: string; outcome: string; attribution: string }[] = [
 
 export default function Testimonials() {
   return (
-    <section className="section bg-warm-white">
+    <section className="section bg-sand">
       <div className="container-prose">
         <div className="max-w-2xl">
           <span className="eyebrow">Client stories</span>

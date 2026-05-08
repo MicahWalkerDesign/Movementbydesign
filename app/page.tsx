@@ -4,12 +4,10 @@ import Section from '@/components/Section';
 import FAQ from '@/components/FAQ';
 import YouTubeCard from '@/components/YouTubeCard';
 import JsonLd from '@/components/JsonLd';
-import Pricing from '@/components/Pricing';
 import Method from '@/components/Method';
 import Proof from '@/components/Proof';
 import Testimonials from '@/components/Testimonials';
 import PhotoSlot from '@/components/PhotoSlot';
-import TrainingScience from '@/components/TrainingScience';
 import { buildMetadata, faqSchema, breadcrumbSchema } from '@/lib/seo';
 import { MEDICAL_DISCLAIMER, SITE } from '@/lib/site';
 
@@ -154,7 +152,7 @@ export default function HomePage() {
       </section>
 
       {/* 2. THIS IS FOR YOU IF… */}
-      <Section background="warm-white">
+      <Section background="sand">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5">
             <span className="eyebrow">This is for you if…</span>
@@ -244,36 +242,40 @@ export default function HomePage() {
             What training actually looks like
           </h2>
           <p className="mt-5 prose-body max-w-prose">
-            Functional training adapted to the person — strength, conditioning, agility and
-            mobility, mixed in the right proportions for your body and goals.
+            Four qualities, trained in the right proportions for your body and life — the
+            ingredients of capacity that holds up over decades.
           </p>
         </div>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
+              src: '/images/training-mobility.jpg',
+              alt: 'Side plank and rotation mobility drill on outdoor mats',
+              label: 'Mobility',
+              caption:
+                'Reduce daily pain or tightness and increase working capacity.',
+            },
+            {
               src: '/images/training-strength.jpg',
               alt: 'Outdoor pushups in plank position on training mats',
               label: 'Strength',
-              caption: 'Push, pull, hinge, squat, carry — the patterns life demands.',
+              caption:
+                'Build a musculoskeletal system that withstands the years and keeps you healthy into retirement.',
+            },
+            {
+              src: '/images/training-corrective.jpg',
+              alt: 'Single-arm row using suspension straps with coach observing technique',
+              label: 'Corrective Exercises',
+              caption:
+                'Restore balance and reprogram movement patterns that have shifted through the years.',
             },
             {
               src: '/images/training-conditioning.jpg',
               alt: 'Battle ropes conditioning session in a sunlit park',
-              label: 'Conditioning',
-              caption: 'Aerobic and mixed-energy work that supports recovery and energy.',
-            },
-            {
-              src: '/images/training-agility.jpg',
-              alt: 'Sandbag work over an agility ladder',
-              label: 'Agility',
-              caption: 'Coordination, balance, foot speed and movement skill.',
-            },
-            {
-              src: '/images/training-mobility.jpg',
-              alt: 'Side plank and rotation mobility drill on outdoor mats',
-              label: 'Mobility',
-              caption: 'Active range, joint control and tissue capacity.',
+              label: 'Cardiovascular Health',
+              caption:
+                'Targeted conditioning to support energy, recovery and long-term heart and lung capacity.',
             },
           ].map((tile) => (
             <figure key={tile.label} className="group">
@@ -339,17 +341,11 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 7. TRAINING SCIENCE — replaces packages */}
-      <TrainingScience />
-
-      {/* 8. PRICING */}
-      <Pricing background="warm-white" />
-
-      {/* 9. TESTIMONIALS */}
+      {/* 8. TESTIMONIALS */}
       <Testimonials />
 
       {/* 10. EDUCATION / YOUTUBE */}
-      <Section background="sand">
+      <Section background="warm-white">
         <div className="grid md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-6">
             <span className="eyebrow">Education hub</span>
@@ -386,7 +382,7 @@ export default function HomePage() {
       </Section>
 
       {/* 11. SERVICE AREAS — moved low, condensed */}
-      <Section background="warm-white">
+      <Section background="sand">
         <PhotoSlot
           src="/images/training-environment.jpg"
           alt="Outdoor training set-up — mats, kettlebells and sandbags ready in a coastal park"
@@ -438,7 +434,7 @@ export default function HomePage() {
       </Section>
 
       {/* 12. FAQ */}
-      <Section background="sand">
+      <Section background="warm-white">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5">
             <span className="eyebrow">FAQ</span>
