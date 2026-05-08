@@ -9,86 +9,82 @@ import Proof from '@/components/Proof';
 import Testimonials from '@/components/Testimonials';
 import PhotoSlot from '@/components/PhotoSlot';
 import { buildMetadata, faqSchema, breadcrumbSchema } from '@/lib/seo';
-import { MEDICAL_DISCLAIMER, SITE } from '@/lib/site';
+import { MEDICAL_DISCLAIMER_ES } from '@/lib/strings';
+import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
   title:
-    'Personal Trainer Salou | Exercise Science Coaching for Strength, Health & Longevity',
+    'Entrenador Personal Salou | Coaching de Ciencias del Ejercicio para Fuerza, Salud y Longevidad',
   description:
-    'Personal training for people who need more than a workout. Exercise-science led coaching for strength, injury prevention, confidence and long-term health in Salou, Cambrils, Tarragona and online.',
-  path: '/',
-  locale: 'en_GB',
-  alternatePath: '/es/',
+    'Entrenamiento personal para personas que necesitan algo más que una rutina de gym. Coaching basado en ciencias del ejercicio para fuerza, prevención de lesiones, confianza y salud a largo plazo en Salou, Cambrils, Tarragona y online.',
+  path: '/es/',
+  locale: 'es_ES',
+  alternatePath: '/',
 });
 
-/* ---------- Section content ---------- */
-
 const FOR_YOU = [
-  'You want to get stronger without aggravating old injuries',
-  'You feel lost after physio, surgery or time away from training',
-  'You want performance without breaking down',
-  'You need coaching adapted to your body, energy and confidence',
-  'You are pregnant, postpartum, older, or managing health considerations',
-  'You want structure, accountability and education — not random workouts',
+  'Quieres ganar fuerza sin agravar lesiones antiguas',
+  'Te sientes perdido tras fisioterapia, una operación o tiempo sin entrenar',
+  'Buscas rendimiento sin acabar roto',
+  'Necesitas un coaching adaptado a tu cuerpo, energía y confianza',
+  'Estás embarazada, en posparto, en edad mayor o gestionando consideraciones de salud',
+  'Quieres estructura, responsabilidad y educación, no entrenamientos al azar',
 ];
 
 const SERVICES = [
   {
-    title: '1:1 Personal Training',
-    text: 'Strength, movement quality, confidence, fitness and injury-conscious progression — designed around you.',
+    title: 'Entrenamiento Personal 1:1',
+    text: 'Fuerza, calidad de movimiento, confianza, forma física y progresión consciente con las lesiones — diseñado en torno a ti.',
     price: '€90',
-    unit: 'per hour',
-    href: '/personal-training-salou/',
-    cta: 'Personal training in Salou',
+    unit: 'por hora',
+    href: '/es/entrenador-personal-salou/',
+    cta: 'Entrenamiento personal en Salou',
   },
   {
-    title: 'Small Group Training',
-    text: 'Functional training in a small group of 3–6. Assemble your own group with friends, family or colleagues — or join the waiting list for the next available spot.',
+    title: 'Entrenamiento en Grupo Reducido',
+    text: 'Entrenamiento funcional en grupo reducido de 3–6 personas. Forma tu propio grupo con amigos, familia o compañeros — o únete a la lista de espera para la próxima plaza disponible.',
     price: '€15–30',
-    unit: 'per person, per hour',
-    href: '/contact/',
-    cta: 'Ask about a small group',
+    unit: 'por persona, por hora',
+    href: '/es/contacto/',
+    cta: 'Pregunta por el grupo reducido',
   },
   {
-    title: 'Manual Therapy',
-    text: 'Soft tissue work for pain management and mobility — available alongside coaching or on its own.',
+    title: 'Terapia Manual',
+    text: 'Trabajo de tejidos blandos para gestión del dolor y movilidad — disponible junto al coaching o de forma independiente.',
     price: '€50',
-    unit: 'per 30 minutes',
-    href: '/contact/',
-    cta: 'Ask about a session',
+    unit: 'por 30 minutos',
+    href: '/es/contacto/',
+    cta: 'Pregunta por una sesión',
   },
 ];
 
 const FAQS = [
   {
-    q: 'Do you offer personal training in English?',
-    a: 'Yes. English is my native language. I also speak German fluently and I am currently learning Spanish.',
+    q: '¿Ofreces entrenamiento personal en español?',
+    a: 'Sí. Estoy aprendiendo español y puedo dar coaching en español básico. Para conversaciones detalladas sobre objetivos, dolor o historial médico, prefiero inglés (mi lengua materna) o alemán (fluido).',
   },
   {
-    q: 'Where do sessions take place?',
-    a: 'Sessions can take place in Salou, Cambrils, Tarragona, La Pineda, Vila-seca and nearby areas, depending on location and training needs. Online coaching is also available.',
+    q: '¿Dónde se realizan las sesiones?',
+    a: 'Las sesiones pueden tener lugar en Salou, Cambrils, Tarragona, La Pineda, Vila-seca y zonas cercanas, según la ubicación y necesidades. El coaching online está disponible internacionalmente.',
   },
   {
-    q: 'Do I need to be fit already?',
-    a: 'No. Coaching is adapted to your current level, goals, injury history and confidence.',
+    q: '¿Necesito estar en forma ya?',
+    a: 'No. El coaching se adapta a tu nivel actual, objetivos, historial de lesiones y confianza.',
   },
   {
-    q: 'Is this suitable if I have an old injury or health considerations?',
-    a: 'In many cases, yes. I use a rehab-informed approach and adapt training around your history and capacity. For diagnosis or active medical conditions I recommend working alongside your doctor or healthcare provider — coaching can sit alongside that work where appropriate.',
+    q: '¿Es adecuado si tengo una lesión antigua o consideraciones de salud?',
+    a: 'En muchos casos, sí. Trabajo con un enfoque orientado a la rehabilitación y adapto el entrenamiento a tu historial y capacidad. Para diagnósticos o condiciones médicas activas, recomiendo trabajar junto a tu médico o profesional sanitario; el coaching puede acompañar ese trabajo cuando es apropiado.',
   },
   {
-    q: 'What is included in coaching?',
-    a: 'Sessions, written programming, technique cues, movement modifications, check-ins and ongoing education. Specifics depend on the package — we’ll define the exact scope on your free intro call.',
+    q: '¿Qué incluye el coaching?',
+    a: 'Sesiones, programación por escrito, indicaciones técnicas, modificaciones de movimiento, seguimientos y educación continua. Los detalles dependen del paquete: definimos el alcance exacto en la llamada inicial gratuita.',
   },
 ];
 
-/* ---------- Page ---------- */
-
-export default function HomePage() {
+export default function SpanishHome() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   return (
     <>
-      {/* Preload the LCP hero image — improves Largest Contentful Paint. */}
       <link
         rel="preload"
         as="image"
@@ -97,7 +93,7 @@ export default function HomePage() {
         fetchpriority="high"
       />
 
-      {/* 1. HERO — calm, premium, photo-led */}
+      {/* HERO */}
       <section className="hero-grad">
         <div className="container-prose pt-16 md:pt-24 pb-20 md:pb-28">
           <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
@@ -105,28 +101,25 @@ export default function HomePage() {
               <span className="eyebrow">Salou · Cambrils · Tarragona · Online</span>
               <span className="accent-line mt-3 mb-6" aria-hidden />
               <h1 className="font-heading font-semibold text-[2.5rem] md:text-[3.4rem] leading-[1.05] tracking-[-0.02em] text-deep-navy max-w-[18ch]">
-                Personal training for people who need more than a workout.
+                Entrenamiento personal para personas que necesitan algo más que una rutina de gym.
               </h1>
               <p className="mt-6 text-lg md:text-xl text-deep-navy/80 max-w-prose leading-relaxed">
-                Exercise-science led coaching for strength, movement confidence, injury
-                prevention and long-term health — in Salou, Cambrils, Tarragona and online.
+                Coaching basado en ciencias del ejercicio para fuerza, confianza en el movimiento, prevención de lesiones y salud a largo plazo — en Salou, Cambrils, Tarragona y online.
               </p>
-
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link href="/contact/" className="btn-primary">
-                  Book a free intro call
+                <Link href="/es/contacto/" className="btn-primary">
+                  Reserva una llamada gratuita
                 </Link>
                 <Link href="#services" className="btn-secondary">
-                  Explore coaching
+                  Explora el coaching
                 </Link>
               </div>
-
               <ul className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs uppercase tracking-label text-deep-navy/70">
                 {[
-                  'Exercise Science',
-                  'Rehab-informed',
-                  'Performance',
-                  'EN · DE · ES learning',
+                  'Ciencias del Ejercicio',
+                  'Enfoque rehabilitador',
+                  'Rendimiento',
+                  'EN · DE · ES en aprendizaje',
                 ].map((chip) => (
                   <li
                     key={chip}
@@ -138,12 +131,11 @@ export default function HomePage() {
                 ))}
               </ul>
             </div>
-
             <div className="md:col-span-6">
               <PhotoSlot
                 src="/images/hero-portrait.jpg"
-                alt="Micah Walker — exercise science coach, outdoors at golden hour"
-                label="hero portrait"
+                alt="Micah Walker — entrenador con formación en ciencias del ejercicio, al aire libre al atardecer"
+                label="retrato hero"
                 variant="portrait"
                 tone="sea"
                 priority
@@ -153,20 +145,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. THIS IS FOR YOU IF… */}
+      {/* THIS IS FOR YOU IF (clay) */}
       <Section background="clay">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5">
             <span className="text-xs font-semibold tracking-label uppercase text-warm-white/85">
-              This is for you if…
+              Esto es para ti si…
             </span>
             <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-warm-white">
-              Coaching for real bodies, real histories and real lives.
+              Coaching para cuerpos reales, historiales reales y vidas reales.
             </h2>
             <p className="mt-5 text-warm-white/90 leading-relaxed max-w-prose">
-              Most training fails when it ignores the person. The work I do is built around
-              the variables that generic plans skip — and the things that actually move the
-              needle long-term.
+              La mayoría de planes de entrenamiento fallan cuando ignoran a la persona. Mi trabajo se construye en torno a las variables que los planes genéricos saltan — y a las cosas que de verdad mueven la aguja a largo plazo.
             </p>
           </div>
           <ul className="md:col-span-7 grid gap-3 sm:grid-cols-2">
@@ -182,30 +172,27 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 3. METHOD */}
-      <Method />
+      <Method lang="es" />
 
-      {/* 4. SERVICES — three pathways */}
+      {/* SERVICES */}
       <section id="services" className="section bg-sand">
         <div className="container-prose">
           <div className="grid md:grid-cols-12 gap-10 items-end">
             <div className="md:col-span-7">
-              <span className="eyebrow">Coaching options</span>
+              <span className="eyebrow">Opciones de coaching</span>
               <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
-                Three ways to work with me
+                Tres formas de trabajar conmigo
               </h2>
               <p className="mt-5 prose-body max-w-prose">
-                A focused range of services with clear formats and clear rates — so it’s
-                easy to know which one fits you.
+                Una gama enfocada de servicios con formatos claros y tarifas transparentes — para que sea fácil saber cuál te encaja.
               </p>
             </div>
             <div className="md:col-span-5 md:justify-self-end">
-              <Link href="/contact/" className="btn-secondary">
-                Not sure which fits? Ask me
+              <Link href="/es/contacto/" className="btn-secondary">
+                ¿No sabes cuál encaja? Pregúntame
               </Link>
             </div>
           </div>
-
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {SERVICES.map((s, i) => (
               <article
@@ -238,51 +225,45 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4b. TRAINING IN MOTION — photo mosaic */}
+      {/* TRAINING IN MOTION */}
       <Section background="warm-white">
         <div className="max-w-2xl">
-          <span className="eyebrow">In motion</span>
+          <span className="eyebrow">En movimiento</span>
           <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
-            What training actually looks like
+            Cómo es realmente entrenar
           </h2>
           <p className="mt-5 prose-body max-w-prose">
-            Four qualities, trained in the right proportions for your body and life — the
-            ingredients of capacity that holds up over decades.
+            Cuatro cualidades, entrenadas en las proporciones adecuadas para tu cuerpo y tu vida — los ingredientes de una capacidad que aguanta décadas.
           </p>
         </div>
-
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
               src: '/images/training-mobility.jpg',
-              alt: 'Side plank and rotation mobility drill on outdoor mats',
-              label: 'Mobility',
-              caption:
-                'Reduce daily pain or tightness and increase working capacity.',
+              alt: 'Plancha lateral con rotación sobre esterillas al aire libre',
+              label: 'Movilidad',
+              caption: 'Reduce el dolor o la rigidez diarios y aumenta la capacidad de trabajo.',
             },
             {
               src: '/images/training-strength.jpg',
-              alt: 'Outdoor pushups in plank position on training mats',
-              label: 'Strength',
-              caption:
-                'Build a musculoskeletal system that withstands the years and keeps you healthy into retirement.',
+              alt: 'Flexiones al aire libre en posición de plancha sobre esterillas',
+              label: 'Fuerza',
+              caption: 'Construye un sistema musculoesquelético que aguante los años y te mantenga sano hasta la jubilación.',
             },
             {
               src: '/images/training-corrective.jpg',
-              alt: 'Single-arm row using suspension straps with coach observing technique',
-              label: 'Corrective Exercises',
-              caption:
-                'Restore balance and reprogram movement patterns that have shifted through the years.',
+              alt: 'Remo unilateral con cintas de suspensión, con el entrenador observando la técnica',
+              label: 'Ejercicio Correctivo',
+              caption: 'Restaura el equilibrio y reprograma patrones de movimiento que han cambiado con los años.',
             },
             {
               src: '/images/training-conditioning.jpg',
-              alt: 'Battle ropes conditioning session in a sunlit park',
-              label: 'Cardiovascular Health',
-              caption:
-                'Targeted conditioning to support energy, recovery and long-term heart and lung capacity.',
+              alt: 'Sesión de battle ropes en un parque soleado',
+              label: 'Salud Cardiovascular',
+              caption: 'Acondicionamiento dirigido para apoyar energía, recuperación y capacidad cardiopulmonar a largo plazo.',
             },
           ].map((tile) => (
-            <figure key={tile.label} className="group">
+            <figure key={tile.label}>
               <PhotoSlot
                 src={tile.src}
                 alt={tile.alt}
@@ -301,80 +282,62 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 5. PROOF / CREDIBILITY */}
-      <Proof />
+      <Proof lang="es" />
 
-      {/* 6. ABOUT PREVIEW with photo */}
+      {/* ABOUT PREVIEW */}
       <Section background="warm-white">
         <div className="grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-5">
             <PhotoSlot
               src="/images/about-coaching.jpg"
-              alt="Micah leading an outdoor training session"
-              label="outdoor training session"
+              alt="Micah dirigiendo una sesión de entrenamiento al aire libre"
+              label="sesión de entrenamiento"
               variant="square"
               tone="sage"
             />
           </div>
           <div className="md:col-span-7">
-            <span className="eyebrow">About</span>
+            <span className="eyebrow">Sobre mí</span>
             <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
-              Hi, I’m Micah.
+              Hola, soy Micah.
             </h2>
             <span className="accent-line mt-5" aria-hidden />
             <div className="mt-6 space-y-4 prose-body max-w-prose">
               <p>
-                I’m an Exercise and Sports Science professional, health coach and
-                rehab-informed personal trainer based between Spain and Australia.
+                Soy profesional en Ciencias del Ejercicio y el Deporte, coach de salud y entrenador personal con enfoque rehabilitador, con base entre España y Australia.
               </p>
               <p>
-                I work at the intersection of movement, behaviour change and practical
-                education — with a long background across personal training, group coaching,
-                clinical exercise research, sports medicine and digital health.
+                Trabajo en la intersección entre movimiento, cambio de comportamiento y educación práctica — con una larga trayectoria en entrenamiento personal, coaching en grupo, investigación clínica del ejercicio, medicina deportiva y salud digital.
               </p>
               <p>
-                The work I do best is for people who need more than a generic plan: clients
-                with injury history, busy lives, complex goals and the kind of variables
-                that off-the-shelf programming tends to ignore.
+                Mi mejor trabajo es para personas que necesitan algo más que un plan genérico: clientes con historial de lesiones, vidas ocupadas, objetivos complejos y el tipo de variables que los programas de catálogo tienden a ignorar.
               </p>
-              <Link href="/about/" className="btn-secondary mt-4">
-                Read more about my background
+              <Link href="/es/sobre-mi/" className="btn-secondary mt-4">
+                Conoce más sobre mi formación
               </Link>
             </div>
           </div>
         </div>
       </Section>
 
-      {/* 8. TESTIMONIALS */}
-      <Testimonials />
+      <Testimonials lang="es" />
 
-      {/* 10. EDUCATION / YOUTUBE */}
+      {/* EDUCATION HUB */}
       <Section background="warm-white">
         <div className="grid md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-6">
-            <span className="eyebrow">Education hub</span>
+            <span className="eyebrow">Centro educativo</span>
             <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
-              Movement education you can use
+              Educación de movimiento que puedes aplicar
             </h2>
             <p className="mt-5 prose-body max-w-prose">
-              Short, practical movement and training education on YouTube — for people who
-              want to understand their body and train with intent between sessions.
+              Educación corta y práctica de movimiento y entrenamiento en YouTube — para quienes quieren entender su cuerpo y entrenar con intención entre sesiones.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href={SITE.youtube}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="btn-secondary"
-              >
+              <a href={SITE.youtube} target="_blank" rel="noreferrer noopener" className="btn-secondary">
                 YouTube
               </a>
-              <a
-                href={SITE.linkedin}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="btn-secondary"
-              >
+              <a href={SITE.linkedin} target="_blank" rel="noreferrer noopener" className="btn-secondary">
                 LinkedIn
               </a>
             </div>
@@ -385,49 +348,39 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 11. SERVICE AREAS — moved low, condensed */}
+      {/* SERVICE AREAS */}
       <Section background="sand">
         <PhotoSlot
           src="/images/training-environment.jpg"
-          alt="Outdoor training set-up — mats, kettlebells and sandbags ready in a coastal park"
-          label="outdoor training set-up"
+          alt="Set de entrenamiento al aire libre — esterillas, kettlebells y sandbags listos en un parque costero"
+          label="entrenamiento al aire libre"
           variant="landscape"
           tone="sand"
           className="mb-12"
         />
-
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5">
-            <span className="eyebrow">Service area</span>
+            <span className="eyebrow">Zona de servicio</span>
             <h2 className="mt-3 font-heading font-semibold text-2xl md:text-3xl text-deep-navy">
-              In-person on the Costa Daurada. Online worldwide.
+              Presencial en la Costa Daurada. Online en todo el mundo.
             </h2>
           </div>
           <div className="md:col-span-7 prose-body max-w-prose">
             <p>
-              In-person personal training in Salou, Cambrils, Tarragona, La Pineda,
-              Vila-seca and Reus. Online coaching available internationally.
+              Entrenamiento personal presencial en Salou, Cambrils, Tarragona, La Pineda, Vila-seca y Reus. Coaching online disponible internacionalmente.
             </p>
             <ul className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
               {[
-                { label: 'Personal Trainer Salou', href: '/personal-training-salou/' },
-                {
-                  label: 'Personal Trainer Cambrils',
-                  href: '/blog/personal-trainer-cambrils/',
-                },
-                { label: 'Functional Training', href: '/functional-training/' },
-                { label: 'Injury Prevention', href: '/injury-prevention/' },
-                { label: 'Online Coaching', href: '/online-coaching/' },
-                { label: 'Nutrition Habits', href: '/nutrition-habits/' },
+                { label: 'Entrenador Personal Salou', href: '/es/entrenador-personal-salou/' },
+                { label: 'Entrenamiento Funcional', href: '/es/entrenamiento-funcional/' },
+                { label: 'Prevención de Lesiones', href: '/es/prevencion-lesiones/' },
+                { label: 'Coaching Online', href: '/es/coaching-online/' },
+                { label: 'Hábitos de Nutrición', href: '/es/nutricion-habitos/' },
+                { label: 'Poblaciones Especiales', href: '/es/poblaciones-especiales/' },
               ].map((l) => (
                 <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    className="inline-flex items-center gap-2 text-coastal-blue hover:text-deep-navy transition-colors"
-                  >
-                    <span aria-hidden className="text-terracotta">
-                      ›
-                    </span>
+                  <Link href={l.href} className="inline-flex items-center gap-2 text-coastal-blue hover:text-deep-navy transition-colors">
+                    <span aria-hidden className="text-terracotta">›</span>
                     {l.label}
                   </Link>
                 </li>
@@ -437,16 +390,16 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 12. FAQ */}
+      {/* FAQ */}
       <Section background="warm-white">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5">
-            <span className="eyebrow">FAQ</span>
+            <span className="eyebrow">Preguntas frecuentes</span>
             <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
-              Frequently asked questions
+              Preguntas habituales
             </h2>
             <p className="mt-5 text-sm text-muted-grey leading-relaxed max-w-prose">
-              {MEDICAL_DISCLAIMER}
+              {MEDICAL_DISCLAIMER_ES}
             </p>
           </div>
           <div className="md:col-span-7">
@@ -455,38 +408,36 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 13. FINAL CTA */}
+      {/* FINAL CTA */}
       <Section background="navy">
         <div className="grid md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-7">
             <span className="text-xs font-semibold tracking-label uppercase text-warm-white/85">
-              Get started
+              Empieza aquí
             </span>
             <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-warm-white">
-              Ready to train with more confidence?
+              ¿Listo para entrenar con más confianza?
             </h2>
             <p className="mt-5 text-warm-white/80 max-w-prose">
-              Tell me where you’re starting from, what you want to improve, and what hasn’t
-              worked before. I’ll let you know if I can help and what the best next step
-              would be.
+              Cuéntame de dónde partes, qué quieres mejorar y qué no te ha funcionado antes. Te diré si puedo ayudarte y cuál sería el mejor siguiente paso.
             </p>
           </div>
           <div className="md:col-span-5 flex flex-wrap gap-3 md:justify-end">
-            <Link href="/contact/" className="btn-primary">
-              Book a free intro call
+            <Link href="/es/contacto/" className="btn-primary">
+              Reserva una llamada gratuita
             </Link>
             <Link
-              href="/contact/"
+              href="/es/contacto/"
               className="inline-flex items-center justify-center bg-transparent text-warm-white border border-warm-white/40 font-medium rounded-2xl px-7 py-4 transition-colors hover:bg-warm-white/10"
             >
-              Send a message
+              Envíame un mensaje
             </Link>
           </div>
         </div>
       </Section>
 
       <JsonLd data={faqSchema(FAQS)} />
-      <JsonLd data={breadcrumbSchema([{ name: 'Home', path: '/' }])} />
+      <JsonLd data={breadcrumbSchema([{ name: 'Inicio', path: '/es/' }])} />
     </>
   );
 }

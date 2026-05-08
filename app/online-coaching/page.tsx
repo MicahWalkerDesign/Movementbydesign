@@ -14,6 +14,8 @@ export const metadata: Metadata = buildMetadata({
   description:
     'Remote personal training and health coaching for training plans, nutrition habits, injury prevention and long-term wellbeing. Online coaching in English and German for clients in Spain and worldwide.',
   path: PATH,
+  locale: 'en_GB',
+  alternatePath: '/es/coaching-online/',
 });
 
 const includes = [

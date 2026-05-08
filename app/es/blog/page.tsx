@@ -5,40 +5,38 @@ import JsonLd from '@/components/JsonLd';
 import { buildMetadata, breadcrumbSchema } from '@/lib/seo';
 import { POSTS } from '@/lib/posts';
 
-const PATH = '/blog/';
+const PATH = '/es/blog/';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Blog | Movement by Design',
   description:
-    'Practical articles on personal training in Salou, functional training, injury prevention, exercise science and coaching for expats on the Costa Daurada.',
+    'Artículos prácticos sobre entrenamiento personal en Salou, entrenamiento funcional, prevención de lesiones, ciencias del ejercicio y coaching para expats en la Costa Daurada.',
   path: PATH,
-  locale: 'en_GB',
-  alternatePath: '/es/blog/',
+  locale: 'es_ES',
+  alternatePath: '/blog/',
 });
 
 const formatDate = (iso: string) =>
-  new Date(iso).toLocaleDateString('en-GB', {
+  new Date(iso).toLocaleDateString('es-ES', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
   });
 
-export default function BlogIndex() {
+export default function BlogIndexEs() {
   const posts = [...POSTS].sort((a, b) => +new Date(b.date) - +new Date(a.date));
 
   return (
     <>
       <section className="hero-grad">
         <div className="container-prose pt-16 md:pt-24 pb-12 md:pb-16">
-          <span className="eyebrow">Journal</span>
+          <span className="eyebrow">Diario</span>
           <span className="accent-line mt-3 mb-5" aria-hidden />
           <h1 className="font-heading font-semibold text-4xl md:text-5xl text-deep-navy max-w-4xl leading-[1.1]">
-            Movement, training &amp; coaching notes
+            Notas sobre movimiento, entrenamiento y coaching
           </h1>
           <p className="mt-5 prose-body max-w-prose">
-            Practical, unhurried writing on personal training in Salou, functional training,
-            injury prevention, special populations exercise coaching and life on the Costa
-            Daurada.
+            Escritura práctica y sin prisas sobre entrenamiento personal en Salou, entrenamiento funcional, prevención de lesiones, coaching para poblaciones especiales y vida en la Costa Daurada.
           </p>
         </div>
       </section>
@@ -58,7 +56,7 @@ export default function BlogIndex() {
                   {p.title}
                 </h2>
                 <p className="mt-3 text-charcoal/85 leading-relaxed">{p.description}</p>
-                <span className="mt-5 text-coastal-blue font-medium">Read article →</span>
+                <span className="mt-5 text-coastal-blue font-medium">Leer artículo →</span>
               </Link>
             </li>
           ))}
@@ -67,7 +65,7 @@ export default function BlogIndex() {
 
       <JsonLd
         data={breadcrumbSchema([
-          { name: 'Home', path: '/' },
+          { name: 'Inicio', path: '/es/' },
           { name: 'Blog', path: PATH },
         ])}
       />

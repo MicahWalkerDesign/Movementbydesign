@@ -14,6 +14,8 @@ export const metadata: Metadata = buildMetadata({
   description:
     'Safe, progressive, exercise science-based training for people returning from injury, managing old limitations or wanting to move with more confidence.',
   path: PATH,
+  locale: 'en_GB',
+  alternatePath: '/es/prevencion-lesiones/',
 });
 
 export default function InjuryPreventionPage() {

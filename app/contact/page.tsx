@@ -11,6 +11,8 @@ export const metadata: Metadata = buildMetadata({
   description:
     'Book a free intro call with Movement by Design. Personal training, online coaching and rehabilitation-informed exercise coaching in Salou, Cambrils and Tarragona.',
   path: PATH,
+  locale: 'en_GB',
+  alternatePath: '/es/contacto/',
 });
 
 export default function ContactPage() {

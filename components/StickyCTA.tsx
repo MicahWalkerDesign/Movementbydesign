@@ -1,7 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { SITE } from '@/lib/site';
+import { localeFromPath, localised } from '@/lib/routes';
+import { UI } from '@/lib/strings';
 
 /**
  * Sticky bottom CTA bar — mobile only. Hidden on md+ via .sticky-cta CSS rule.
@@ -9,20 +12,27 @@ import { SITE } from '@/lib/site';
  * is configured.
  */
 export default function StickyCTA() {
+  const pathname = usePathname() || '/';
+  const lang = localeFromPath(pathname);
+  const t = UI[lang];
+
+  const greeting =
+    lang === 'es'
+      ? 'Hola Micah — me gustaría preguntar sobre tu coaching.'
+      : "Hi Micah — I'd like to ask about coaching.";
+
   const wa = SITE.whatsapp
-    ? `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(
-        "Hi Micah — I'd like to ask about coaching.",
-      )}`
+    ? `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(greeting)}`
     : null;
 
   return (
     <div className="sticky-cta">
       <div className="mx-3 mb-3 rounded-2xl border border-soft-border bg-warm-white/95 backdrop-blur shadow-lift p-2 flex items-center gap-2">
         <Link
-          href="/contact/"
+          href={localised('/contact/', lang)}
           className="flex-1 inline-flex items-center justify-center bg-coastal-blue text-warm-white font-medium rounded-xl px-4 py-3 text-sm hover:bg-deep-navy transition-colors"
         >
-          Book a free intro call
+          {t.cta.bookCall}
         </Link>
         {wa && (
           <a

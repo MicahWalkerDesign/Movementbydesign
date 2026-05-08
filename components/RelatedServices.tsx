@@ -1,31 +1,61 @@
 import Link from 'next/link';
+import type { Locale } from '@/lib/routes';
+import { localised } from '@/lib/routes';
 
-const ALL = [
-  { href: '/personal-training-salou/', label: 'Personal Training in Salou' },
-  { href: '/online-coaching/', label: 'Online Coaching' },
-  { href: '/functional-training/', label: 'Functional Training' },
-  { href: '/injury-prevention/', label: 'Injury Prevention' },
-  { href: '/nutrition-habits/', label: 'Nutrition Habits' },
-  { href: '/special-populations-exercise/', label: 'Special Populations Exercise' },
-];
+const COPY = {
+  en: {
+    heading: 'Related coaching',
+    learnMore: 'Learn more →',
+    items: [
+      { en: '/personal-training-salou/', label: 'Personal Training in Salou' },
+      { en: '/online-coaching/', label: 'Online Coaching' },
+      { en: '/functional-training/', label: 'Functional Training' },
+      { en: '/injury-prevention/', label: 'Injury Prevention' },
+      { en: '/nutrition-habits/', label: 'Nutrition Habits' },
+      { en: '/special-populations-exercise/', label: 'Special Populations Exercise' },
+    ],
+  },
+  es: {
+    heading: 'Otros servicios de coaching',
+    learnMore: 'Más información →',
+    items: [
+      { en: '/personal-training-salou/', label: 'Entrenador Personal en Salou' },
+      { en: '/online-coaching/', label: 'Coaching Online' },
+      { en: '/functional-training/', label: 'Entrenamiento Funcional' },
+      { en: '/injury-prevention/', label: 'Prevención de Lesiones' },
+      { en: '/nutrition-habits/', label: 'Hábitos de Nutrición' },
+      { en: '/special-populations-exercise/', label: 'Ejercicio para Poblaciones Especiales' },
+    ],
+  },
+} as const;
 
-export default function RelatedServices({ excludeHref }: { excludeHref: string }) {
-  const items = ALL.filter((i) => i.href !== excludeHref);
+export default function RelatedServices({
+  excludeHref,
+  lang = 'en',
+}: {
+  excludeHref: string;
+  lang?: Locale;
+}) {
+  const c = COPY[lang];
+  const items = c.items.filter((i) => localised(i.en, lang) !== excludeHref);
   return (
     <div>
-      <h2 className="font-heading font-semibold text-2xl text-deep-navy">Related coaching</h2>
+      <h2 className="font-heading font-semibold text-2xl text-deep-navy">{c.heading}</h2>
       <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((i) => (
-          <li key={i.href}>
-            <Link
-              href={i.href}
-              className="block bg-white border border-soft-border rounded-2xl px-5 py-4 hover:border-coastal-blue/40 transition-colors"
-            >
-              <span className="text-deep-navy font-medium">{i.label}</span>
-              <span className="block text-xs text-coastal-blue mt-1">Learn more →</span>
-            </Link>
-          </li>
-        ))}
+        {items.map((i) => {
+          const href = localised(i.en, lang);
+          return (
+            <li key={href}>
+              <Link
+                href={href}
+                className="block bg-white border border-soft-border rounded-2xl px-5 py-4 hover:border-coastal-blue/40 transition-colors"
+              >
+                <span className="text-deep-navy font-medium">{i.label}</span>
+                <span className="block text-xs text-coastal-blue mt-1">{c.learnMore}</span>
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

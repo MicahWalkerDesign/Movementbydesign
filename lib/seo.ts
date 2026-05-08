@@ -6,15 +6,42 @@ type SeoArgs = {
   description: string;
   path: string;
   ogImage?: string;
+  /** ISO language code for OG locale (e.g. 'en_GB', 'es_ES'). Defaults to 'en_GB'. */
+  locale?: 'en_GB' | 'es_ES';
+  /** Path of the equivalent page in the other language, for hreflang. */
+  alternatePath?: string;
 };
 
-export function buildMetadata({ title, description, path, ogImage }: SeoArgs): Metadata {
+export function buildMetadata({
+  title,
+  description,
+  path,
+  ogImage,
+  locale = 'en_GB',
+  alternatePath,
+}: SeoArgs): Metadata {
   const url = `${SITE.url}${path}`;
   const image = ogImage || `${SITE.url}/og-default.svg`;
+
+  const languages: Record<string, string> = {};
+  if (alternatePath) {
+    if (locale === 'en_GB') {
+      languages['en'] = url;
+      languages['es'] = `${SITE.url}${alternatePath}`;
+    } else {
+      languages['es'] = url;
+      languages['en'] = `${SITE.url}${alternatePath}`;
+    }
+    languages['x-default'] = locale === 'en_GB' ? url : `${SITE.url}${alternatePath}`;
+  }
+
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      ...(Object.keys(languages).length ? { languages } : {}),
+    },
     metadataBase: new URL(SITE.url),
     openGraph: {
       type: 'website',
@@ -23,7 +50,7 @@ export function buildMetadata({ title, description, path, ogImage }: SeoArgs): M
       title,
       description,
       images: [{ url: image, width: 1200, height: 630, alt: SITE.name }],
-      locale: 'en_GB',
+      locale,
     },
     twitter: {
       card: 'summary_large_image',

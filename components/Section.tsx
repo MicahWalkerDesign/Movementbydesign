@@ -3,13 +3,14 @@ import { ReactNode } from 'react';
 type Props = {
   children: ReactNode;
   className?: string;
-  background?: 'warm-white' | 'sand' | 'navy';
+  background?: 'warm-white' | 'sand' | 'clay' | 'navy';
   id?: string;
 };
 
 const bg = {
   'warm-white': 'bg-warm-white',
   sand: 'bg-sand',
+  clay: 'bg-clay',
   navy: 'bg-deep-navy text-warm-white',
 };
 

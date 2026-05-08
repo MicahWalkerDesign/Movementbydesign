@@ -14,6 +14,8 @@ export const metadata: Metadata = buildMetadata({
   description:
     'Practical nutrition education and behaviour-change support for energy, training, body composition and consistency. Habit-focused, not medical nutrition therapy.',
   path: PATH,
+  locale: 'en_GB',
+  alternatePath: '/es/nutricion-habitos/',
 });
 
 export default function NutritionHabitsPage() {

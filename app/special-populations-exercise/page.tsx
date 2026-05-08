@@ -14,6 +14,8 @@ export const metadata: Metadata = buildMetadata({
   description:
     'Personalised exercise coaching for pregnancy, postpartum, cancer recovery, diabetes, older adults, orthopaedic and neurological limitations, and special needs children — adapted around your body and medical context.',
   path: PATH,
+  locale: 'en_GB',
+  alternatePath: '/es/poblaciones-especiales/',
 });
 
 const populations = [

@@ -1,8 +1,30 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { MEDICAL_DISCLAIMER, SITE } from '@/lib/site';
+import { localeFromPath, localised } from '@/lib/routes';
+import { UI, MEDICAL_DISCLAIMER_ES } from '@/lib/strings';
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const pathname = usePathname() || '/';
+  const lang = localeFromPath(pathname);
+  const t = UI[lang];
+  const disclaimer = lang === 'es' ? MEDICAL_DISCLAIMER_ES : MEDICAL_DISCLAIMER;
+
+  const exploreLinks: { href: string; label: string }[] = [
+    { href: localised('/personal-training-salou/', lang), label: t.explore.personalTraining },
+    { href: localised('/functional-training/', lang), label: t.explore.functionalTraining },
+    { href: localised('/injury-prevention/', lang), label: t.explore.injuryPrevention },
+    { href: localised('/special-populations-exercise/', lang), label: t.explore.specialPopulations },
+    { href: localised('/online-coaching/', lang), label: t.explore.onlineCoaching },
+    { href: localised('/nutrition-habits/', lang), label: t.explore.nutritionHabits },
+    { href: localised('/about/', lang), label: t.explore.about },
+    { href: localised('/blog/', lang), label: t.explore.blog },
+    { href: localised('/contact/', lang), label: t.explore.contact },
+  ];
+
   return (
     <footer className="bg-deep-navy text-warm-white/90 mt-24">
       <div className="container-prose py-16 grid gap-12 md:grid-cols-4">
@@ -16,41 +38,45 @@ export default function Footer() {
               {SITE.name}
             </span>
           </div>
-          <p className="text-sm text-warm-white/75 max-w-prose">
-            Personal training and health coaching in Salou, Cambrils and Tarragona.
-          </p>
-          <p className="text-sm text-warm-white/75 mt-3">
-            Languages: English (native), German (fluent), Spanish (learning)
-          </p>
+          <p className="text-sm text-warm-white/75 max-w-prose">{t.footer.tagline}</p>
+          <p className="text-sm text-warm-white/75 mt-3">{t.footer.languages}</p>
         </div>
 
         <div>
-          <h3 className="font-heading font-semibold text-warm-white mb-3">Service areas</h3>
+          <h3 className="font-heading font-semibold text-warm-white mb-3">
+            {t.footer.serviceAreas}
+          </h3>
           <ul className="space-y-1.5 text-sm text-warm-white/75">
             {SITE.serviceAreas.map((a) => (
               <li key={a}>{a}</li>
             ))}
-            <li>Online coaching (international)</li>
+            <li>
+              {lang === 'es'
+                ? 'Coaching online (internacional)'
+                : 'Online coaching (international)'}
+            </li>
           </ul>
         </div>
 
         <div>
-          <h3 className="font-heading font-semibold text-warm-white mb-3">Explore</h3>
+          <h3 className="font-heading font-semibold text-warm-white mb-3">
+            {t.footer.explore}
+          </h3>
           <ul className="space-y-1.5 text-sm">
-            <li><Link href="/personal-training-salou/" className="hover:text-warm-white">Personal Training</Link></li>
-            <li><Link href="/functional-training/" className="hover:text-warm-white">Functional Training</Link></li>
-            <li><Link href="/injury-prevention/" className="hover:text-warm-white">Injury Prevention</Link></li>
-            <li><Link href="/special-populations-exercise/" className="hover:text-warm-white">Special Populations</Link></li>
-            <li><Link href="/online-coaching/" className="hover:text-warm-white">Online Coaching</Link></li>
-            <li><Link href="/nutrition-habits/" className="hover:text-warm-white">Nutrition Habits</Link></li>
-            <li><Link href="/about/" className="hover:text-warm-white">About</Link></li>
-            <li><Link href="/blog/" className="hover:text-warm-white">Blog</Link></li>
-            <li><Link href="/contact/" className="hover:text-warm-white">Contact</Link></li>
+            {exploreLinks.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="hover:text-warm-white">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div>
-          <h3 className="font-heading font-semibold text-warm-white mb-3">Contact</h3>
+          <h3 className="font-heading font-semibold text-warm-white mb-3">
+            {t.footer.contact}
+          </h3>
           <ul className="space-y-1.5 text-sm">
             <li>
               <a href={`mailto:${SITE.email}`} className="hover:text-warm-white">
@@ -70,12 +96,22 @@ export default function Footer() {
               </li>
             )}
             <li>
-              <a href={SITE.youtube} target="_blank" rel="noreferrer noopener" className="hover:text-warm-white">
+              <a
+                href={SITE.youtube}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="hover:text-warm-white"
+              >
                 YouTube — Movement by Design
               </a>
             </li>
             <li>
-              <a href={SITE.linkedin} target="_blank" rel="noreferrer noopener" className="hover:text-warm-white">
+              <a
+                href={SITE.linkedin}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="hover:text-warm-white"
+              >
                 LinkedIn — Micah Walker
               </a>
             </li>
@@ -85,8 +121,10 @@ export default function Footer() {
 
       <div className="border-t border-warm-white/10">
         <div className="container-prose py-8 text-xs text-warm-white/60 space-y-3">
-          <p className="leading-relaxed max-w-prose">{MEDICAL_DISCLAIMER}</p>
-          <p>© {year} {SITE.name}. All rights reserved.</p>
+          <p className="leading-relaxed max-w-prose">{disclaimer}</p>
+          <p>
+            © {year} {SITE.name}. {t.footer.copyright}
+          </p>
         </div>
       </div>
     </footer>

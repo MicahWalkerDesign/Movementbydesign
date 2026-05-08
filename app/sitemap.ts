@@ -15,13 +15,34 @@ const STATIC_PATHS = [
   '/blog/',
 ];
 
+const ES_STATIC_PATHS = [
+  '/es/',
+  '/es/entrenador-personal-salou/',
+  '/es/coaching-online/',
+  '/es/entrenamiento-funcional/',
+  '/es/prevencion-lesiones/',
+  '/es/nutricion-habitos/',
+  '/es/poblaciones-especiales/',
+  '/es/sobre-mi/',
+  '/es/contacto/',
+  '/es/blog/',
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+
   const staticEntries = STATIC_PATHS.map((p) => ({
     url: `${SITE.url}${p}`,
     lastModified: now,
     changeFrequency: 'monthly' as const,
     priority: p === '/' ? 1 : 0.8,
+  }));
+
+  const esStaticEntries = ES_STATIC_PATHS.map((p) => ({
+    url: `${SITE.url}${p}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: p === '/es/' ? 0.9 : 0.7,
   }));
 
   const blogEntries = POSTS.map((post) => ({
@@ -31,5 +52,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...blogEntries];
+  return [...staticEntries, ...esStaticEntries, ...blogEntries];
 }

@@ -14,6 +14,8 @@ export const metadata: Metadata = buildMetadata({
   description:
     'Functional training in Salou and the Costa Daurada. Strength, mobility, conditioning and real-life movement coaching for people who want to train smarter.',
   path: PATH,
+  locale: 'en_GB',
+  alternatePath: '/es/entrenamiento-funcional/',
 });
 
 export default function FunctionalTrainingPage() {

@@ -20,6 +20,8 @@ export const metadata: Metadata = buildMetadata({
   description:
     'Premium personal training in Salou for strength, health, movement quality and confidence. English-speaking and German-speaking personal trainer with an exercise science background.',
   path: PATH,
+  locale: 'en_GB',
+  alternatePath: '/es/entrenador-personal-salou/',
 });
 
 export default function PersonalTrainingSalouPage() {
@@ -58,6 +60,9 @@ export default function PersonalTrainingSalouPage() {
         title="Personal Trainer in Salou"
         subtitle="Premium exercise science-based personal training for strength, health, movement quality and long-term confidence."
         body="1:1 coaching in Salou and the wider Costa Daurada — Cambrils, Tarragona, La Pineda, Vila-seca and Reus. Sessions can be delivered outdoors, at suitable training spaces or at home where appropriate."
+        photoSrc="/images/training-corrective.jpg"
+        photoAlt="Personal training in Salou — single-arm row coaching session in the Costa Daurada"
+        photoLabel="Salou coaching session"
       />
 
       <Section background="warm-white">
@@ -67,6 +72,10 @@ export default function PersonalTrainingSalouPage() {
             <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
               A premium 1:1 experience
             </h2>
+            <p className="mt-5 prose-body max-w-prose">
+              Personal training in Salou and the Costa Daurada — built around exercise
+              science, your medical history and the goals that actually matter to you.
+            </p>
           </div>
           <div className="md:col-span-3 grid sm:grid-cols-2 gap-5">
             {benefits.map((b) => (

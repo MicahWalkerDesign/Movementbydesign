@@ -14,6 +14,7 @@ const config: Config = {
         'coastal-blue': '#1F5361',       // Grounded blue (primary CTA)
         'coastal-blue-dark': '#12313B',  // hover -> deep
         sand: '#F3E8D8',
+        clay: '#A07B5A', // earthy brown — section accent (passes 5.4:1 vs deep-navy)
         'warm-white': '#FBF7EF',
         olive: '#7E8F7A',                // Sage (semantic alias kept)
         sage: '#7E8F7A',

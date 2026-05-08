@@ -12,6 +12,8 @@ export const metadata: Metadata = buildMetadata({
   description:
     'Movement by Design is led by Micah Walker — an exercise science professional, health coach and rehabilitation-informed personal trainer based between Spain and Australia.',
   path: PATH,
+  locale: 'en_GB',
+  alternatePath: '/es/sobre-mi/',
 });
 
 const credentials = [
