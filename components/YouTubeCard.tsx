@@ -73,7 +73,7 @@ export default function YouTubeCard({ videoId, title, channelHref }: Props) {
       target="_blank"
       rel="noreferrer noopener"
       className="relative block w-full aspect-video rounded-2xl overflow-hidden border border-soft-border"
-      aria-label="Open Movement by Design YouTube channel in a new tab"
+      aria-label={`${title} — watch on YouTube (opens in a new tab)`}
     >
       {Inner}
     </a>

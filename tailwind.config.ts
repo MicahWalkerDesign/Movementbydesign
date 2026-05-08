@@ -19,7 +19,7 @@ const config: Config = {
         sage: '#7E8F7A',
         terracotta: '#C77652',
         charcoal: '#13292F',
-        'muted-grey': '#667A82',
+        'muted-grey': '#4F6168',
         'soft-border': '#E5D9C2',
         'success-green': '#7E8F7A',
       },

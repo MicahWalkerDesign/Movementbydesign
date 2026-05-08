@@ -85,8 +85,18 @@ const FAQS = [
 /* ---------- Page ---------- */
 
 export default function HomePage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   return (
     <>
+      {/* Preload the LCP hero image — improves Largest Contentful Paint. */}
+      <link
+        rel="preload"
+        as="image"
+        href={`${basePath}/images/hero-portrait.jpg`}
+        // @ts-expect-error fetchpriority is valid HTML5 even if React types lag
+        fetchpriority="high"
+      />
+
       {/* 1. HERO — calm, premium, photo-led */}
       <section className="hero-grad">
         <div className="container-prose pt-16 md:pt-24 pb-20 md:pb-28">
