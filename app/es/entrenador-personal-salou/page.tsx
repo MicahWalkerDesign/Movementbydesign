@@ -12,7 +12,7 @@ import { MEDICAL_DISCLAIMER_ES } from '@/lib/strings';
 const PATH = '/es/entrenador-personal-salou/';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Entrenador Personal en Salou | Coaching Premium Basado en Ciencias del Ejercicio',
+  title: 'Entrenador Personal en Salou | Coaching Premium Basado en Ciencias del Ejercicio | Movement by Design',
   description:
     'Entrenamiento personal premium en Salou para fuerza, salud, calidad de movimiento y confianza. Entrenador personal con base en ciencias del ejercicio que habla inglés y alemán.',
   path: PATH,

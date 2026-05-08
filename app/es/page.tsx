@@ -14,7 +14,7 @@ import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
   title:
-    'Entrenador Personal Salou | Coaching de Ciencias del Ejercicio para Fuerza, Salud y Longevidad',
+    'Entrenador Personal Salou | Coaching de Ciencias del Ejercicio para Fuerza, Salud y Longevidad | Movement by Design',
   description:
     'Entrenamiento personal para personas que necesitan algo más que una rutina de gym. Coaching basado en ciencias del ejercicio para fuerza, prevención de lesiones, confianza y salud a largo plazo en Salou, Cambrils, Tarragona y online.',
   path: '/es/',

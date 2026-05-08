@@ -19,7 +19,7 @@ export default function ContactPage() {
   return (
     <>
       <section className="hero-grad">
-        <div className="container-prose pt-16 md:pt-24 pb-12 md:pb-16">
+        <div className="container-prose pt-16 md:pt-24 pb-8 md:pb-10">
           <span className="eyebrow">Contact</span>
           <span className="accent-line mt-3 mb-5" aria-hidden />
           <h1 className="font-heading font-semibold text-4xl md:text-5xl text-deep-navy max-w-4xl leading-[1.1]">

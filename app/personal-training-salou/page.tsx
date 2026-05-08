@@ -16,7 +16,7 @@ import { MEDICAL_DISCLAIMER } from '@/lib/site';
 const PATH = '/personal-training-salou/';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Personal Trainer in Salou | Premium 1:1 Exercise Science Coaching',
+  title: 'Personal Trainer in Salou | Premium 1:1 Exercise Science Coaching | Movement by Design',
   description:
     'Premium personal training in Salou for strength, health, movement quality and confidence. English-speaking and German-speaking personal trainer with an exercise science background.',
   path: PATH,

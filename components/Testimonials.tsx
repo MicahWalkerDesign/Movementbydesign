@@ -45,6 +45,12 @@ export default function Testimonials({ lang = 'en' }: { lang?: Locale }) {
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {c.items.map((t) => (
             <figure key={t.outcome} className="card flex flex-col">
+              <span
+                aria-hidden
+                className="font-heading text-5xl leading-none text-coastal-blue/30 select-none -mb-2"
+              >
+                &ldquo;
+              </span>
               <span className="text-xs uppercase tracking-label text-coastal-blue">
                 {t.outcome}
               </span>

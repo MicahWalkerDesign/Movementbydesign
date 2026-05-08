@@ -13,7 +13,7 @@ import { MEDICAL_DISCLAIMER, SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
   title:
-    'Personal Trainer Salou | Exercise Science Coaching for Strength, Health & Longevity',
+    'Personal Trainer Salou | Exercise Science Coaching for Strength, Health & Longevity | Movement by Design',
   description:
     'Personal training for people who need more than a workout. Exercise-science led coaching for strength, injury prevention, confidence and long-term health in Salou, Cambrils, Tarragona and online.',
   path: '/',

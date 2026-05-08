@@ -29,7 +29,7 @@ export default function ServiceHero({
   const hasPhoto = Boolean(photoSrc);
   return (
     <section className="hero-grad">
-      <div className="container-prose pt-16 md:pt-24 pb-16 md:pb-20">
+      <div className="container-prose pt-16 md:pt-24 pb-8 md:pb-10">
         <div
           className={
             hasPhoto

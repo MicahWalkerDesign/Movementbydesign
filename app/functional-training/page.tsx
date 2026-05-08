@@ -10,7 +10,7 @@ import { MEDICAL_DISCLAIMER } from '@/lib/site';
 const PATH = '/functional-training/';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Functional Training in Salou | Strength, Mobility & Real-Life Fitness',
+  title: 'Functional Training in Salou | Strength, Mobility & Real-Life Fitness | Movement by Design',
   description:
     'Functional training in Salou and the Costa Daurada. Strength, mobility, conditioning and real-life movement coaching for people who want to train smarter.',
   path: PATH,

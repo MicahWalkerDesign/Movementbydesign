@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
     default: 'Personal Trainer Salou | Premium Exercise Science & Health Coaching',
-    template: '%s | Movement by Design',
+    template: '%s',
   },
   description: SITE.description,
   applicationName: SITE.name,

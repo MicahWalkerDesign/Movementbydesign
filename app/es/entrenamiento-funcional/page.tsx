@@ -10,7 +10,7 @@ import { MEDICAL_DISCLAIMER_ES } from '@/lib/strings';
 const PATH = '/es/entrenamiento-funcional/';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Entrenamiento Funcional en Salou | Fuerza, Movilidad y Fitness Real',
+  title: 'Entrenamiento Funcional en Salou | Fuerza, Movilidad y Fitness Real | Movement by Design',
   description:
     'Entrenamiento funcional en Salou y la Costa Daurada. Fuerza, movilidad, acondicionamiento y coaching de movimiento para personas que quieren entrenar de forma más inteligente.',
   path: PATH,
