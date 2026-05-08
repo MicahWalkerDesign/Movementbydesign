@@ -54,7 +54,7 @@ export const PRICE_TIERS: PriceTier[] = [
       'Regular check-ins and adjustments',
     ],
     cta: 'Ask about online coaching',
-    href: '/online-coaching/',
+    href: '/contact/',
     footnote: 'Final monthly rate depends on cadence — confirmed on your intro call.',
   },
 ];

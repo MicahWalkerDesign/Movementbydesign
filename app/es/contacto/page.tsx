@@ -55,7 +55,7 @@ export default function ContactoPage() {
           </div>
 
           {/* WhatsApp primary CTA — hero placement */}
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3">
             <a
               href={waHref}
               target="_blank"
@@ -65,10 +65,10 @@ export default function ContactoPage() {
               <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden fill="currentColor">
                 <path d="M20.5 3.5A11 11 0 0 0 3.7 17.6L2 22l4.5-1.6A11 11 0 1 0 20.5 3.5Zm-8.5 18a9 9 0 0 1-4.6-1.3l-.3-.2-2.7 1 .9-2.6-.2-.3a9 9 0 1 1 6.9 3.4Zm5-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.1l-1 1c-.2.2-.4.3-.7.1a7.4 7.4 0 0 1-2.2-1.4 8 8 0 0 1-1.5-1.9c-.2-.3 0-.5.1-.6l.4-.5.3-.4c.1-.2 0-.3 0-.4l-.9-2.2c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.5.6.2 1.2.2 1.7.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3Z" />
               </svg>
-              Escríbeme por WhatsApp
+              WhatsApp (+34 665 518 632)
             </a>
             <a href={`mailto:${SITE.email}`} className="btn-secondary">
-              Email directo
+              Email ({SITE.email})
             </a>
           </div>
         </div>
