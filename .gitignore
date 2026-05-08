@@ -7,3 +7,11 @@ out/
 
 # Local Claude Code permission cache (developer-specific)
 .claude/
+
+# Source photos / videos — too large to serve directly. Drop only optimised
+# web copies into public/images/ for actual site use.
+photos/
+*.HEIC
+*.heic
+*.MOV
+*.mov

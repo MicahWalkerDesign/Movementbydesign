@@ -131,7 +131,9 @@ export default function HomePage() {
 
             <div className="md:col-span-6">
               <PhotoSlot
-                label="hero portrait — Micah outdoors, Costa Daurada"
+                src="/images/hero-portrait.jpg"
+                alt="Micah Walker — exercise science coach, outdoors at golden hour"
+                label="hero portrait"
                 variant="portrait"
                 tone="sea"
                 priority
@@ -232,7 +234,9 @@ export default function HomePage() {
         <div className="grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-5">
             <PhotoSlot
-              label="coaching moment — observing technique"
+              src="/images/about-coaching.jpg"
+              alt="Micah leading an outdoor training session"
+              label="outdoor training session"
               variant="square"
               tone="sage"
             />
@@ -314,6 +318,15 @@ export default function HomePage() {
 
       {/* 11. SERVICE AREAS — moved low, condensed */}
       <Section background="warm-white">
+        <PhotoSlot
+          src="/images/training-environment.jpg"
+          alt="Outdoor training set-up — mats, kettlebells and sandbags ready in a coastal park"
+          label="outdoor training set-up"
+          variant="landscape"
+          tone="sand"
+          className="mb-12"
+        />
+
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5">
             <span className="eyebrow">Service area</span>

@@ -40,13 +40,20 @@ export default function PhotoSlot({
   priority,
 }: Props) {
   if (src) {
+    // Prefix the GitHub Pages basePath in production. Pass-through for absolute URLs.
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+    const finalSrc =
+      /^(https?:|data:|blob:)/.test(src) || src.startsWith(basePath)
+        ? src
+        : `${basePath}${src.startsWith('/') ? '' : '/'}${src}`;
+
     return (
       <figure
         className={`relative w-full ${ratio[variant]} overflow-hidden rounded-3xl border border-soft-border shadow-lift ${className}`}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={src}
+          src={finalSrc}
           alt={alt}
           loading={priority ? 'eager' : 'lazy'}
           decoding="async"
