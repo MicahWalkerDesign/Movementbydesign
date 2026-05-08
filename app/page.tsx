@@ -459,7 +459,7 @@ export default function HomePage() {
       <Section background="navy">
         <div className="grid md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-7">
-            <span className="text-xs font-semibold tracking-label uppercase text-terracotta">
+            <span className="text-xs font-semibold tracking-label uppercase text-warm-white/85">
               Get started
             </span>
             <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-warm-white">

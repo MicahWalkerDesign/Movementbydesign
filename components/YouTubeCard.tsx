@@ -73,9 +73,9 @@ export default function YouTubeCard({ videoId, title, channelHref }: Props) {
       target="_blank"
       rel="noreferrer noopener"
       className="relative block w-full aspect-video rounded-2xl overflow-hidden border border-soft-border"
-      aria-label={`${title} — watch on YouTube (opens in a new tab)`}
     >
       {Inner}
+      <span className="sr-only">(opens in a new tab)</span>
     </a>
   );
 }

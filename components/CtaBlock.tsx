@@ -10,7 +10,7 @@ export default function CtaBlock({
   return (
     <div className="bg-deep-navy text-warm-white rounded-3xl p-10 md:p-14 grid md:grid-cols-5 gap-8 items-center">
       <div className="md:col-span-3">
-        <span className="text-xs font-semibold tracking-label uppercase text-terracotta">
+        <span className="text-xs font-semibold tracking-label uppercase text-warm-white/85">
           Get started
         </span>
         <h2 className="mt-3 font-heading font-semibold text-2xl md:text-3xl">{title}</h2>

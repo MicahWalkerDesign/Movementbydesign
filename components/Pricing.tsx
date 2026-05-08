@@ -101,7 +101,7 @@ export default function Pricing({
               }`}
             >
               {t.highlight && (
-                <span className="self-start text-xs uppercase tracking-label text-terracotta mb-2">
+                <span className="self-start text-xs font-semibold uppercase tracking-label text-coastal-blue mb-2">
                   Most requested
                 </span>
               )}
