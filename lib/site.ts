@@ -1,8 +1,6 @@
 export const SITE = {
   name: 'Movement by Design',
-  // Project-pages URL. Update to a custom domain (e.g. https://movementbydesign.es)
-  // and unset BASE_PATH in next.config.mjs once the domain is connected.
-  url: 'https://micahwalkerdesign.github.io/Movementbydesign',
+  url: 'https://www.movementbydesign.es',
   email: 'micah.walker@gmail.com',
   youtube: 'https://www.youtube.com/@MovementConsultant',
   linkedin: 'https://www.linkedin.com/in/micah-walker-246745101/',

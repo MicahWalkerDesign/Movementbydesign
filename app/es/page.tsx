@@ -82,13 +82,12 @@ const FAQS = [
 ];
 
 export default function SpanishHome() {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   return (
     <>
       <link
         rel="preload"
         as="image"
-        href={`${basePath}/images/hero-portrait.jpg`}
+        href="/images/hero-portrait.jpg"
         // @ts-expect-error fetchpriority is valid HTML5 even if React types lag
         fetchpriority="high"
       />

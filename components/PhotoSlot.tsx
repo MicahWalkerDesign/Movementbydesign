@@ -1,12 +1,12 @@
 /**
  * Premium photo slot.
  *
- * Pass `src` to render a real <img>, otherwise a designed coastal placeholder
+ * Pass `src` to render a real image, otherwise a designed coastal placeholder
  * appears with a small "Photo · {label}" tag so the layout reads as final
  * while photography is in production.
- *
- * Replacement is one prop: <PhotoSlot src="/images/hero.webp" alt="..." label="hero portrait" />
  */
+import Image from 'next/image';
+
 type Variant = 'portrait' | 'landscape' | 'square';
 
 type Props = {
@@ -40,25 +40,17 @@ export default function PhotoSlot({
   priority,
 }: Props) {
   if (src) {
-    // Prefix the GitHub Pages basePath in production. Pass-through for absolute URLs.
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-    const finalSrc =
-      /^(https?:|data:|blob:)/.test(src) || src.startsWith(basePath)
-        ? src
-        : `${basePath}${src.startsWith('/') ? '' : '/'}${src}`;
-
     return (
       <figure
         className={`relative w-full ${ratio[variant]} overflow-hidden rounded-3xl border border-soft-border shadow-lift ${className}`}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={finalSrc}
+        <Image
+          src={src}
           alt={alt}
-          loading={priority ? 'eager' : 'lazy'}
-          decoding="async"
-          fetchPriority={priority ? 'high' : 'auto'}
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          priority={priority}
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
       </figure>
     );

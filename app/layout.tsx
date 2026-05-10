@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   creator: 'Micah Walker',
   publisher: SITE.name,
   icons: {
-    icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.svg`,
+    icon: '/favicon.svg',
   },
   openGraph: {
     type: 'website',
