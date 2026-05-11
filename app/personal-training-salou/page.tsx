@@ -6,19 +6,21 @@ import RelatedServices from '@/components/RelatedServices';
 import CtaBlock from '@/components/CtaBlock';
 import Pricing from '@/components/Pricing';
 import JsonLd from '@/components/JsonLd';
+import FAQ from '@/components/FAQ';
 import {
   buildMetadata,
   serviceSchema,
   breadcrumbSchema,
+  faqSchema,
 } from '@/lib/seo';
 import { MEDICAL_DISCLAIMER } from '@/lib/site';
 
 const PATH = '/personal-training-salou/';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Personal Trainer in Salou | Premium 1:1 Exercise Science Coaching | Movement by Design',
+  title: 'Personal Trainer Salou | Premium 1:1 Exercise Science Coaching | Movement by Design',
   description:
-    'Premium personal training in Salou for strength, health, movement quality and confidence. English-speaking and German-speaking personal trainer with an exercise science background.',
+    'Personal Trainer Salou for premium 1:1 coaching in strength, health, movement quality and confidence. English-speaking and German-speaking exercise science coach.',
   path: PATH,
   locale: 'en_GB',
   alternatePath: '/es/entrenador-personal-salou/',
@@ -53,13 +55,47 @@ export default function PersonalTrainingSalouPage() {
     'Active adults who want performance without breaking down',
   ];
 
+  const localDetails = [
+    {
+      title: 'Training in Salou',
+      text: 'Coaching is available around Salou for clients who want structured 1:1 personal training without a generic gym-plan approach.',
+    },
+    {
+      title: 'Home, outdoor or suitable training spaces',
+      text: 'Sessions can be organised outdoors, at home or in appropriate training spaces depending on your goals, equipment needs and location.',
+    },
+    {
+      title: 'Costa Daurada service area',
+      text: 'I work with clients across Salou, Cambrils, La Pineda, Vila-seca, Tarragona, Reus and nearby Costa Daurada locations.',
+    },
+  ];
+
+  const faqs = [
+    {
+      q: 'How much does a personal trainer in Salou cost?',
+      a: '1:1 personal training is €90 per hour. Small-group training is €15–30 per person per hour, depending on group size. Packages and training cadence are confirmed during the free intro call.',
+    },
+    {
+      q: 'Do you offer personal training at home in Salou?',
+      a: 'Yes, in-home personal training can be arranged in Salou when the space, equipment and training goals make sense. Outdoor sessions and suitable local training spaces are also possible.',
+    },
+    {
+      q: 'Are sessions available in English or German?',
+      a: 'Yes. English is my native language and I speak German fluently. I can also use simple Spanish coaching cues while I continue improving my Spanish.',
+    },
+    {
+      q: 'Can you help if I have an old injury or pain history?',
+      a: 'Often, yes. Coaching is rehabilitation-informed and adapted around your history, capacity and confidence. It does not replace medical diagnosis or physiotherapy when those are needed.',
+    },
+  ];
+
   return (
     <>
       <ServiceHero
         eyebrow="Service · Salou"
-        title="Personal Trainer in Salou"
+        title="Personal Trainer Salou"
         subtitle="Premium exercise science-based personal training for strength, health, movement quality and long-term confidence."
-        body="1:1 coaching in Salou and the wider Costa Daurada — Cambrils, Tarragona, La Pineda, Vila-seca and Reus. Sessions can be delivered outdoors, at suitable training spaces or at home where appropriate."
+        body="1:1 personal trainer in Salou and the wider Costa Daurada — Cambrils, Tarragona, La Pineda, Vila-seca and Reus. Sessions can be delivered outdoors, at suitable training spaces or at home where appropriate."
         photoSrc="/images/training-corrective.jpg"
         photoAlt="Personal training in Salou — single-arm row coaching session in the Costa Daurada"
         photoLabel="Salou coaching session"
@@ -176,6 +212,42 @@ export default function PersonalTrainingSalouPage() {
       />
 
       <Section background="warm-white">
+        <div className="grid md:grid-cols-5 gap-12 items-start">
+          <div className="md:col-span-2">
+            <span className="eyebrow">Local personal training</span>
+            <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
+              Personal training built for Salou life
+            </h2>
+            <p className="mt-5 prose-body max-w-prose">
+              This page is for people searching for a personal trainer Salou residents,
+              expats and frequent visitors can work with consistently — not a one-size-fits-all
+              workout.
+            </p>
+          </div>
+          <div className="md:col-span-3 grid gap-5">
+            {localDetails.map((item) => (
+              <article key={item.title} className="card">
+                <h3 className="font-heading font-semibold text-lg text-deep-navy">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-charcoal/85 leading-relaxed">{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section background="sand">
+        <div className="max-w-2xl mb-10">
+          <span className="eyebrow">Questions</span>
+          <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
+            Personal Trainer Salou FAQs
+          </h2>
+        </div>
+        <FAQ items={faqs} />
+      </Section>
+
+      <Section background="warm-white">
         <RelatedServices excludeHref={PATH} />
       </Section>
 
@@ -188,11 +260,12 @@ export default function PersonalTrainingSalouPage() {
 
       <JsonLd
         data={serviceSchema(
-          'Personal Trainer in Salou',
+          'Personal Trainer Salou',
           'Premium 1:1 personal training in Salou and the Costa Daurada with an exercise science foundation.',
           PATH,
         )}
       />
+      <JsonLd data={faqSchema(faqs)} />
       <JsonLd
         data={breadcrumbSchema([
           { name: 'Home', path: '/' },

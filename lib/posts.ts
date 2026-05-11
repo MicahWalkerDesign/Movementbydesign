@@ -4,11 +4,168 @@ export type Post = {
   description: string;
   date: string; // ISO
   readingTime: string;
+  alternatePath?: string;
   intro: string;
   body: { heading?: string; paragraphs: string[]; bullets?: string[] }[];
 };
 
 export const POSTS: Post[] = [
+  {
+    slug: 'in-home-personal-training-salou',
+    title: 'In-Home Personal Training in Salou: When Training Comes to You',
+    description:
+      'How in-home personal training in Salou works, who it suits, what equipment you need and how to build strength safely without a traditional gym.',
+    date: '2026-05-11',
+    readingTime: '6 min read',
+    alternatePath: '/es/blog/entrenador-personal-a-domicilio-salou/',
+    intro:
+      'For some people, the barrier to training is not motivation. It is logistics. Work, family, travel, confidence, pain history and the simple friction of getting to a gym can all get in the way. In-home personal training in Salou can be a practical solution when it is structured properly.',
+    body: [
+      {
+        heading: 'Home training is not second-best',
+        paragraphs: [
+          'A good home session is not a watered-down gym session. It is a different format with different constraints. The goal is to use the space, equipment and schedule you actually have, then build a plan that progresses over weeks rather than improvising workouts one session at a time.',
+          'For many clients, training at home removes the biggest obstacle: showing up. That matters. Consistency is the foundation of every strength, fat loss, mobility and health outcome.',
+        ],
+      },
+      {
+        heading: 'Who it suits best',
+        paragraphs: [
+          'In-home coaching works especially well for busy professionals, parents, older adults, people returning after injury, and clients who feel uncomfortable in a crowded gym.',
+          'It can also suit visitors and seasonal residents in Salou who want structured training while they are here, without signing up to a local gym for a short stay.',
+        ],
+      },
+      {
+        heading: 'What equipment do you need?',
+        paragraphs: [
+          'You do not need a full gym. A pair of adjustable dumbbells, a few bands, a mat and a stable bench or box can cover a surprising amount. For some clients, bodyweight, tempo, pauses and range-of-motion progressions are enough to start.',
+          'The important question is not “how much equipment do I own?” It is “can we progress the work safely over time?” A coach should be honest if your goals require more load or a different setting.',
+        ],
+      },
+      {
+        heading: 'What a well-designed home session includes',
+        paragraphs: [],
+        bullets: [
+          'A short readiness check: sleep, pain, energy and stress',
+          'Movement preparation that matches your body, not a generic warm-up',
+          'Two to four focused strength movements',
+          'Mobility or corrective work where it genuinely helps',
+          'A clear progression note for the next session',
+        ],
+      },
+      {
+        heading: 'When a gym or outdoor space is better',
+        paragraphs: [
+          'Home training is not always the best answer. If your goals require heavy lower-body strength, power work, loaded carries or conditioning with more space, an outdoor or gym-based session may be more effective.',
+          'The best personal training format in Salou is usually the one you can repeat consistently while still progressing. Sometimes that is home. Sometimes it is the promenade, a park, a training space or a blended approach.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'training-with-injuries-salou',
+    title: 'Personal Training with Injuries in Salou: How to Train Around Pain Safely',
+    description:
+      'A practical guide to training with old injuries, pain history or health considerations with a rehabilitation-informed personal trainer in Salou.',
+    date: '2026-05-10',
+    readingTime: '7 min read',
+    alternatePath: '/es/blog/entrenador-personal-lesiones-salou/',
+    intro:
+      'Many adults are not looking for the hardest workout in Salou. They are looking for a way to train without flaring up their back, knee, shoulder or hip again. That is a different coaching problem — and it needs a different standard of care.',
+    body: [
+      {
+        heading: 'Pain changes the job',
+        paragraphs: [
+          'When someone has an injury history, the first task is not to prove toughness. It is to understand the context: what happened, what has been diagnosed, what makes symptoms worse, what has helped before, and what the person is afraid of doing.',
+          'A rehabilitation-informed personal trainer does not diagnose injuries. The job is to build capacity inside appropriate boundaries, communicate clearly, and work alongside medical or physiotherapy guidance where needed.',
+        ],
+      },
+      {
+        heading: 'The goal is capacity, not avoidance',
+        paragraphs: [
+          'Avoidance feels safe in the short term, but it often shrinks your world. Good training restores options. That might mean learning to hinge again after back pain, rebuilding single-leg strength after knee trouble, or restoring shoulder confidence after months of guarding.',
+          'The work is usually slower, more technical and more individual than standard fitness programming. That is not a weakness. It is the point.',
+        ],
+      },
+      {
+        heading: 'Useful questions before you start',
+        paragraphs: [],
+        bullets: [
+          'Has the injury been diagnosed, and by whom?',
+          'Are there red flags that need medical attention first?',
+          'Which movements currently feel threatening or painful?',
+          'What activities do you want back in your life?',
+          'How will we measure progress beyond pain levels?',
+        ],
+      },
+      {
+        heading: 'What training often looks like',
+        paragraphs: [
+          'The first phase is usually about finding tolerable entry points: ranges, loads, tempos and positions that let you move with control. From there, the plan gradually expands exposure.',
+          'Strength training is central. Stronger tissues usually tolerate life better. The key is dose: enough stimulus to adapt, not so much that the next week becomes damage control.',
+        ],
+      },
+      {
+        heading: 'When to involve a physiotherapist or doctor',
+        paragraphs: [
+          'If pain is unexplained, worsening, associated with neurological symptoms, linked to trauma, or not behaving as expected, it belongs with a qualified healthcare professional. A good coach should say that without ego.',
+          'The best results often come from a simple team: the clinician clarifies diagnosis and boundaries; the coach helps build the week-to-week training habit that turns advice into capacity.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'physical-preparation-salou',
+    title: 'Physical Preparation in Salou: Strength and Conditioning for Real Life',
+    description:
+      'What a physical preparation coach in Salou actually does: strength, mobility, conditioning and durable performance for sport, work and everyday life.',
+    date: '2026-05-09',
+    readingTime: '6 min read',
+    alternatePath: '/es/blog/preparador-fisico-salou/',
+    intro:
+      '“Physical preparation” sounds like something reserved for athletes. In reality, it describes a useful idea for almost everyone: prepare the body for the demands you actually place on it.',
+    body: [
+      {
+        heading: 'Prepared for what?',
+        paragraphs: [
+          'A runner needs different preparation from a parent carrying children, a golfer, a hotel worker on their feet all day, or an older adult who wants confident stairs and travel. The first step is defining the demands.',
+          'A good coach in Salou should ask about your real life before prescribing exercises. Training is only useful if it transfers.',
+        ],
+      },
+      {
+        heading: 'The four pillars',
+        paragraphs: [
+          'Most physical preparation comes down to four qualities: strength, mobility, conditioning and movement skill. The proportions change depending on the person.',
+          'Strength gives you capacity. Mobility gives you access to positions. Conditioning gives you the engine to repeat effort. Movement skill lets you express those qualities efficiently.',
+        ],
+      },
+      {
+        heading: 'Why the Costa Daurada is useful',
+        paragraphs: [
+          'Salou and the surrounding Costa Daurada are excellent places to train outside: flat promenades, beach sand, parks, steps, hills nearby and mild weather for much of the year.',
+          'That environment can support loaded carries, walking intervals, mobility work, balance, bodyweight strength and conditioning without making every session feel like a gym appointment.',
+        ],
+      },
+      {
+        heading: 'What it is not',
+        paragraphs: [],
+        bullets: [
+          'Random circuits until you are exhausted',
+          'Athlete-style drills with no reason behind them',
+          'Mobility work that never turns into strength',
+          'Strength work that ignores movement quality',
+          'Conditioning that leaves you too tired to recover',
+        ],
+      },
+      {
+        heading: 'A useful weekly structure',
+        paragraphs: [
+          'For many adults, two focused strength sessions, one conditioning session and short daily mobility work is enough to make meaningful progress. Athletes or active clients may need more specificity, but more is not automatically better.',
+          'The best physical preparation plan is the one that improves your life outside the session.',
+        ],
+      },
+    ],
+  },
   {
     slug: 'personal-trainer-salou',
     title: 'Personal Trainer in Salou: How to Choose the Right Coach',
@@ -107,6 +264,7 @@ export const POSTS: Post[] = [
       'A guide to finding a personal trainer in Cambrils — including in-person training, outdoor sessions and online coaching options for residents and expats.',
     date: '2026-03-22',
     readingTime: '5 min read',
+    alternatePath: '/es/blog/entrenador-personal-cambrils/',
     intro:
       'Cambrils is a beautiful place to train. It is also a relatively small market, which means choosing a personal trainer is partly about availability and partly about finding someone whose approach fits you long-term.',
     body: [
@@ -142,6 +300,7 @@ export const POSTS: Post[] = [
       'Why working with an English-speaking personal trainer in Salou and Cambrils matters — particularly for expats, professionals and people with complex health histories.',
     date: '2026-03-08',
     readingTime: '4 min read',
+    alternatePath: '/es/blog/entrenador-personal-ingles-salou/',
     intro:
       'Salou, Cambrils and the wider Costa Daurada are home to a growing community of English-speaking expats, international families, professionals and long-term visitors. For many of them, a key part of finding the right personal trainer is finding one they can communicate with naturally.',
     body: [

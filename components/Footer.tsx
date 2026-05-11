@@ -83,6 +83,11 @@ export default function Footer() {
                 {SITE.email}
               </a>
             </li>
+            <li>
+              <a href={`tel:${SITE.phone.replace(/\s+/g, '')}`} className="hover:text-warm-white">
+                {SITE.phone}
+              </a>
+            </li>
             {SITE.whatsapp && (
               <li>
                 <a
@@ -95,6 +100,7 @@ export default function Footer() {
                 </a>
               </li>
             )}
+            <li>{lang === 'es' ? 'Base de servicio: Salou, Tarragona' : 'Service base: Salou, Tarragona'}</li>
             <li>
               <a
                 href={SITE.youtube}

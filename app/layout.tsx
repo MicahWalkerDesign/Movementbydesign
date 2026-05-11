@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter, Inter_Tight } from 'next/font/google';
+import { headers } from 'next/headers';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -49,8 +50,11 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const pathname = headers().get('x-pathname') || '/';
+  const documentLang = pathname === '/es' || pathname.startsWith('/es/') ? 'es-ES' : 'en';
+
   return (
-    <html lang="en" className={`${inter.variable} ${interTight.variable}`}>
+    <html lang={documentLang} className={`${inter.variable} ${interTight.variable}`}>
       <body>
         <a
           href="#main"

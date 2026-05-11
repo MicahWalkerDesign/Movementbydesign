@@ -6,15 +6,16 @@ import RelatedServices from '@/components/RelatedServices';
 import CtaBlock from '@/components/CtaBlock';
 import Pricing from '@/components/Pricing';
 import JsonLd from '@/components/JsonLd';
-import { buildMetadata, serviceSchema, breadcrumbSchema } from '@/lib/seo';
+import FAQ from '@/components/FAQ';
+import { buildMetadata, serviceSchema, breadcrumbSchema, faqSchema } from '@/lib/seo';
 import { MEDICAL_DISCLAIMER_ES } from '@/lib/strings';
 
 const PATH = '/es/entrenador-personal-salou/';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Entrenador Personal en Salou | Coaching Premium Basado en Ciencias del Ejercicio | Movement by Design',
+  title: 'Entrenador Personal Salou | Coaching Premium Basado en Ciencias del Ejercicio | Movement by Design',
   description:
-    'Entrenamiento personal premium en Salou para fuerza, salud, calidad de movimiento y confianza. Entrenador personal con base en ciencias del ejercicio que habla inglés y alemán.',
+    'Entrenador personal Salou para entrenamiento 1:1 premium de fuerza, salud, calidad de movimiento y confianza. Coaching basado en ciencias del ejercicio.',
   path: PATH,
   locale: 'es_ES',
   alternatePath: '/personal-training-salou/',
@@ -36,13 +37,47 @@ export default function EntrenadorPersonalSalouPage() {
     'Adultos activos que buscan rendimiento sin romperse',
   ];
 
+  const localDetails = [
+    {
+      title: 'Entrenamiento en Salou',
+      text: 'Coaching 1:1 para personas que buscan un entrenador personal en Salou con estructura, progresión y atención real a su historial.',
+    },
+    {
+      title: 'A domicilio, al aire libre o en espacios adecuados',
+      text: 'Las sesiones pueden organizarse al aire libre, a domicilio o en espacios de entrenamiento adecuados según tus objetivos, material disponible y ubicación.',
+    },
+    {
+      title: 'Zona Costa Daurada',
+      text: 'Trabajo con clientes en Salou, Cambrils, La Pineda, Vila-seca, Tarragona, Reus y otras zonas cercanas de la Costa Daurada.',
+    },
+  ];
+
+  const faqs = [
+    {
+      q: '¿Cuánto cuesta un entrenador personal en Salou?',
+      a: 'El entrenamiento personal 1:1 cuesta €90 por hora. El entrenamiento en grupo reducido cuesta €15–30 por persona y hora, según el tamaño del grupo. La frecuencia y los paquetes se confirman en la llamada inicial gratuita.',
+    },
+    {
+      q: '¿Ofreces entrenamiento personal a domicilio en Salou?',
+      a: 'Sí, el entrenamiento a domicilio en Salou puede organizarse cuando el espacio, el material y los objetivos lo permiten. También son posibles sesiones al aire libre o en espacios de entrenamiento adecuados.',
+    },
+    {
+      q: '¿Puedo entrenar en inglés o alemán?',
+      a: 'Sí. El inglés es mi lengua materna y hablo alemán con fluidez. También puedo usar indicaciones simples en español mientras sigo mejorando mi español.',
+    },
+    {
+      q: '¿Es adecuado si tengo una lesión antigua o dolor?',
+      a: 'En muchos casos, sí. El coaching tiene un enfoque orientado a la rehabilitación y se adapta a tu historial, capacidad y confianza. No sustituye diagnóstico médico ni fisioterapia cuando hacen falta.',
+    },
+  ];
+
   return (
     <>
       <ServiceHero
         eyebrow="Servicio · Salou"
-        title="Entrenador Personal en Salou"
-        subtitle="Entrenamiento personal premium basado en ciencias del ejercicio para fuerza, salud, calidad de movimiento y confianza a largo plazo."
-        body="Coaching 1:1 en Salou y la Costa Daurada — Cambrils, Tarragona, La Pineda, Vila-seca y Reus. Las sesiones pueden hacerse al aire libre, en espacios de entrenamiento adecuados o en casa cuando es apropiado."
+        title="Entrenador Personal Salou"
+        subtitle="Entrenador personal en Salou para fuerza, salud, calidad de movimiento y confianza a largo plazo."
+        body="Coaching 1:1 en Salou y la Costa Daurada — Cambrils, Tarragona, La Pineda, Vila-seca y Reus. Las sesiones pueden hacerse al aire libre, en espacios de entrenamiento adecuados o a domicilio cuando es apropiado."
         photoSrc="/images/training-corrective.jpg"
         photoAlt="Entrenamiento personal en Salou — sesión de remo unilateral en la Costa Daurada"
         photoLabel="Sesión en Salou"
@@ -130,7 +165,43 @@ export default function EntrenadorPersonalSalouPage() {
         eyebrow="Tarifas"
         heading="Tarifas por sesión"
         intro="Precios claros y simples. Bonos prepagados y paquetes pueden organizarse en la llamada inicial cuando sepamos qué cadencia te conviene."
+        lang="es"
       />
+
+      <Section background="warm-white">
+        <div className="grid md:grid-cols-5 gap-12 items-start">
+          <div className="md:col-span-2">
+            <span className="eyebrow">Entrenamiento local</span>
+            <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
+              Entrenamiento personal pensado para Salou
+            </h2>
+            <p className="mt-5 prose-body max-w-prose">
+              Esta página está pensada para quien busca entrenador personal Salou con un
+              enfoque serio, medible y adaptado a la vida real — no una rutina genérica.
+            </p>
+          </div>
+          <div className="md:col-span-3 grid gap-5">
+            {localDetails.map((item) => (
+              <article key={item.title} className="card">
+                <h3 className="font-heading font-semibold text-lg text-deep-navy">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-charcoal/85 leading-relaxed">{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section background="sand">
+        <div className="max-w-2xl mb-10">
+          <span className="eyebrow">Preguntas</span>
+          <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
+            Preguntas sobre entrenador personal en Salou
+          </h2>
+        </div>
+        <FAQ items={faqs} />
+      </Section>
 
       <Section background="warm-white">
         <RelatedServices excludeHref={PATH} lang="es" />
@@ -143,11 +214,12 @@ export default function EntrenadorPersonalSalouPage() {
 
       <JsonLd
         data={serviceSchema(
-          'Entrenador Personal en Salou',
+          'Entrenador Personal Salou',
           'Entrenamiento personal 1:1 premium en Salou y la Costa Daurada con base en ciencias del ejercicio.',
           PATH,
         )}
       />
+      <JsonLd data={faqSchema(faqs)} />
       <JsonLd
         data={breadcrumbSchema([
           { name: 'Inicio', path: '/es/' },

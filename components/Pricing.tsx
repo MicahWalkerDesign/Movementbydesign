@@ -75,12 +75,78 @@ export default function Pricing({
   heading = 'Transparent session rates',
   intro = 'Clear, simple pricing so you know what you’re working with from the start. Packages and pre-paid blocks are available — ask for current options on your intro call.',
   background = 'sand',
+  lang = 'en',
 }: {
   eyebrow?: string;
   heading?: string;
   intro?: string;
   background?: 'sand' | 'warm-white';
+  lang?: 'en' | 'es';
 }) {
+  const tiers: PriceTier[] =
+    lang === 'es'
+      ? [
+          {
+            title: 'Entrenamiento Personal 1:1',
+            price: '€90',
+            unit: 'por hora',
+            blurb:
+              'Coaching 1:1 personalizado con atención completa a técnica, programación y progresión.',
+            bullets: [
+              'Adaptado a tus objetivos e historial',
+              'Interior, exterior o a domicilio cuando sea apropiado',
+              'Salou, Cambrils, Tarragona y la Costa Daurada',
+            ],
+            cta: 'Reserva una llamada gratuita',
+            href: '/es/contacto/',
+            highlight: true,
+          },
+          {
+            title: 'Entrenamiento en Grupo Reducido',
+            price: '€15–30',
+            unit: 'por persona, por hora',
+            blurb:
+              'Entrenamiento funcional en grupos de 3–6 personas, ideal para amigos, familias o equipos pequeños.',
+            bullets: [
+              '3–6 participantes',
+              'Formato de entrenamiento funcional',
+              'La tarifa por persona se ajusta al tamaño del grupo',
+            ],
+            cta: 'Pregunta por grupos reducidos',
+            href: '/es/contacto/',
+          },
+          {
+            title: 'Coaching Online',
+            price: 'Desde €120',
+            unit: 'al mes',
+            blurb:
+              'Programación remota, modificaciones, seguimientos, educación y responsabilidad adaptadas a tu semana.',
+            bullets: [
+              'Programación personalizada',
+              'Apoyo de hábitos y educación',
+              'Seguimientos y ajustes regulares',
+            ],
+            cta: 'Pregunta por coaching online',
+            href: '/es/contacto/',
+            footnote:
+              'La tarifa mensual final depende de la cadencia y se confirma en la llamada inicial.',
+          },
+        ]
+      : PRICE_TIERS;
+
+  const addOns =
+    lang === 'es'
+      ? [
+          {
+            title: 'Apoyo de movimiento',
+            price: '€50',
+            unit: 'por 30 minutos',
+            blurb:
+              'Trabajo de tejidos blandos y movilidad para complementar el entrenamiento. No sustituye atención médica.',
+          },
+        ]
+      : ADD_ONS;
+
   return (
     <section className={`section ${background === 'sand' ? 'bg-sand' : 'bg-warm-white'}`}>
       <div className="container-prose">
@@ -93,7 +159,7 @@ export default function Pricing({
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {PRICE_TIERS.map((t) => (
+          {tiers.map((t) => (
             <article
               key={t.title}
               className={`card flex flex-col ${
@@ -102,7 +168,7 @@ export default function Pricing({
             >
               {t.highlight && (
                 <span className="self-start text-xs font-semibold uppercase tracking-label text-coastal-blue mb-2">
-                  Most requested
+                  {lang === 'es' ? 'Más solicitado' : 'Most requested'}
                 </span>
               )}
               <h3 className="font-heading font-semibold text-xl text-deep-navy">{t.title}</h3>
@@ -135,14 +201,14 @@ export default function Pricing({
 
         {/* Add-ons */}
         <div className="mt-10 grid gap-5 md:grid-cols-2">
-          {ADD_ONS.map((a) => (
+          {addOns.map((a) => (
             <div
               key={a.title}
               className="bg-white border border-soft-border rounded-2xl p-6 flex flex-wrap items-baseline gap-4"
             >
               <div className="flex-1 min-w-[14rem]">
                 <span className="text-xs uppercase tracking-label text-coastal-blue">
-                  Add-on
+                  {lang === 'es' ? 'Extra' : 'Add-on'}
                 </span>
                 <h3 className="mt-1 font-heading font-semibold text-deep-navy">{a.title}</h3>
                 <p className="mt-1 text-sm text-charcoal/85">{a.blurb}</p>
@@ -158,8 +224,9 @@ export default function Pricing({
         </div>
 
         <p className="mt-8 text-xs text-muted-grey max-w-prose">
-          Prices in EUR and inclusive of applicable taxes where relevant. Travel beyond
-          Salou and Cambrils, or sessions outside standard hours, may be quoted separately.
+          {lang === 'es'
+            ? 'Precios en EUR e impuestos aplicables incluidos cuando corresponda. Desplazamientos fuera de Salou y Cambrils, o sesiones fuera del horario habitual, pueden presupuestarse aparte.'
+            : 'Prices in EUR and inclusive of applicable taxes where relevant. Travel beyond Salou and Cambrils, or sessions outside standard hours, may be quoted separately.'}
         </p>
       </div>
     </section>

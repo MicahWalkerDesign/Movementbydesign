@@ -70,10 +70,13 @@ export function localBusinessSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'HealthAndBeautyBusiness',
+    '@id': `${SITE.url}/#business`,
     name: SITE.name,
     description: SITE.description,
     url: SITE.url,
     email: SITE.email,
+    telephone: SITE.phone,
+    priceRange: '€€€',
     image: `${SITE.url}/og-default.svg`,
     address: {
       '@type': 'PostalAddress',
@@ -89,6 +92,13 @@ export function localBusinessSchema() {
       jobTitle: 'Exercise Science Personal Trainer and Health Coach',
     },
     sameAs: [SITE.youtube, SITE.linkedin],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      telephone: SITE.phone,
+      email: SITE.email,
+      availableLanguage: SITE.languages as unknown as string[],
+    },
   };
 }
 
@@ -120,8 +130,10 @@ export function serviceSchema(name: string, description: string, path: string) {
     areaServed: SITE.serviceAreas as unknown as string[],
     provider: {
       '@type': 'HealthAndBeautyBusiness',
+      '@id': `${SITE.url}/#business`,
       name: SITE.name,
       url: SITE.url,
+      telephone: SITE.phone,
     },
   };
 }

@@ -2,6 +2,7 @@ export const SITE = {
   name: 'Movement by Design',
   url: 'https://www.movementbydesign.es',
   email: 'micah.walker@gmail.com',
+  phone: '+34 665 518 632',
   youtube: 'https://www.youtube.com/@MovementConsultant',
   linkedin: 'https://www.linkedin.com/in/micah-walker-246745101/',
   // WhatsApp Business number — full international format, no + or spaces.
