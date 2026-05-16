@@ -21,7 +21,7 @@
   --sand: #1e293b;
   --warm-white: #0f172a;
   --charcoal: #cbd5e1;
-  --muted-grey: #64748b;
+  --muted-grey: #94a3b8;
   --soft-border: #334155;
 }
 
@@ -153,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #e2e8f0;
 }
 .dark .text-muted-grey {
-  color: #64748b;
+  color: #94a3b8;
 }
 
 /* Link hover: deep-navy hover would be invisible in dark mode */
@@ -183,6 +183,13 @@ h1, h2, h3, h4, h5, h6 {
 .dark .text-deep-navy\/70 {
   color: #94a3b8;
 }
+
+/* coastal-blue is hardcoded #1F5361 in Tailwind — near-invisible on dark bg */
+.dark .text-coastal-blue { color: #38bdf8; }
+
+/* eyebrow and btn-ghost compile text-coastal-blue via @apply — override directly */
+.dark .eyebrow { color: #38bdf8; }
+.dark .btn-ghost { color: #38bdf8; }
 
 /* ── End dark mode overrides ───────────────────────────────────────────── */
 
