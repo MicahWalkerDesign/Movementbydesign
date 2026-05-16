@@ -143,6 +143,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #cbd5e1;
 }
 
+/* Bare <section> wrappers with hardcoded bg-warm-white — keep them dark in
+   dark mode so light text on light bg doesn't happen. Scoped to section
+   element so it doesn't affect buttons/badges that intentionally stay light. */
+.dark section.bg-warm-white {
+  background-color: #0f172a;
+}
+
 /* Inline prose text that uses text-charcoal/90 or text-deep-navy/85 directly */
 .dark .text-charcoal\/90,
 .dark .text-charcoal\/85 {
