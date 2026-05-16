@@ -102,7 +102,7 @@ export default function SpanishHome() {
               <h1 className="font-heading font-semibold text-[2.5rem] md:text-[3.4rem] leading-[1.05] tracking-[-0.02em] text-deep-navy max-w-[18ch]">
                 Entrenamiento personal para personas que necesitan algo más que una rutina de gym.
               </h1>
-              <p className="mt-6 text-lg md:text-xl text-deep-navy/80 max-w-prose leading-relaxed">
+              <p className="mt-6 text-lg md:text-xl text-deep-navy/80 dark:text-slate-300 max-w-prose leading-relaxed">
                 Coaching basado en ciencias del ejercicio para fuerza, confianza en el movimiento, prevención de lesiones y salud a largo plazo — en Salou, Cambrils, Tarragona y online.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -113,7 +113,7 @@ export default function SpanishHome() {
                   Explora el coaching
                 </Link>
               </div>
-              <ul className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs uppercase tracking-label text-deep-navy/70">
+              <ul className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs uppercase tracking-label text-deep-navy/70 dark:text-slate-400">
                 {[
                   'Ciencias del Ejercicio',
                   'Enfoque rehabilitador',
@@ -122,7 +122,7 @@ export default function SpanishHome() {
                 ].map((chip) => (
                   <li
                     key={chip}
-                    className="inline-flex items-center gap-1.5 bg-warm-white border border-soft-border rounded-full px-3 py-1.5"
+                    className="inline-flex items-center gap-1.5 bg-warm-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-full px-3 py-1.5"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-terracotta" aria-hidden />
                     {chip}
@@ -160,7 +160,7 @@ export default function SpanishHome() {
             {FOR_YOU.map((line) => (
               <li
                 key={line}
-                className="bg-white border border-soft-border rounded-2xl p-5 text-charcoal/90 leading-snug"
+                className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-5 text-charcoal/90 dark:text-slate-300 leading-snug"
               >
                 {line}
               </li>
@@ -170,7 +170,7 @@ export default function SpanishHome() {
       </Section>
 
       {/* SERVICES */}
-      <section id="services" className="section bg-warm-white">
+      <section id="services" className="section bg-warm-white dark:bg-slate-900">
         <div className="container-prose">
           <div className="grid md:grid-cols-12 gap-10 items-end">
             <div className="md:col-span-7">
@@ -202,14 +202,14 @@ export default function SpanishHome() {
                 <h3 className="mt-3 font-heading font-semibold text-xl text-deep-navy">
                   {s.title}
                 </h3>
-                <p className="mt-3 text-charcoal/85 leading-relaxed">{s.text}</p>
+                <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">{s.text}</p>
                 <div className="mt-5 flex items-baseline gap-2">
-                  <span className="font-heading text-3xl font-semibold text-deep-navy">
+                  <span className="font-heading text-3xl font-semibold text-deep-navy dark:text-slate-100">
                     {s.price}
                   </span>
-                  <span className="text-sm text-muted-grey">{s.unit}</span>
+                  <span className="text-sm text-muted-grey dark:text-slate-400">{s.unit}</span>
                 </div>
-                <div className="mt-6 pt-5 border-t border-soft-border">
+                <div className="mt-6 pt-5 border-t border-soft-border dark:border-slate-700">
                   <Link href={s.href} className="btn-ghost">
                     {s.cta} →
                   </Link>
@@ -270,7 +270,7 @@ export default function SpanishHome() {
                 <span className="text-xs uppercase tracking-label text-coastal-blue">
                   {tile.label}
                 </span>
-                <p className="mt-1 text-sm text-charcoal/85 leading-snug">{tile.caption}</p>
+                <p className="mt-1 text-sm text-charcoal/85 dark:text-slate-300 leading-snug">{tile.caption}</p>
               </figcaption>
             </figure>
           ))}
@@ -374,7 +374,7 @@ export default function SpanishHome() {
                 { label: 'Poblaciones Especiales', href: '/es/poblaciones-especiales/' },
               ].map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="inline-flex items-center gap-2 text-coastal-blue hover:text-deep-navy transition-colors">
+                  <Link href={l.href} className="inline-flex items-center gap-2 text-coastal-blue dark:text-sky-400 hover:text-deep-navy dark:hover:text-slate-100 transition-colors">
                     <span aria-hidden className="text-terracotta">›</span>
                     {l.label}
                   </Link>
@@ -393,7 +393,7 @@ export default function SpanishHome() {
             <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
               Preguntas habituales
             </h2>
-            <p className="mt-5 text-sm text-muted-grey leading-relaxed max-w-prose">
+            <p className="mt-5 text-sm text-muted-grey dark:text-slate-400 leading-relaxed max-w-prose">
               {MEDICAL_DISCLAIMER_ES}
             </p>
           </div>

@@ -84,8 +84,8 @@ export default function PoblacionesEspecialesPage() {
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {populations.map((p) => (
             <article key={p.title} className="card">
-              <h3 className="font-heading font-semibold text-lg text-deep-navy">{p.title}</h3>
-              <p className="mt-3 text-charcoal/85 leading-relaxed">{p.text}</p>
+              <h3 className="font-heading font-semibold text-lg text-deep-navy dark:text-slate-100">{p.title}</h3>
+              <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">{p.text}</p>
             </article>
           ))}
         </div>
@@ -111,11 +111,11 @@ export default function PoblacionesEspecialesPage() {
       </Section>
 
       <Section background="warm-white">
-        <div className="bg-sand border border-soft-border rounded-3xl p-8 md:p-10 max-w-3xl">
-          <h2 className="font-heading font-semibold text-xl md:text-2xl text-deep-navy">
+        <div className="bg-sand dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-8 md:p-10 max-w-3xl">
+          <h2 className="font-heading font-semibold text-xl md:text-2xl text-deep-navy dark:text-slate-100">
             Nota importante sobre el alcance del servicio
           </h2>
-          <p className="mt-4 text-charcoal/85 leading-relaxed">
+          <p className="mt-4 text-charcoal/85 dark:text-slate-300 leading-relaxed">
             Movement by Design ofrece coaching de ejercicio basado en ciencias del deporte, entrenamiento personal, educación en salud y apoyo de ejercicio con enfoque rehabilitador. No ofrece diagnóstico médico, tratamiento, fisioterapia, dietética ni atención clínica especializada. Para embarazo, oncología, diabetes, condiciones neurológicas, recuperación posquirúrgica o cualquier condición médica activa, el coaching de ejercicio se desarrolla junto a la orientación médica o de salud aliada cuando corresponde.
           </p>
         </div>
@@ -126,7 +126,7 @@ export default function PoblacionesEspecialesPage() {
       </Section>
 
       <Section background="warm-white">
-        <p className="text-sm text-muted-grey leading-relaxed max-w-prose mb-10">{MEDICAL_DISCLAIMER_ES}</p>
+        <p className="text-sm text-muted-grey dark:text-slate-400 leading-relaxed max-w-prose mb-10">{MEDICAL_DISCLAIMER_ES}</p>
         <CtaBlock title="Pregunta si el coaching para poblaciones especiales es adecuado para ti" lang="es" />
       </Section>
 

@@ -100,8 +100,8 @@ export default function EntrenadorPersonalSalouPage() {
           <div className="md:col-span-3 grid sm:grid-cols-2 gap-5">
             {benefits.map((b) => (
               <article key={b.title} className="card">
-                <h3 className="font-heading font-semibold text-lg text-deep-navy">{b.title}</h3>
-                <p className="mt-3 text-charcoal/85 leading-relaxed">{b.text}</p>
+                <h3 className="font-heading font-semibold text-lg text-deep-navy dark:text-slate-100">{b.title}</h3>
+                <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">{b.text}</p>
               </article>
             ))}
           </div>
@@ -121,7 +121,7 @@ export default function EntrenadorPersonalSalouPage() {
           </div>
           <ul className="grid gap-3">
             {ideal.map((i) => (
-              <li key={i} className="bg-white border border-soft-border rounded-2xl p-5 text-charcoal/90">
+              <li key={i} className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-5 text-charcoal/90 dark:text-slate-300">
                 {i}
               </li>
             ))}
@@ -144,13 +144,13 @@ export default function EntrenadorPersonalSalouPage() {
               <li><strong className="font-heading text-deep-navy">5. Revisiones y hábitos.</strong> Revisiones regulares para mantener el plan honesto, más apoyo práctico de hábitos y educación fuera del gym.</li>
             </ol>
           </div>
-          <aside className="md:col-span-2 bg-sand rounded-3xl p-8 border border-soft-border">
-            <h3 className="font-heading font-semibold text-deep-navy">Idiomas</h3>
-            <p className="mt-3 text-charcoal/85 leading-relaxed">
+          <aside className="md:col-span-2 bg-sand dark:bg-slate-800 rounded-3xl p-8 border border-soft-border dark:border-slate-700">
+            <h3 className="font-heading font-semibold text-deep-navy dark:text-slate-100">Idiomas</h3>
+            <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">
               Entrenador personal angloparlante en Salou. Entrenador germanoparlante en Salou. Español en aprendizaje — encantado de dar pautas simples en español, con inglés o alemán para explicaciones detalladas.
             </p>
-            <h3 className="mt-7 font-heading font-semibold text-deep-navy">Zona de servicio</h3>
-            <p className="mt-3 text-charcoal/85 leading-relaxed">
+            <h3 className="mt-7 font-heading font-semibold text-deep-navy dark:text-slate-100">Zona de servicio</h3>
+            <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">
               Salou, Cambrils, Tarragona, La Pineda, Vila-seca, Reus y la Costa Daurada. Coaching online disponible en todo el mundo.
             </p>
             <Link href="/es/contacto/" className="btn-primary mt-7 w-full">
@@ -208,7 +208,7 @@ export default function EntrenadorPersonalSalouPage() {
       </Section>
 
       <Section background="sand">
-        <p className="text-sm text-muted-grey leading-relaxed max-w-prose mb-10">{MEDICAL_DISCLAIMER_ES}</p>
+        <p className="text-sm text-muted-grey dark:text-slate-400 leading-relaxed max-w-prose mb-10">{MEDICAL_DISCLAIMER_ES}</p>
         <CtaBlock lang="es" />
       </Section>
 

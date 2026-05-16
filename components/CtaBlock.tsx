@@ -29,7 +29,7 @@ export default function CtaBlock({
   const t = UI[lang];
   const contact = localised('/contact/', lang);
   return (
-    <div className="bg-deep-navy text-warm-white rounded-3xl p-10 md:p-14 grid md:grid-cols-5 gap-8 items-center">
+    <div className="bg-deep-navy dark:bg-slate-950 text-warm-white rounded-3xl p-10 md:p-14 grid md:grid-cols-5 gap-8 items-center">
       <div className="md:col-span-3">
         <span className="eyebrow-light">
           {d.eyebrow}

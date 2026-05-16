@@ -82,8 +82,8 @@ export default function SpecialPopulationsPage() {
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {populations.map((p) => (
             <article key={p.title} className="card">
-              <h3 className="font-heading font-semibold text-lg text-deep-navy">{p.title}</h3>
-              <p className="mt-3 text-charcoal/85 leading-relaxed">{p.text}</p>
+              <h3 className="font-heading font-semibold text-lg text-deep-navy dark:text-slate-100">{p.title}</h3>
+              <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">{p.text}</p>
             </article>
           ))}
         </div>
@@ -114,11 +114,11 @@ export default function SpecialPopulationsPage() {
       </Section>
 
       <Section background="warm-white">
-        <div className="bg-sand border border-soft-border rounded-3xl p-8 md:p-10 max-w-3xl">
-          <h2 className="font-heading font-semibold text-xl md:text-2xl text-deep-navy">
+        <div className="bg-sand dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-8 md:p-10 max-w-3xl">
+          <h2 className="font-heading font-semibold text-xl md:text-2xl text-deep-navy dark:text-slate-100">
             Important scope note
           </h2>
-          <p className="mt-4 text-charcoal/85 leading-relaxed">
+          <p className="mt-4 text-charcoal/85 dark:text-slate-300 leading-relaxed">
             Movement by Design provides exercise science-based coaching, personal training,
             health education and rehabilitation-informed exercise support. It does not provide
             medical diagnosis, treatment, physiotherapy, dietetics or specialist clinical
@@ -134,7 +134,7 @@ export default function SpecialPopulationsPage() {
       </Section>
 
       <Section background="warm-white">
-        <p className="text-sm text-muted-grey leading-relaxed max-w-prose mb-10">
+        <p className="text-sm text-muted-grey dark:text-slate-400 leading-relaxed max-w-prose mb-10">
           {MEDICAL_DISCLAIMER}
         </p>
         <CtaBlock title="Ask if special populations coaching is right for you" />

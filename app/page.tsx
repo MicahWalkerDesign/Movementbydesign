@@ -106,7 +106,7 @@ export default function HomePage() {
               <h1 className="font-heading font-semibold text-[2.5rem] md:text-[3.4rem] leading-[1.05] tracking-[-0.02em] text-deep-navy max-w-[18ch]">
                 Personal training for people who need more than a workout.
               </h1>
-              <p className="mt-6 text-lg md:text-xl text-deep-navy/80 max-w-prose leading-relaxed">
+              <p className="mt-6 text-lg md:text-xl text-deep-navy/80 dark:text-slate-300 max-w-prose leading-relaxed">
                 Exercise-science led coaching for strength, movement confidence, injury
                 prevention and long-term health — in Salou, Cambrils, Tarragona and online.
               </p>
@@ -120,7 +120,7 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <ul className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs uppercase tracking-label text-deep-navy/70">
+              <ul className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs uppercase tracking-label text-deep-navy/70 dark:text-slate-400">
                 {[
                   'Exercise Science',
                   'Rehab-informed',
@@ -129,7 +129,7 @@ export default function HomePage() {
                 ].map((chip) => (
                   <li
                     key={chip}
-                    className="inline-flex items-center gap-1.5 bg-warm-white border border-soft-border rounded-full px-3 py-1.5"
+                    className="inline-flex items-center gap-1.5 bg-warm-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-full px-3 py-1.5"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-terracotta" aria-hidden />
                     {chip}
@@ -170,7 +170,7 @@ export default function HomePage() {
             {FOR_YOU.map((line) => (
               <li
                 key={line}
-                className="bg-white border border-soft-border rounded-2xl p-5 text-charcoal/90 leading-snug"
+                className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-5 text-charcoal/90 dark:text-slate-300 leading-snug"
               >
                 {line}
               </li>
@@ -214,14 +214,14 @@ export default function HomePage() {
                 <h3 className="mt-3 font-heading font-semibold text-xl text-deep-navy">
                   {s.title}
                 </h3>
-                <p className="mt-3 text-charcoal/85 leading-relaxed">{s.text}</p>
+                <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">{s.text}</p>
                 <div className="mt-5 flex items-baseline gap-2">
-                  <span className="font-heading text-3xl font-semibold text-deep-navy">
+                  <span className="font-heading text-3xl font-semibold text-deep-navy dark:text-slate-100">
                     {s.price}
                   </span>
-                  <span className="text-sm text-muted-grey">{s.unit}</span>
+                  <span className="text-sm text-muted-grey dark:text-slate-400">{s.unit}</span>
                 </div>
-                <div className="mt-6 pt-5 border-t border-soft-border">
+                <div className="mt-6 pt-5 border-t border-soft-border dark:border-slate-700">
                   <Link href={s.href} className="btn-ghost">
                     {s.cta} →
                   </Link>
@@ -288,7 +288,7 @@ export default function HomePage() {
                 <span className="text-xs uppercase tracking-label text-coastal-blue">
                   {tile.label}
                 </span>
-                <p className="mt-1 text-sm text-charcoal/85 leading-snug">{tile.caption}</p>
+                <p className="mt-1 text-sm text-charcoal/85 dark:text-slate-300 leading-snug">{tile.caption}</p>
               </figcaption>
             </figure>
           ))}
@@ -417,7 +417,7 @@ export default function HomePage() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="inline-flex items-center gap-2 text-coastal-blue hover:text-deep-navy transition-colors"
+                    className="inline-flex items-center gap-2 text-coastal-blue dark:text-sky-400 hover:text-deep-navy dark:hover:text-slate-100 transition-colors"
                   >
                     <span aria-hidden className="text-terracotta">
                       ›
@@ -439,7 +439,7 @@ export default function HomePage() {
             <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
               Frequently asked questions
             </h2>
-            <p className="mt-5 text-sm text-muted-grey leading-relaxed max-w-prose">
+            <p className="mt-5 text-sm text-muted-grey dark:text-slate-400 leading-relaxed max-w-prose">
               {MEDICAL_DISCLAIMER}
             </p>
           </div>

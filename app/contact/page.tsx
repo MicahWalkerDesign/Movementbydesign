@@ -28,7 +28,7 @@ export default function ContactPage() {
         <div className="container-prose pt-16 md:pt-24 pb-8 md:pb-10">
           <span className="eyebrow">Contact</span>
           <span className="accent-line mt-3 mb-5" aria-hidden />
-          <h1 className="font-heading font-semibold text-4xl md:text-5xl text-deep-navy max-w-4xl leading-[1.1]">
+          <h1 className="font-heading font-semibold text-4xl md:text-5xl text-deep-navy dark:text-slate-100 max-w-4xl leading-[1.1]">
             Get in touch
           </h1>
           <div className="mt-5 prose-body max-w-prose space-y-4">
@@ -64,13 +64,13 @@ export default function ContactPage() {
       <Section background="warm-white">
         <div className="grid md:grid-cols-5 gap-12 items-start">
           <div className="md:col-span-3">
-            <h2 className="font-heading font-semibold text-2xl text-deep-navy mb-6">
+            <h2 className="font-heading font-semibold text-2xl text-deep-navy dark:text-slate-100 mb-6">
               Or send an enquiry form
             </h2>
             <form
               action={formAction}
               method="POST"
-              className="bg-white border border-soft-border rounded-3xl p-6 md:p-8 space-y-5"
+              className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-6 md:p-8 space-y-5"
               aria-label="Enquiry form"
             >
               {/* Formspree: set subject line and redirect after submit */}
@@ -87,14 +87,14 @@ export default function ContactPage() {
               <div>
                 <label
                   htmlFor="language"
-                  className="block text-sm font-medium text-deep-navy mb-1.5"
+                  className="block text-sm font-medium text-deep-navy dark:text-slate-100 mb-1.5"
                 >
                   Preferred language
                 </label>
                 <select
                   id="language"
                   name="language"
-                  className="w-full rounded-xl border border-soft-border bg-warm-white px-4 py-3 focus:border-coastal-blue focus:outline-none"
+                  className="w-full rounded-xl border border-soft-border dark:border-slate-700 bg-warm-white dark:bg-slate-900 dark:text-slate-100 px-4 py-3 focus:border-coastal-blue dark:focus:border-sky-400 focus:outline-none"
                   defaultValue="English"
                 >
                   <option>English</option>
@@ -106,7 +106,7 @@ export default function ContactPage() {
               <Field label="Goal" name="goal" placeholder="What do you want to improve?" />
 
               <fieldset>
-                <legend className="text-sm font-medium text-deep-navy mb-2">
+                <legend className="text-sm font-medium text-deep-navy dark:text-slate-100 mb-2">
                   Training preference
                 </legend>
                 <div className="grid sm:grid-cols-2 gap-2.5">
@@ -120,7 +120,7 @@ export default function ContactPage() {
                   ].map((opt) => (
                     <label
                       key={opt}
-                      className="flex items-center gap-3 bg-warm-white border border-soft-border rounded-xl px-4 py-2.5 cursor-pointer hover:border-coastal-blue/40"
+                      className="flex items-center gap-3 bg-warm-white dark:bg-slate-900 border border-soft-border dark:border-slate-700 rounded-xl px-4 py-2.5 cursor-pointer hover:border-coastal-blue/40 dark:hover:border-sky-400/40"
                     >
                       <input
                         type="radio"
@@ -128,7 +128,7 @@ export default function ContactPage() {
                         value={opt}
                         className="accent-coastal-blue"
                       />
-                      <span className="text-sm text-charcoal">{opt}</span>
+                      <span className="text-sm text-charcoal dark:text-slate-300">{opt}</span>
                     </label>
                   ))}
                 </div>
@@ -137,7 +137,7 @@ export default function ContactPage() {
               <div>
                 <label
                   htmlFor="medical"
-                  className="block text-sm font-medium text-deep-navy mb-1.5"
+                  className="block text-sm font-medium text-deep-navy dark:text-slate-100 mb-1.5"
                 >
                   Medical considerations / injury history
                 </label>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                   id="medical"
                   name="medical"
                   rows={3}
-                  className="w-full rounded-xl border border-soft-border bg-warm-white px-4 py-3 focus:border-coastal-blue focus:outline-none resize-y"
+                  className="w-full rounded-xl border border-soft-border dark:border-slate-700 bg-warm-white dark:bg-slate-900 dark:text-slate-100 px-4 py-3 focus:border-coastal-blue dark:focus:border-sky-400 focus:outline-none resize-y"
                   placeholder="Anything I should know about — injuries, surgeries, conditions, pregnancy, medications, etc."
                 />
               </div>
@@ -153,7 +153,7 @@ export default function ContactPage() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-deep-navy mb-1.5"
+                  className="block text-sm font-medium text-deep-navy dark:text-slate-100 mb-1.5"
                 >
                   Message
                 </label>
@@ -161,7 +161,7 @@ export default function ContactPage() {
                   id="message"
                   name="message"
                   rows={5}
-                  className="w-full rounded-xl border border-soft-border bg-warm-white px-4 py-3 focus:border-coastal-blue focus:outline-none resize-y"
+                  className="w-full rounded-xl border border-soft-border dark:border-slate-700 bg-warm-white dark:bg-slate-900 dark:text-slate-100 px-4 py-3 focus:border-coastal-blue dark:focus:border-sky-400 focus:outline-none resize-y"
                   placeholder="Tell me a bit more about what you're looking for"
                 />
               </div>
@@ -176,7 +176,7 @@ export default function ContactPage() {
 
           <aside className="md:col-span-2 space-y-6">
             {/* WhatsApp card — top of sidebar */}
-            <div className="bg-deep-navy rounded-3xl p-7 text-warm-white">
+            <div className="bg-deep-navy dark:bg-slate-950 rounded-3xl p-7 text-warm-white">
               <span className="eyebrow-light">Preferred contact</span>
               <h2 className="mt-3 font-heading font-semibold text-xl">WhatsApp</h2>
               <p className="mt-3 text-warm-white/80 text-sm leading-relaxed">
@@ -199,50 +199,50 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="bg-white border border-soft-border rounded-3xl p-7">
-              <h2 className="font-heading font-semibold text-deep-navy text-xl">Session rates</h2>
-              <ul className="mt-4 divide-y divide-soft-border text-sm">
+            <div className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-7">
+              <h2 className="font-heading font-semibold text-deep-navy dark:text-slate-100 text-xl">Session rates</h2>
+              <ul className="mt-4 divide-y divide-soft-border dark:divide-slate-700 text-sm">
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
-                  <span className="text-charcoal/90">1:1 Personal Training</span>
-                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">
+                  <span className="text-charcoal/90 dark:text-slate-300">1:1 Personal Training</span>
+                  <span className="font-heading font-semibold text-deep-navy dark:text-slate-100 whitespace-nowrap">
                     €90 / hr
                   </span>
                 </li>
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
-                  <span className="text-charcoal/90">
-                    Small Group <span className="text-muted-grey">(3–6)</span>
+                  <span className="text-charcoal/90 dark:text-slate-300">
+                    Small Group <span className="text-muted-grey dark:text-slate-400">(3–6)</span>
                   </span>
-                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">
+                  <span className="font-heading font-semibold text-deep-navy dark:text-slate-100 whitespace-nowrap">
                     €15–30 / hr pp
                   </span>
                 </li>
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
-                  <span className="text-charcoal/90">Online Coaching</span>
-                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">
+                  <span className="text-charcoal/90 dark:text-slate-300">Online Coaching</span>
+                  <span className="font-heading font-semibold text-deep-navy dark:text-slate-100 whitespace-nowrap">
                     From €120 / mo
                   </span>
                 </li>
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
-                  <span className="text-charcoal/90">
-                    Movement support <span className="text-muted-grey">(add-on)</span>
+                  <span className="text-charcoal/90 dark:text-slate-300">
+                    Movement support <span className="text-muted-grey dark:text-slate-400">(add-on)</span>
                   </span>
-                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">
+                  <span className="font-heading font-semibold text-deep-navy dark:text-slate-100 whitespace-nowrap">
                     €50 / 30 min
                   </span>
                 </li>
               </ul>
-              <p className="mt-3 text-xs text-muted-grey">
+              <p className="mt-3 text-xs text-muted-grey dark:text-slate-400">
                 Pre-paid blocks and packages available on request.
               </p>
             </div>
 
-            <div className="bg-sand border border-soft-border rounded-3xl p-7">
-              <h2 className="font-heading font-semibold text-deep-navy text-xl">Other ways to reach me</h2>
-              <ul className="mt-4 space-y-2 text-charcoal/90 text-sm">
+            <div className="bg-sand dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-7">
+              <h2 className="font-heading font-semibold text-deep-navy dark:text-slate-100 text-xl">Other ways to reach me</h2>
+              <ul className="mt-4 space-y-2 text-charcoal/90 dark:text-slate-300 text-sm">
                 <li>
                   Email:{' '}
                   <a
-                    className="text-coastal-blue hover:text-deep-navy underline-offset-4 hover:underline"
+                    className="text-coastal-blue dark:text-sky-400 hover:text-deep-navy dark:hover:text-slate-100 underline-offset-4 hover:underline"
                     href={`mailto:${SITE.email}`}
                   >
                     {SITE.email}
@@ -251,7 +251,7 @@ export default function ContactPage() {
                 <li>
                   YouTube:{' '}
                   <a
-                    className="text-coastal-blue hover:text-deep-navy underline-offset-4 hover:underline"
+                    className="text-coastal-blue dark:text-sky-400 hover:text-deep-navy dark:hover:text-slate-100 underline-offset-4 hover:underline"
                     href={SITE.youtube}
                     target="_blank"
                     rel="noreferrer noopener"
@@ -262,7 +262,7 @@ export default function ContactPage() {
                 <li>
                   LinkedIn:{' '}
                   <a
-                    className="text-coastal-blue hover:text-deep-navy underline-offset-4 hover:underline"
+                    className="text-coastal-blue dark:text-sky-400 hover:text-deep-navy dark:hover:text-slate-100 underline-offset-4 hover:underline"
                     href={SITE.linkedin}
                     target="_blank"
                     rel="noreferrer noopener"
@@ -273,15 +273,15 @@ export default function ContactPage() {
               </ul>
             </div>
 
-            <div className="bg-warm-white border border-soft-border rounded-3xl p-7">
-              <h2 className="font-heading font-semibold text-deep-navy text-xl">Service area</h2>
-              <p className="mt-3 text-charcoal/85 leading-relaxed text-sm">
+            <div className="bg-warm-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-7">
+              <h2 className="font-heading font-semibold text-deep-navy dark:text-slate-100 text-xl">Service area</h2>
+              <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed text-sm">
                 Salou · Cambrils · Tarragona · La Pineda · Vila-seca · Reus · Costa Daurada.
                 Online coaching available internationally.
               </p>
             </div>
 
-            <p className="text-xs text-muted-grey leading-relaxed">{MEDICAL_DISCLAIMER}</p>
+            <p className="text-xs text-muted-grey dark:text-slate-400 leading-relaxed">{MEDICAL_DISCLAIMER}</p>
           </aside>
         </div>
       </Section>
@@ -311,7 +311,7 @@ function Field({
 }) {
   return (
     <div>
-      <label htmlFor={name} className="block text-sm font-medium text-deep-navy mb-1.5">
+      <label htmlFor={name} className="block text-sm font-medium text-deep-navy dark:text-slate-100 mb-1.5">
         {label}
         {required && <span className="text-terracotta"> *</span>}
       </label>
@@ -321,7 +321,7 @@ function Field({
         type={type}
         required={required}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-soft-border bg-warm-white px-4 py-3 focus:border-coastal-blue focus:outline-none"
+        className="w-full rounded-xl border border-soft-border dark:border-slate-700 bg-warm-white dark:bg-slate-900 dark:text-slate-100 px-4 py-3 focus:border-coastal-blue dark:focus:border-sky-400 focus:outline-none"
       />
     </div>
   );

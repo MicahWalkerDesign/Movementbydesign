@@ -54,17 +54,17 @@ export default function Testimonials({ lang = 'en' }: { lang?: Locale }) {
               <span className="text-xs uppercase tracking-label text-coastal-blue">
                 {t.outcome}
               </span>
-              <blockquote className="mt-4 text-deep-navy font-heading text-lg leading-snug">
+              <blockquote className="mt-4 text-deep-navy dark:text-slate-100 font-heading text-lg leading-snug">
                 {t.quote}
               </blockquote>
-              <figcaption className="mt-auto pt-6 text-sm text-muted-grey">
+              <figcaption className="mt-auto pt-6 text-sm text-muted-grey dark:text-slate-400">
                 {t.attribution}
               </figcaption>
             </figure>
           ))}
         </div>
 
-        <p className="mt-6 text-xs text-muted-grey max-w-prose">{c.footnote}</p>
+        <p className="mt-6 text-xs text-muted-grey dark:text-slate-400 max-w-prose">{c.footnote}</p>
       </div>
     </section>
   );

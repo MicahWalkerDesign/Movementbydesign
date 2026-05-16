@@ -116,8 +116,8 @@ export default function PersonalTrainingSalouPage() {
           <div className="md:col-span-3 grid sm:grid-cols-2 gap-5">
             {benefits.map((b) => (
               <article key={b.title} className="card">
-                <h3 className="font-heading font-semibold text-lg text-deep-navy">{b.title}</h3>
-                <p className="mt-3 text-charcoal/85 leading-relaxed">{b.text}</p>
+                <h3 className="font-heading font-semibold text-lg text-deep-navy dark:text-slate-100">{b.title}</h3>
+                <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">{b.text}</p>
               </article>
             ))}
           </div>
@@ -141,7 +141,7 @@ export default function PersonalTrainingSalouPage() {
             {ideal.map((i) => (
               <li
                 key={i}
-                className="bg-white border border-soft-border rounded-2xl p-5 text-charcoal/90"
+                className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-5 text-charcoal/90 dark:text-slate-300"
               >
                 {i}
               </li>
@@ -159,41 +159,41 @@ export default function PersonalTrainingSalouPage() {
             </h2>
             <ol className="space-y-5 mt-4">
               <li>
-                <strong className="font-heading text-deep-navy">1. Free intro call.</strong>{' '}
+                <strong className="font-heading text-deep-navy dark:text-slate-100">1. Free intro call.</strong>{' '}
                 A short conversation about your goals, history and constraints — and whether
                 I’m the right fit.
               </li>
               <li>
-                <strong className="font-heading text-deep-navy">2. Movement and goal review.</strong>{' '}
+                <strong className="font-heading text-deep-navy dark:text-slate-100">2. Movement and goal review.</strong>{' '}
                 A structured assessment covering training history, injury history, lifestyle,
                 preferences and what success would look like.
               </li>
               <li>
-                <strong className="font-heading text-deep-navy">3. Personalised plan.</strong>{' '}
+                <strong className="font-heading text-deep-navy dark:text-slate-100">3. Personalised plan.</strong>{' '}
                 A coaching plan built around your body and your week — not a generic template.
               </li>
               <li>
-                <strong className="font-heading text-deep-navy">4. Sessions and progression.</strong>{' '}
+                <strong className="font-heading text-deep-navy dark:text-slate-100">4. Sessions and progression.</strong>{' '}
                 1:1 coaching with clear technique work, structured progression and ongoing
                 adjustments.
               </li>
               <li>
-                <strong className="font-heading text-deep-navy">5. Reviews and habits.</strong>{' '}
+                <strong className="font-heading text-deep-navy dark:text-slate-100">5. Reviews and habits.</strong>{' '}
                 Regular reviews to keep the plan honest, plus practical habit and education
                 support outside the gym.
               </li>
             </ol>
           </div>
 
-          <aside className="md:col-span-2 bg-sand rounded-3xl p-8 border border-soft-border">
-            <h3 className="font-heading font-semibold text-deep-navy">Languages</h3>
-            <p className="mt-3 text-charcoal/85 leading-relaxed">
+          <aside className="md:col-span-2 bg-sand dark:bg-slate-800 rounded-3xl p-8 border border-soft-border dark:border-slate-700">
+            <h3 className="font-heading font-semibold text-deep-navy dark:text-slate-100">Languages</h3>
+            <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">
               English-speaking personal trainer in Salou. German-speaking personal trainer in
               Salou. Spanish learning — happy to coach simple cues in Spanish, with English or
               German for detailed explanations.
             </p>
-            <h3 className="mt-7 font-heading font-semibold text-deep-navy">Service area</h3>
-            <p className="mt-3 text-charcoal/85 leading-relaxed">
+            <h3 className="mt-7 font-heading font-semibold text-deep-navy dark:text-slate-100">Service area</h3>
+            <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">
               Salou, Cambrils, Tarragona, La Pineda, Vila-seca, Reus and surrounding Costa
               Daurada. Online coaching available worldwide.
             </p>
@@ -227,10 +227,10 @@ export default function PersonalTrainingSalouPage() {
           <div className="md:col-span-3 grid gap-5">
             {localDetails.map((item) => (
               <article key={item.title} className="card">
-                <h3 className="font-heading font-semibold text-lg text-deep-navy">
+                <h3 className="font-heading font-semibold text-lg text-deep-navy dark:text-slate-100">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-charcoal/85 leading-relaxed">{item.text}</p>
+                <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">{item.text}</p>
               </article>
             ))}
           </div>
@@ -252,7 +252,7 @@ export default function PersonalTrainingSalouPage() {
       </Section>
 
       <Section background="sand">
-        <p className="text-sm text-muted-grey leading-relaxed max-w-prose mb-10">
+        <p className="text-sm text-muted-grey dark:text-slate-400 leading-relaxed max-w-prose mb-10">
           {MEDICAL_DISCLAIMER}
         </p>
         <CtaBlock />

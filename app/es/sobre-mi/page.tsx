@@ -37,7 +37,7 @@ export default function SobreMiPage() {
           <h1 className="font-heading font-semibold text-4xl md:text-5xl text-deep-navy max-w-4xl leading-[1.1]">
             Sobre Movement by Design
           </h1>
-          <p className="mt-5 text-xl md:text-2xl text-deep-navy/85 font-heading max-w-3xl">
+          <p className="mt-5 text-xl md:text-2xl text-deep-navy/85 dark:text-slate-300 font-heading max-w-3xl">
             Una mejor salud empieza con mejores sistemas.
           </p>
         </div>
@@ -72,9 +72,9 @@ export default function SobreMiPage() {
           </div>
           <ul className="md:col-span-3 grid gap-3 sm:grid-cols-2">
             {credentials.map((c) => (
-              <li key={c} className="bg-white border border-soft-border rounded-2xl p-5 flex gap-3">
+              <li key={c} className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-5 flex gap-3">
                 <span aria-hidden className="mt-1.5 w-1.5 h-1.5 rounded-full bg-terracotta flex-none" />
-                <span className="text-charcoal/90">{c}</span>
+                <span className="text-charcoal/90 dark:text-slate-300">{c}</span>
               </li>
             ))}
           </ul>
@@ -95,10 +95,10 @@ export default function SobreMiPage() {
               Reserva una llamada gratuita
             </Link>
           </div>
-          <div className="bg-sand border border-soft-border rounded-3xl p-8 md:p-10">
-            <h3 className="font-heading font-semibold text-deep-navy text-xl">Idiomas y ubicaciones</h3>
-            <p className="mt-4 text-charcoal/85 leading-relaxed">Inglés (nativo) · Alemán (fluido) · Español (en aprendizaje).</p>
-            <p className="mt-3 text-charcoal/85 leading-relaxed">
+          <div className="bg-sand dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-8 md:p-10">
+            <h3 className="font-heading font-semibold text-deep-navy dark:text-slate-100 text-xl">Idiomas y ubicaciones</h3>
+            <p className="mt-4 text-charcoal/85 dark:text-slate-300 leading-relaxed">Inglés (nativo) · Alemán (fluido) · Español (en aprendizaje).</p>
+            <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">
               Con base en Salou, Tarragona. Atendemos Salou, Cambrils, Tarragona, La Pineda, Vila-seca, Reus y la Costa Daurada en general — con coaching online disponible internacionalmente.
             </p>
           </div>

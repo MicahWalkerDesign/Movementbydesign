@@ -54,11 +54,11 @@ export default function BlogIndex() {
                 <span className="text-xs uppercase tracking-label text-coastal-blue">
                   {formatDate(p.date)} · {p.readingTime}
                 </span>
-                <h2 className="mt-3 font-heading font-semibold text-xl md:text-2xl text-deep-navy leading-snug">
+                <h2 className="mt-3 font-heading font-semibold text-xl md:text-2xl text-deep-navy dark:text-slate-100 leading-snug">
                   {p.title}
                 </h2>
-                <p className="mt-3 text-charcoal/85 leading-relaxed">{p.description}</p>
-                <span className="mt-5 text-coastal-blue font-medium">Read article →</span>
+                <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">{p.description}</p>
+                <span className="mt-5 text-coastal-blue dark:text-sky-400 font-medium">Read article →</span>
               </Link>
             </li>
           ))}

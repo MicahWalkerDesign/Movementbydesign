@@ -17,7 +17,7 @@ export default function YouTubeCard({ videoId, title, channelHref }: Props) {
 
   if (active && videoId) {
     return (
-      <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-soft-border">
+      <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-soft-border dark:border-slate-700">
         <iframe
           src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`}
           title={title}
@@ -60,7 +60,7 @@ export default function YouTubeCard({ videoId, title, channelHref }: Props) {
     return (
       <button
         onClick={() => setActive(true)}
-        className="relative w-full aspect-video rounded-2xl overflow-hidden border border-soft-border focus-visible:outline-coastal-blue"
+        className="relative w-full aspect-video rounded-2xl overflow-hidden border border-soft-border dark:border-slate-700 focus-visible:outline-coastal-blue"
         aria-label={`Play video: ${title}`}
       >
         {Inner}
@@ -72,7 +72,7 @@ export default function YouTubeCard({ videoId, title, channelHref }: Props) {
       href={channelHref}
       target="_blank"
       rel="noreferrer noopener"
-      className="relative block w-full aspect-video rounded-2xl overflow-hidden border border-soft-border"
+      className="relative block w-full aspect-video rounded-2xl overflow-hidden border border-soft-border dark:border-slate-700"
     >
       {Inner}
       <span className="sr-only">(opens in a new tab)</span>

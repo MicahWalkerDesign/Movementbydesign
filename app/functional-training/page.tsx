@@ -62,8 +62,8 @@ export default function FunctionalTrainingPage() {
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {pillars.map((p) => (
             <article key={p.title} className="card">
-              <h3 className="font-heading font-semibold text-lg text-deep-navy">{p.title}</h3>
-              <p className="mt-3 text-charcoal/85 leading-relaxed">{p.text}</p>
+              <h3 className="font-heading font-semibold text-lg text-deep-navy dark:text-slate-100">{p.title}</h3>
+              <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">{p.text}</p>
             </article>
           ))}
         </div>
@@ -94,7 +94,7 @@ export default function FunctionalTrainingPage() {
             ].map((i) => (
               <li
                 key={i}
-                className="bg-white border border-soft-border rounded-2xl p-5 text-charcoal/90"
+                className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-5 text-charcoal/90 dark:text-slate-300"
               >
                 {i}
               </li>
@@ -108,7 +108,7 @@ export default function FunctionalTrainingPage() {
       </Section>
 
       <Section background="sand">
-        <p className="text-sm text-muted-grey leading-relaxed max-w-prose mb-10">
+        <p className="text-sm text-muted-grey dark:text-slate-400 leading-relaxed max-w-prose mb-10">
           {MEDICAL_DISCLAIMER}
         </p>
         <CtaBlock />

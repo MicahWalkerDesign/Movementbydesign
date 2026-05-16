@@ -25,11 +25,11 @@ const formAction = SITE.formspreeId
 function Field({ label, name, type = 'text', required, placeholder }: { label: string; name: string; type?: string; required?: boolean; placeholder?: string }) {
   return (
     <div>
-      <label htmlFor={name} className="block text-sm font-medium text-deep-navy mb-1.5">
+      <label htmlFor={name} className="block text-sm font-medium text-deep-navy dark:text-slate-100 mb-1.5">
         {label}
         {required && <span className="text-terracotta"> *</span>}
       </label>
-      <input id={name} name={name} type={type} required={required} placeholder={placeholder} className="w-full rounded-xl border border-soft-border bg-warm-white px-4 py-3 focus:border-coastal-blue focus:outline-none" />
+      <input id={name} name={name} type={type} required={required} placeholder={placeholder} className="w-full rounded-xl border border-soft-border dark:border-slate-700 bg-warm-white dark:bg-slate-900 dark:text-slate-100 px-4 py-3 focus:border-coastal-blue dark:focus:border-sky-400 focus:outline-none" />
     </div>
   );
 }
@@ -41,7 +41,7 @@ export default function ContactoPage() {
         <div className="container-prose pt-16 md:pt-24 pb-8 md:pb-10">
           <span className="eyebrow">Contacto</span>
           <span className="accent-line mt-3 mb-5" aria-hidden />
-          <h1 className="font-heading font-semibold text-4xl md:text-5xl text-deep-navy max-w-4xl leading-[1.1]">
+          <h1 className="font-heading font-semibold text-4xl md:text-5xl text-deep-navy dark:text-slate-100 max-w-4xl leading-[1.1]">
             Escríbeme
           </h1>
           <div className="mt-5 prose-body max-w-prose space-y-4">
@@ -77,13 +77,13 @@ export default function ContactoPage() {
       <Section background="warm-white">
         <div className="grid md:grid-cols-5 gap-12 items-start">
           <div className="md:col-span-3">
-            <h2 className="font-heading font-semibold text-2xl text-deep-navy mb-6">
+            <h2 className="font-heading font-semibold text-2xl text-deep-navy dark:text-slate-100 mb-6">
               O envía un formulario de consulta
             </h2>
             <form
               action={formAction}
               method="POST"
-              className="bg-white border border-soft-border rounded-3xl p-6 md:p-8 space-y-5"
+              className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-6 md:p-8 space-y-5"
               aria-label="Formulario de contacto"
             >
               <input type="hidden" name="_subject" value="Nueva consulta de coaching — Movement by Design" />
@@ -96,10 +96,10 @@ export default function ContactoPage() {
                 <Field label="Ubicación" name="location" placeholder="ej. Salou" />
               </div>
               <div>
-                <label htmlFor="language" className="block text-sm font-medium text-deep-navy mb-1.5">
+                <label htmlFor="language" className="block text-sm font-medium text-deep-navy dark:text-slate-100 mb-1.5">
                   Idioma preferido
                 </label>
-                <select id="language" name="language" className="w-full rounded-xl border border-soft-border bg-warm-white px-4 py-3 focus:border-coastal-blue focus:outline-none" defaultValue="Inglés">
+                <select id="language" name="language" className="w-full rounded-xl border border-soft-border dark:border-slate-700 bg-warm-white dark:bg-slate-900 dark:text-slate-100 px-4 py-3 focus:border-coastal-blue dark:focus:border-sky-400 focus:outline-none" defaultValue="Inglés">
                   <option>Inglés</option>
                   <option>Alemán</option>
                   <option>Español (básico)</option>
@@ -107,7 +107,7 @@ export default function ContactoPage() {
               </div>
               <Field label="Objetivo" name="goal" placeholder="¿Qué quieres mejorar?" />
               <fieldset>
-                <legend className="text-sm font-medium text-deep-navy mb-2">Preferencia de entrenamiento</legend>
+                <legend className="text-sm font-medium text-deep-navy dark:text-slate-100 mb-2">Preferencia de entrenamiento</legend>
                 <div className="grid sm:grid-cols-2 gap-2.5">
                   {[
                     'entrenamiento personal 1:1',
@@ -117,24 +117,24 @@ export default function ContactoPage() {
                     'apoyo de movimiento (terapia manual)',
                     'aún no estoy seguro',
                   ].map((opt) => (
-                    <label key={opt} className="flex items-center gap-3 bg-warm-white border border-soft-border rounded-xl px-4 py-2.5 cursor-pointer hover:border-coastal-blue/40">
+                    <label key={opt} className="flex items-center gap-3 bg-warm-white dark:bg-slate-900 border border-soft-border dark:border-slate-700 rounded-xl px-4 py-2.5 cursor-pointer hover:border-coastal-blue/40 dark:hover:border-sky-400/40">
                       <input type="radio" name="preference" value={opt} className="accent-coastal-blue" />
-                      <span className="text-sm text-charcoal">{opt}</span>
+                      <span className="text-sm text-charcoal dark:text-slate-300">{opt}</span>
                     </label>
                   ))}
                 </div>
               </fieldset>
               <div>
-                <label htmlFor="medical" className="block text-sm font-medium text-deep-navy mb-1.5">
+                <label htmlFor="medical" className="block text-sm font-medium text-deep-navy dark:text-slate-100 mb-1.5">
                   Consideraciones médicas / historial de lesiones
                 </label>
-                <textarea id="medical" name="medical" rows={3} className="w-full rounded-xl border border-soft-border bg-warm-white px-4 py-3 focus:border-coastal-blue focus:outline-none resize-y" placeholder="Cualquier cosa que deba saber: lesiones, operaciones, condiciones, embarazo, medicación, etc." />
+                <textarea id="medical" name="medical" rows={3} className="w-full rounded-xl border border-soft-border dark:border-slate-700 bg-warm-white dark:bg-slate-900 dark:text-slate-100 px-4 py-3 focus:border-coastal-blue dark:focus:border-sky-400 focus:outline-none resize-y" placeholder="Cualquier cosa que deba saber: lesiones, operaciones, condiciones, embarazo, medicación, etc." />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-deep-navy mb-1.5">
+                <label htmlFor="message" className="block text-sm font-medium text-deep-navy dark:text-slate-100 mb-1.5">
                   Mensaje
                 </label>
-                <textarea id="message" name="message" rows={5} className="w-full rounded-xl border border-soft-border bg-warm-white px-4 py-3 focus:border-coastal-blue focus:outline-none resize-y" placeholder="Cuéntame un poco más sobre lo que buscas" />
+                <textarea id="message" name="message" rows={5} className="w-full rounded-xl border border-soft-border dark:border-slate-700 bg-warm-white dark:bg-slate-900 dark:text-slate-100 px-4 py-3 focus:border-coastal-blue dark:focus:border-sky-400 focus:outline-none resize-y" placeholder="Cuéntame un poco más sobre lo que buscas" />
               </div>
               <div className="flex flex-wrap gap-3 pt-2">
                 <button type="submit" className="btn-primary">Enviar consulta</button>
@@ -144,7 +144,7 @@ export default function ContactoPage() {
 
           <aside className="md:col-span-2 space-y-6">
             {/* WhatsApp card */}
-            <div className="bg-deep-navy rounded-3xl p-7 text-warm-white">
+            <div className="bg-deep-navy dark:bg-slate-950 rounded-3xl p-7 text-warm-white">
               <span className="eyebrow-light">Contacto preferido</span>
               <h2 className="mt-3 font-heading font-semibold text-xl">WhatsApp</h2>
               <p className="mt-3 text-warm-white/80 text-sm leading-relaxed">
@@ -167,46 +167,46 @@ export default function ContactoPage() {
               </p>
             </div>
 
-            <div className="bg-white border border-soft-border rounded-3xl p-7">
-              <h2 className="font-heading font-semibold text-deep-navy text-xl">Tarifas por sesión</h2>
-              <ul className="mt-4 divide-y divide-soft-border text-sm">
+            <div className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-7">
+              <h2 className="font-heading font-semibold text-deep-navy dark:text-slate-100 text-xl">Tarifas por sesión</h2>
+              <ul className="mt-4 divide-y divide-soft-border dark:divide-slate-700 text-sm">
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
-                  <span className="text-charcoal/90">Entrenamiento Personal 1:1</span>
-                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">€90 / hora</span>
+                  <span className="text-charcoal/90 dark:text-slate-300">Entrenamiento Personal 1:1</span>
+                  <span className="font-heading font-semibold text-deep-navy dark:text-slate-100 whitespace-nowrap">€90 / hora</span>
                 </li>
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
-                  <span className="text-charcoal/90">Grupo Reducido <span className="text-muted-grey">(3–6)</span></span>
-                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">€15–30 / hora pp</span>
+                  <span className="text-charcoal/90 dark:text-slate-300">Grupo Reducido <span className="text-muted-grey dark:text-slate-400">(3–6)</span></span>
+                  <span className="font-heading font-semibold text-deep-navy dark:text-slate-100 whitespace-nowrap">€15–30 / hora pp</span>
                 </li>
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
-                  <span className="text-charcoal/90">Coaching Online</span>
-                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">Desde €120 / mes</span>
+                  <span className="text-charcoal/90 dark:text-slate-300">Coaching Online</span>
+                  <span className="font-heading font-semibold text-deep-navy dark:text-slate-100 whitespace-nowrap">Desde €120 / mes</span>
                 </li>
                 <li className="flex items-baseline justify-between py-2.5 gap-4">
-                  <span className="text-charcoal/90">Apoyo de movimiento <span className="text-muted-grey">(add-on)</span></span>
-                  <span className="font-heading font-semibold text-deep-navy whitespace-nowrap">€50 / 30 min</span>
+                  <span className="text-charcoal/90 dark:text-slate-300">Apoyo de movimiento <span className="text-muted-grey dark:text-slate-400">(add-on)</span></span>
+                  <span className="font-heading font-semibold text-deep-navy dark:text-slate-100 whitespace-nowrap">€50 / 30 min</span>
                 </li>
               </ul>
-              <p className="mt-3 text-xs text-muted-grey">Bonos prepagados y paquetes disponibles bajo petición.</p>
+              <p className="mt-3 text-xs text-muted-grey dark:text-slate-400">Bonos prepagados y paquetes disponibles bajo petición.</p>
             </div>
 
-            <div className="bg-sand border border-soft-border rounded-3xl p-7">
-              <h2 className="font-heading font-semibold text-deep-navy text-xl">Otros canales</h2>
-              <ul className="mt-4 space-y-2 text-charcoal/90 text-sm">
-                <li>Email: <a className="text-coastal-blue hover:text-deep-navy underline-offset-4 hover:underline" href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
-                <li>YouTube: <a className="text-coastal-blue hover:text-deep-navy underline-offset-4 hover:underline" href={SITE.youtube} target="_blank" rel="noreferrer noopener">@MovementConsultant</a></li>
-                <li>LinkedIn: <a className="text-coastal-blue hover:text-deep-navy underline-offset-4 hover:underline" href={SITE.linkedin} target="_blank" rel="noreferrer noopener">Micah Walker</a></li>
+            <div className="bg-sand dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-7">
+              <h2 className="font-heading font-semibold text-deep-navy dark:text-slate-100 text-xl">Otros canales</h2>
+              <ul className="mt-4 space-y-2 text-charcoal/90 dark:text-slate-300 text-sm">
+                <li>Email: <a className="text-coastal-blue dark:text-sky-400 hover:text-deep-navy dark:hover:text-slate-100 underline-offset-4 hover:underline" href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
+                <li>YouTube: <a className="text-coastal-blue dark:text-sky-400 hover:text-deep-navy dark:hover:text-slate-100 underline-offset-4 hover:underline" href={SITE.youtube} target="_blank" rel="noreferrer noopener">@MovementConsultant</a></li>
+                <li>LinkedIn: <a className="text-coastal-blue dark:text-sky-400 hover:text-deep-navy dark:hover:text-slate-100 underline-offset-4 hover:underline" href={SITE.linkedin} target="_blank" rel="noreferrer noopener">Micah Walker</a></li>
               </ul>
             </div>
 
-            <div className="bg-warm-white border border-soft-border rounded-3xl p-7">
-              <h2 className="font-heading font-semibold text-deep-navy text-xl">Zona de servicio</h2>
-              <p className="mt-3 text-charcoal/85 leading-relaxed text-sm">
+            <div className="bg-warm-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-7">
+              <h2 className="font-heading font-semibold text-deep-navy dark:text-slate-100 text-xl">Zona de servicio</h2>
+              <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed text-sm">
                 Salou · Cambrils · Tarragona · La Pineda · Vila-seca · Reus · Costa Daurada. Coaching online disponible internacionalmente.
               </p>
             </div>
 
-            <p className="text-xs text-muted-grey leading-relaxed">{MEDICAL_DISCLAIMER_ES}</p>
+            <p className="text-xs text-muted-grey dark:text-slate-400 leading-relaxed">{MEDICAL_DISCLAIMER_ES}</p>
           </aside>
         </div>
       </Section>

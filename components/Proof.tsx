@@ -46,9 +46,9 @@ export default function Proof({ lang = 'en' }: { lang?: Locale }) {
 
         <ul className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {c.items.map((it) => (
-            <li key={it.title} className="bg-white border border-soft-border rounded-2xl p-6 shadow-soft">
-              <h3 className="font-heading font-semibold text-deep-navy">{it.title}</h3>
-              <p className="mt-2 text-charcoal/85 leading-relaxed text-[0.95rem]">{it.text}</p>
+            <li key={it.title} className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-6 shadow-soft dark:shadow-none">
+              <h3 className="font-heading font-semibold text-deep-navy dark:text-slate-100">{it.title}</h3>
+              <p className="mt-2 text-charcoal/85 dark:text-slate-300 leading-relaxed text-[0.95rem]">{it.text}</p>
             </li>
           ))}
         </ul>

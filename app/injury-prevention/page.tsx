@@ -66,8 +66,8 @@ export default function InjuryPreventionPage() {
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {principles.map((p) => (
             <article key={p.title} className="card">
-              <h3 className="font-heading font-semibold text-lg text-deep-navy">{p.title}</h3>
-              <p className="mt-3 text-charcoal/85 leading-relaxed">{p.text}</p>
+              <h3 className="font-heading font-semibold text-lg text-deep-navy dark:text-slate-100">{p.title}</h3>
+              <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">{p.text}</p>
             </article>
           ))}
         </div>
@@ -90,7 +90,7 @@ export default function InjuryPreventionPage() {
             {supports.map((s) => (
               <li
                 key={s}
-                className="bg-white border border-soft-border rounded-2xl p-5 text-charcoal/90"
+                className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-5 text-charcoal/90 dark:text-slate-300"
               >
                 {s}
               </li>
@@ -100,11 +100,11 @@ export default function InjuryPreventionPage() {
       </Section>
 
       <Section background="warm-white">
-        <div className="bg-sand border border-soft-border rounded-3xl p-8 md:p-10 max-w-3xl">
-          <h2 className="font-heading font-semibold text-xl md:text-2xl text-deep-navy">
+        <div className="bg-sand dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-8 md:p-10 max-w-3xl">
+          <h2 className="font-heading font-semibold text-xl md:text-2xl text-deep-navy dark:text-slate-100">
             A note on scope
           </h2>
-          <p className="mt-4 text-charcoal/85 leading-relaxed">
+          <p className="mt-4 text-charcoal/85 dark:text-slate-300 leading-relaxed">
             Movement by Design provides exercise science-based, rehabilitation-informed
             training. It does not replace physiotherapy, medical care or clinical
             rehabilitation. For active injuries, post-surgical phases or undiagnosed pain, I
@@ -119,7 +119,7 @@ export default function InjuryPreventionPage() {
       </Section>
 
       <Section background="warm-white">
-        <p className="text-sm text-muted-grey leading-relaxed max-w-prose mb-10">
+        <p className="text-sm text-muted-grey dark:text-slate-400 leading-relaxed max-w-prose mb-10">
           {MEDICAL_DISCLAIMER}
         </p>
         <CtaBlock />

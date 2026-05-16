@@ -43,7 +43,7 @@ export default function ServiceHero({
             <h1 className="font-heading font-semibold text-4xl md:text-5xl text-deep-navy max-w-4xl leading-[1.1]">
               {title}
             </h1>
-            <p className="mt-5 text-xl md:text-2xl text-deep-navy/85 font-heading max-w-3xl">
+            <p className="mt-5 text-xl md:text-2xl text-deep-navy/85 dark:text-slate-300 font-heading max-w-3xl">
               {subtitle}
             </p>
             {body && <p className="mt-5 prose-body max-w-prose">{body}</p>}

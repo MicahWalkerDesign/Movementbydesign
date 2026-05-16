@@ -16,7 +16,7 @@ export default function LanguageSwitcher({ compact = false }: { compact?: boolea
       href={target}
       hrefLang={lang === 'en' ? 'es' : 'en'}
       aria-label={labels.switchTo}
-      className={`inline-flex items-center gap-1.5 rounded-full border border-soft-border px-3 py-1.5 text-xs font-semibold tracking-label uppercase text-deep-navy hover:bg-sand transition-colors ${
+      className={`inline-flex items-center gap-1.5 rounded-full border border-soft-border dark:border-slate-700 px-3 py-1.5 text-xs font-semibold tracking-label uppercase text-deep-navy dark:text-slate-300 hover:bg-sand dark:hover:bg-slate-800 transition-colors ${
         compact ? '' : ''
       }`}
     >

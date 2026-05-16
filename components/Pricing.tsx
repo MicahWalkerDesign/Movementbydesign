@@ -148,11 +148,11 @@ export default function Pricing({
       : ADD_ONS;
 
   return (
-    <section className={`section ${background === 'sand' ? 'bg-sand' : 'bg-warm-white'}`}>
+    <section className={`section ${background === 'sand' ? 'bg-sand dark:bg-slate-800' : 'bg-warm-white dark:bg-slate-900'}`}>
       <div className="container-prose">
         <div className="max-w-2xl">
           <span className="eyebrow">{eyebrow}</span>
-          <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy">
+          <h2 className="mt-3 font-heading font-semibold text-3xl md:text-4xl text-deep-navy dark:text-slate-100">
             {heading}
           </h2>
           {intro && <p className="mt-5 prose-body max-w-prose">{intro}</p>}
@@ -171,15 +171,15 @@ export default function Pricing({
                   {lang === 'es' ? 'Más solicitado' : 'Most requested'}
                 </span>
               )}
-              <h3 className="font-heading font-semibold text-xl text-deep-navy">{t.title}</h3>
-              <p className="mt-1 text-sm text-muted-grey">{t.blurb}</p>
+              <h3 className="font-heading font-semibold text-xl text-deep-navy dark:text-slate-100">{t.title}</h3>
+              <p className="mt-1 text-sm text-muted-grey dark:text-slate-400">{t.blurb}</p>
               <div className="mt-5 flex items-baseline gap-2">
-                <span className="font-heading text-4xl font-semibold text-deep-navy">
+                <span className="font-heading text-4xl font-semibold text-deep-navy dark:text-slate-100">
                   {t.price}
                 </span>
-                <span className="text-sm text-muted-grey">{t.unit}</span>
+                <span className="text-sm text-muted-grey dark:text-slate-400">{t.unit}</span>
               </div>
-              <ul className="mt-5 space-y-2 text-charcoal/85">
+              <ul className="mt-5 space-y-2 text-charcoal/85 dark:text-slate-300">
                 {t.bullets.map((b) => (
                   <li key={b} className="flex gap-2.5">
                     <span aria-hidden className="mt-1.5 w-1.5 h-1.5 rounded-full bg-coastal-blue flex-none" />
@@ -187,13 +187,13 @@ export default function Pricing({
                   </li>
                 ))}
               </ul>
-              <div className="mt-7 pt-5 border-t border-soft-border">
+              <div className="mt-7 pt-5 border-t border-soft-border dark:border-slate-700">
                 <Link href={t.href} className="btn-ghost">
                   {t.cta} →
                 </Link>
               </div>
               {t.footnote && (
-                <p className="mt-4 text-xs text-muted-grey">{t.footnote}</p>
+                <p className="mt-4 text-xs text-muted-grey dark:text-slate-400">{t.footnote}</p>
               )}
             </article>
           ))}
@@ -204,26 +204,26 @@ export default function Pricing({
           {addOns.map((a) => (
             <div
               key={a.title}
-              className="bg-white border border-soft-border rounded-2xl p-6 flex flex-wrap items-baseline gap-4"
+              className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-6 flex flex-wrap items-baseline gap-4"
             >
               <div className="flex-1 min-w-[14rem]">
                 <span className="text-xs uppercase tracking-label text-coastal-blue">
                   {lang === 'es' ? 'Extra' : 'Add-on'}
                 </span>
-                <h3 className="mt-1 font-heading font-semibold text-deep-navy">{a.title}</h3>
-                <p className="mt-1 text-sm text-charcoal/85">{a.blurb}</p>
+                <h3 className="mt-1 font-heading font-semibold text-deep-navy dark:text-slate-100">{a.title}</h3>
+                <p className="mt-1 text-sm text-charcoal/85 dark:text-slate-300">{a.blurb}</p>
               </div>
               <div className="flex items-baseline gap-2">
-                <span className="font-heading text-2xl font-semibold text-deep-navy">
+                <span className="font-heading text-2xl font-semibold text-deep-navy dark:text-slate-100">
                   {a.price}
                 </span>
-                <span className="text-sm text-muted-grey">{a.unit}</span>
+                <span className="text-sm text-muted-grey dark:text-slate-400">{a.unit}</span>
               </div>
             </div>
           ))}
         </div>
 
-        <p className="mt-8 text-xs text-muted-grey max-w-prose">
+        <p className="mt-8 text-xs text-muted-grey dark:text-slate-400 max-w-prose">
           {lang === 'es'
             ? 'Precios en EUR e impuestos aplicables incluidos cuando corresponda. Desplazamientos fuera de Salou y Cambrils, o sesiones fuera del horario habitual, pueden presupuestarse aparte.'
             : 'Prices in EUR and inclusive of applicable taxes where relevant. Travel beyond Salou and Cambrils, or sessions outside standard hours, may be quoted separately.'}

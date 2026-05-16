@@ -40,7 +40,7 @@ export default function RelatedServices({
   const items = c.items.filter((i) => localised(i.en, lang) !== excludeHref);
   return (
     <div>
-      <h2 className="font-heading font-semibold text-2xl text-deep-navy">{c.heading}</h2>
+      <h2 className="font-heading font-semibold text-2xl text-deep-navy dark:text-slate-100">{c.heading}</h2>
       <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((i) => {
           const href = localised(i.en, lang);
@@ -48,10 +48,10 @@ export default function RelatedServices({
             <li key={href}>
               <Link
                 href={href}
-                className="block bg-white border border-soft-border rounded-2xl px-5 py-4 hover:border-coastal-blue/40 transition-colors"
+                className="block bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl px-5 py-4 hover:border-coastal-blue/40 dark:hover:border-sky-400/40 transition-colors"
               >
-                <span className="text-deep-navy font-medium">{i.label}</span>
-                <span className="block text-xs text-coastal-blue mt-1">{c.learnMore}</span>
+                <span className="text-deep-navy dark:text-slate-100 font-medium">{i.label}</span>
+                <span className="block text-xs text-coastal-blue dark:text-sky-400 mt-1">{c.learnMore}</span>
               </Link>
             </li>
           );

@@ -65,8 +65,8 @@ export default function OnlineCoachingPage() {
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {includes.map((i) => (
             <article key={i.title} className="card">
-              <h3 className="font-heading font-semibold text-lg text-deep-navy">{i.title}</h3>
-              <p className="mt-3 text-charcoal/85 leading-relaxed">{i.text}</p>
+              <h3 className="font-heading font-semibold text-lg text-deep-navy dark:text-slate-100">{i.title}</h3>
+              <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">{i.text}</p>
             </article>
           ))}
         </div>
@@ -94,12 +94,12 @@ export default function OnlineCoachingPage() {
             ].map((step, idx) => (
               <li
                 key={step}
-                className="bg-white border border-soft-border rounded-2xl p-5 flex gap-4"
+                className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-5 flex gap-4"
               >
                 <span className="font-heading text-coastal-blue font-semibold w-6 flex-none">
                   {idx + 1}.
                 </span>
-                <span className="text-charcoal/90">{step}</span>
+                <span className="text-charcoal/90 dark:text-slate-300">{step}</span>
               </li>
             ))}
           </ol>
@@ -125,7 +125,7 @@ export default function OnlineCoachingPage() {
             ].map((s) => (
               <li
                 key={s}
-                className="bg-white border border-soft-border rounded-2xl p-5 text-charcoal/90"
+                className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-5 text-charcoal/90 dark:text-slate-300"
               >
                 {s}
               </li>
@@ -139,7 +139,7 @@ export default function OnlineCoachingPage() {
       </Section>
 
       <Section background="warm-white">
-        <p className="text-sm text-muted-grey leading-relaxed max-w-prose mb-10">
+        <p className="text-sm text-muted-grey dark:text-slate-400 leading-relaxed max-w-prose mb-10">
           {MEDICAL_DISCLAIMER}
         </p>
         <CtaBlock title="Ask about online coaching" />

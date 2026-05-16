@@ -15,6 +15,32 @@
   --success-green: #7E8F7A;
 }
 
+.dark {
+  --deep-navy: #f1f5f9;
+  --coastal-blue: #38bdf8;
+  --sand: #1e293b;
+  --warm-white: #0f172a;
+  --charcoal: #cbd5e1;
+  --muted-grey: #64748b;
+  --soft-border: #334155;
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #f1f5f9;
+}
+
+.dark .hero-grad {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(56,189,248,0.06), transparent 60%),
+    radial-gradient(800px 500px at -10% 110%, rgba(199,118,82,0.06), transparent 60%),
+    #0f172a;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -76,7 +102,89 @@ h1, h2, h3, h4, h5, h6 {
   .prose-body p {
     @apply text-charcoal/90 leading-relaxed;
   }
+
+  .dark .btn-secondary {
+    @apply bg-slate-800 text-slate-100 border-slate-700 hover:bg-slate-700;
+  }
+  .dark .card {
+    @apply bg-slate-800 border-slate-700 shadow-none;
+  }
+  .dark .prose-body p {
+    @apply text-slate-300;
+  }
 }
+
+/* ── Dark mode: patterns not covered by Tailwind dark: classes ────────── */
+
+/* Hero subtitle and body text on hero-grad backgrounds */
+.dark .hero-grad p,
+.dark .hero-grad span:not(.eyebrow):not(.eyebrow-light):not(.accent-line) {
+  color: #e2e8f0;
+}
+
+/* Blog/article body text — covers all 12 blog posts without per-file edits */
+.dark article p,
+.dark article li,
+.dark article span.text-sm,
+.dark article span.text-xs {
+  color: #cbd5e1;
+}
+.dark article strong {
+  color: #f1f5f9;
+}
+.dark article blockquote {
+  color: #f1f5f9;
+}
+
+/* bg-white elements (non-card list items in service/contact pages) */
+.dark .bg-white {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+/* Inline prose text that uses text-charcoal/90 or text-deep-navy/85 directly */
+.dark .text-charcoal\/90,
+.dark .text-charcoal\/85 {
+  color: #cbd5e1;
+}
+.dark .text-deep-navy\/85,
+.dark .text-deep-navy\/80 {
+  color: #e2e8f0;
+}
+.dark .text-muted-grey {
+  color: #64748b;
+}
+
+/* Link hover: deep-navy hover would be invisible in dark mode */
+.dark .hover\:text-deep-navy:hover {
+  color: #38bdf8;
+}
+
+/* Form inputs and textareas */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #64748b;
+}
+
+/* Dividers */
+.dark .divide-soft-border > * + * {
+  border-color: #334155;
+}
+
+/* Subtle text on dark nav/footer areas */
+.dark .text-deep-navy\/70 {
+  color: #94a3b8;
+}
+
+/* ── End dark mode overrides ───────────────────────────────────────────── */
 
 /* Subtle hero gradient backdrop */
 .hero-grad {

@@ -37,7 +37,7 @@ export default function AboutPage() {
           <h1 className="font-heading font-semibold text-4xl md:text-5xl text-deep-navy max-w-4xl leading-[1.1]">
             About Movement by Design
           </h1>
-          <p className="mt-5 text-xl md:text-2xl text-deep-navy/85 font-heading max-w-3xl">
+          <p className="mt-5 text-xl md:text-2xl text-deep-navy/85 dark:text-slate-300 font-heading max-w-3xl">
             Better health starts with better systems.
           </p>
         </div>
@@ -93,10 +93,10 @@ export default function AboutPage() {
             {credentials.map((c) => (
               <li
                 key={c}
-                className="bg-white border border-soft-border rounded-2xl p-5 flex gap-3"
+                className="bg-white dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-2xl p-5 flex gap-3"
               >
                 <span aria-hidden className="mt-1.5 w-1.5 h-1.5 rounded-full bg-terracotta flex-none" />
-                <span className="text-charcoal/90">{c}</span>
+                <span className="text-charcoal/90 dark:text-slate-300">{c}</span>
               </li>
             ))}
           </ul>
@@ -119,14 +119,14 @@ export default function AboutPage() {
               Book a free intro call
             </Link>
           </div>
-          <div className="bg-sand border border-soft-border rounded-3xl p-8 md:p-10">
-            <h3 className="font-heading font-semibold text-deep-navy text-xl">
+          <div className="bg-sand dark:bg-slate-800 border border-soft-border dark:border-slate-700 rounded-3xl p-8 md:p-10">
+            <h3 className="font-heading font-semibold text-deep-navy dark:text-slate-100 text-xl">
               Languages &amp; locations
             </h3>
-            <p className="mt-4 text-charcoal/85 leading-relaxed">
+            <p className="mt-4 text-charcoal/85 dark:text-slate-300 leading-relaxed">
               English (native) · German (fluent) · Spanish (learning).
             </p>
-            <p className="mt-3 text-charcoal/85 leading-relaxed">
+            <p className="mt-3 text-charcoal/85 dark:text-slate-300 leading-relaxed">
               Based in Salou, Tarragona. Serving Salou, Cambrils, Tarragona, La Pineda,
               Vila-seca, Reus and the wider Costa Daurada — with online coaching available
               internationally.
