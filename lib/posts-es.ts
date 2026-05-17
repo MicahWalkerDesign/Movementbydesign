@@ -310,6 +310,94 @@ export const POSTS_ES: PostEs[] = [
     date: '2026-05-06',
     readingTime: '10 min de lectura',
   },
+  {
+    slug: 'cinco-tejidos-prevencion-lesiones',
+    title: 'Los 5 tejidos que más se lesionan en deportistas recreativos — y cómo entrenarlos para ser resistentes',
+    description:
+      'Tendón, músculo, hueso, articulación y fascia: las cinco categorías de tejido detrás de la mayoría de lesiones recreativas, y cómo cargar cada una para construir resistencia real.',
+    date: '2026-05-17',
+    readingTime: '9 min de lectura',
+    category: 'Prevención de Lesiones',
+    alternatePath: '/blog/five-tissues-injury-prevention/',
+    intro:
+      'Si corres, levantas pesas o juegas al pádel con cierta frecuencia, antes o después uno de cinco tejidos acabará protestando. Casi todas las lesiones recreativas — tendón rotuliano, isquiotibiales, tibia, cadera, fascia plantar — son la historia de un tejido concreto cargado más rápido de lo que podía adaptarse. Identificar de qué tejido se trata importa, porque cada uno tiene un ritmo distinto y una estrategia de carga distinta. Tratar un tendón como si fuera músculo, o un hueso como si fuera tendón, es uno de los motivos más habituales por los que una rehabilitación se estanca.',
+    body: [
+      {
+        heading: 'Por qué pensar en tejidos',
+        paragraphs: [
+          'Las etiquetas diagnósticas — “rodilla del corredor”, “codo de tenista”, “periostitis tibial” — describen una zona, no un mecanismo. El mecanismo está en el tejido. El tendón remodela en respuesta a la deformación mecánica. El músculo se adapta rápido al trabajo excéntrico. El hueso responde a flexiones y compresiones repetidas, pero en un reloj mucho más lento. El cartílago necesita carga cíclica solo para nutrirse. La fascia y el nervio periférico tienen comportamientos propios.',
+          'Cuando puedes identificar cuál de las cinco categorías está sintomática, el plan se escribe casi solo: elige el tipo de carga que impulsa la adaptación de ese tejido, dosifícala dentro de su ventana de recuperación y progresa según el calendario que ese tejido realmente respeta.',
+        ],
+      },
+      {
+        heading: '1. Tendón',
+        paragraphs: [
+          'El tendón vive de la mecanotransducción — la conversión de la deformación mecánica en señales celulares que regulan el recambio de colágeno (Khan y Scott, BJSM 2009). Sin carga, el tendón se debilita. Con demasiada carga demasiado rápido, se vuelve reactivo: hinchado, doloroso, sensible por la mañana. El modelo de continuum de Cook y Purdam (BJSM 2009) describe la progresión de tendinopatía reactiva a desorganización y degeneración. La idea práctica es que la mayoría de problemas tendinosos recreativos son reactivos, y responden muy bien a una carga progresiva.',
+          'La escalera de carga es conocida: isometrías pesadas para modular el dolor en la fase aguda, resistencia pesada y lenta para la adaptación estructural, y trabajo de almacenamiento de energía — saltos, rebotes, cambios de dirección — solo cuando el tendón tolera la carga lenta sin reagudización al día siguiente. Tendón rotuliano en saltadores, Aquiles en corredores y origen extensor del codo lateral en jugadores de pádel siguen la misma lógica.',
+          'El codo de pádel es endémico en los clubes de Cambrils y Salou porque el volumen sube más rápido de lo que los extensores de la muñeca pueden adaptarse. Dos meses de tres sesiones semanales es un salto importante para cualquier tendón, y los síntomas suelen llegar hacia la sexta semana.',
+        ],
+      },
+      {
+        heading: '2. Músculo y sus envolturas conectivas',
+        paragraphs: [
+          'El músculo es el más adaptable de los cinco tejidos. Se reconstruye en pocos días tras un trabajo excéntrico exigente, y el efecto de sesión repetida (repeated-bout effect) hace que la segunda exposición produzca una fracción del dolor de la primera. La distinción clínica relevante es entre las agujetas, que son la respuesta normal a la carga excéntrica, y la rotura fibrilar, que es una disrupción estructural en la unión miotendinosa.',
+          'La lesión de isquiotibiales en velocistas y futbolistas es el ejemplo clásico. La evidencia sobre el ejercicio nórdico de isquiotibiales como medida preventiva es de las más sólidas en el campo: varios ensayos controlados muestran reducciones aproximadas del 50 % en deportistas que lo realizan de forma constante. El mecanismo es claro: la fuerza excéntrica en longitudes largas es la cualidad específica que protege ante la rotura típica de la fase final de la zancada.',
+          'Para el deportista recreativo la lección se generaliza: los músculos expuestos a carga excéntrica controlada en rango final toleran mucho mejor la carga excéntrica incontrolada del deporte.',
+        ],
+      },
+      {
+        heading: '3. Hueso',
+        paragraphs: [
+          'La ley de Wolff, actualizada, dice que el hueso remodela en respuesta a las deformaciones que recibe — pero en una escala de meses, no de semanas. Un músculo puede estar visiblemente más fuerte en ocho semanas. Una tibia se adapta en una curva de tres a seis meses. Esa diferencia de tiempos es lo que provoca reacciones de estrés y fracturas por estrés en personas que aumentaron su volumen de carrera de forma brusca.',
+          'La progresión va de reacción de estrés (edema medular, a menudo invisible en radiografía) a fractura de estrés (línea visible) y, en casos extremos, a fractura completa. Las localizaciones más habituales en corredores recreativos son calcáneo y tibia. El paseo marítimo de Salou es un terreno amable, pero el volumen en cualquier superficie sigue las mismas reglas: el hueso necesita su tiempo.',
+          'Las deportistas femeninas merecen una nota específica. El déficit energético relativo en el deporte (RED-S) — comer menos de lo que la carga exige — suprime los estrógenos, deteriora la formación ósea y eleva mucho el riesgo de fractura por estrés. Si los ciclos menstruales se han vuelto irregulares o han desaparecido, es un asunto clínico, no de entrenamiento, y debe verlo un médico antes de añadir volumen.',
+        ],
+      },
+      {
+        heading: '4. Estructuras articulares: cartílago, cápsula, labrum',
+        paragraphs: [
+          'El cartílago articular no tiene irrigación sanguínea. Se nutre del líquido sinovial que se bombea a través de él por la compresión cíclica — es decir, caminar, sentarse y levantarse, cargar la articulación. El mito persistente de que la carga “gasta” las articulaciones tiene la fisiología al revés: la carga cíclica adecuada es lo que mantiene sano al cartílago (Buckwalter y otros han escrito ampliamente sobre esto).',
+          'La artrosis se asocia más con el desuso, la obesidad y las lesiones previas que con la carga deportiva razonable. La degeneración meniscal en adultos de mediana edad se considera hoy un hallazgo de imagen normal en muchos casos, y el ejercicio terapéutico es al menos tan eficaz como la artroscopia para roturas degenerativas.',
+          'El pinzamiento femoroacetabular y la irritación del labrum aparecen en ciclistas y jugadores de pádel que pasan mucho tiempo en flexión profunda de cadera. Cápsula y labrum responden al mismo principio: exposición progresiva, con un énfasis especial en la fuerza en los rangos que el deporte realmente exige.',
+        ],
+      },
+      {
+        heading: '5. Fascia y nervio periférico',
+        paragraphs: [
+          'La fascitis plantar es, en su mayoría, un nombre engañoso. Los estudios histológicos muestran cambios degenerativos más que inflamación, de modo que “fasciopatía plantar” es el término más correcto. Se comporta como un problema tendinoso y responde a la misma lógica: fortalecimiento progresivo del gemelo y de la musculatura intrínseca del pie, no estiramiento aislado.',
+          'Los nervios periféricos necesitan movilidad a través de los tejidos que los rodean. La irritación del ciático en corredores y levantadores rara vez es un pinzamiento estructural — más bien una reducción del deslizamiento del nervio a través de la cadera posterior y los isquiotibiales. Las movilizaciones neurales tienen un papel, pero la respuesta más útil suele ser fortalecer la cadera y la cadena posterior para que el nervio viva en un entorno menos reactivo.',
+          'Estirar con más intensidad una fascia o un nervio ya sensibilizado es uno de los errores más frecuentes. La respuesta casi siempre es tolerancia a la carga, no longitud.',
+        ],
+      },
+      {
+        heading: 'El principio común',
+        paragraphs: [
+          'Carga progresiva con recuperación suficiente gana siempre a la intensidad por sensación. La famosa regla del 10 % semanal es un eslogan útil pero un instrumento torpe — ignora la condición previa, la carga acumulada, el sueño y el estrés vital. Más honesto es monitorizar la carga semana a semana: registrar sesiones, esfuerzo percibido y cómo se sintió la mañana siguiente, y dejar que la tendencia decida la progresión.',
+          'La mayoría de reagudizaciones son la consecuencia de un único salto brusco — un torneo, una semana de vacaciones, la vuelta tras una gripe — que cae sobre un tejido no preparado.',
+        ],
+      },
+      {
+        heading: 'Cómo programa Movement by Design la resistencia tisular',
+        paragraphs: [
+          'La valoración empieza por la historia más que por los tests. ¿Qué tejidos han dado problemas antes? ¿Cuál es la carga semanal actual entre deporte y entrenamiento? ¿Cómo son los próximos tres meses? A partir de ahí el programa avanza en fases: una fase inicial de construcción de capacidad que carga específicamente los tejidos históricamente vulnerables, una fase de desarrollo que añade cualidades específicas del deporte como potencia o resistencia, y semanas de descarga cada cuatro o cinco semanas para que los tejidos más lentos alcancen a los más rápidos.',
+          'Para un jugador de pádel suele significar trabajo de tendón dedicado al codo y al rotuliano, fuerza unilateral para rodilla y cadera, y potencia rotacional como cualidad independiente. Para un corredor: carga de gemelo y pie, progresión gradual del kilometraje y descargas pensadas en el hueso.',
+        ],
+      },
+      {
+        heading: 'Cuándo acudir al entrenador y cuándo al fisio',
+        paragraphs: [
+          'Un entrenador con formación en rehabilitación puede manejar la mayoría de molestias, déficits de capacidad y retornos de lesiones antiguas. El fisioterapeuta o el médico son el siguiente paso cuando el dolor no tiene explicación, empeora con una carga sensata, se asocia a síntomas neurológicos, viene de un trauma o se acompaña de dolor nocturno u otros signos sistémicos.',
+          'Los mejores resultados suelen venir de combinar los dos: el clínico aclara el diagnóstico y el entrenador convierte el consejo en hábito semanal. Muchas rehabilitaciones fallan no porque el diagnóstico fuera incorrecto, sino porque nadie se hizo cargo de los ocho meses de carga progresiva que tocaban después.',
+        ],
+      },
+      {
+        heading: 'Cómo encajarlo',
+        paragraphs: [
+          'Si entrenas de forma recreativa en la Costa Daurada — corriendo por el paseo marítimo, entrenando en casa o jugando al pádel en Salou y Cambrils — la prevención de lesiones se reduce a identificar tus tejidos históricamente vulnerables y dedicarles algo más de atención que al resto. Un entrenamiento personal en Salou orientado a la rehabilitación debería poder explicar, en términos sencillos, qué tejido entrena cada ejercicio y en qué calendario espera la adaptación. Si un entrenador no puede hacerlo, el programa está adivinando.',
+        ],
+      },
+    ],
+  },
 ];
 
 export function getPostEs(slug: string) {

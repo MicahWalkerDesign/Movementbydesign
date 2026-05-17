@@ -545,6 +545,93 @@ export const POSTS: Post[] = [
       },
     ],
   },
+  {
+    slug: 'five-tissues-injury-prevention',
+    title: 'The 5 Tissues That Get Injured Most in Recreational Athletes — and How to Train Them Resilient',
+    description:
+      'Tendon, muscle, bone, joint and fascia: the five tissue categories behind most recreational injuries, and how to load each one to build genuine resilience.',
+    date: '2026-05-17',
+    readingTime: '9 min read',
+    alternatePath: '/es/blog/cinco-tejidos-prevencion-lesiones/',
+    intro:
+      'If you ride, run, lift or play padel often enough, you will eventually meet one of five tissues complaining about its workload. Almost every recreational injury — patellar tendon, hamstring, shin, hip, plantar fascia — is a story about a specific tissue that was loaded faster than it could adapt. Knowing which tissue is failing matters, because each one has a different time course and a different loading strategy. Treating a tendon like a muscle, or a bone like a tendon, is one of the most common reasons rehab stalls.',
+    body: [
+      {
+        heading: 'Why think in tissues at all',
+        paragraphs: [
+          'Diagnostic labels — "runner\'s knee", "tennis elbow", "shin splints" — describe a location, not a mechanism. The mechanism is at the tissue level. Tendons remodel in response to mechanical strain. Muscle adapts quickly to eccentric overload. Bone responds to repetitive bending and compression, but on a far slower clock. Cartilage needs cyclical loading just to stay nourished. Fascia and peripheral nerves have their own behaviours again.',
+          'Once you can identify which of the five categories is symptomatic, the training plan more or less writes itself: pick the load type that drives adaptation in that tissue, dose it inside the tissue\'s recovery window, and progress on the timeline the tissue actually obeys.',
+        ],
+      },
+      {
+        heading: '1. Tendon',
+        paragraphs: [
+          'Tendons live or die by mechanotransduction — the conversion of mechanical strain into cellular signalling that drives collagen turnover (Khan & Scott, BJSM 2009). Without strain, tendons get weaker. With too much strain too quickly, they become reactive: swollen, painful, sensitive in the morning. Cook and Purdam\'s continuum model (BJSM 2009) describes the progression from reactive tendinopathy to dysrepair to degenerative change, and the practical point is that most recreational tendon problems are reactive — and reactive tendons respond very well to graded loading.',
+          'The loading ladder is well established: heavy isometrics for pain modulation in the acute phase, heavy slow resistance for structural adaptation through the middle phase, and energy-storage work — jumping, bounding, change of direction — only once the tendon tolerates slow loading without next-day flare. Patellar tendons in jumping athletes, Achilles tendons in runners, and the common extensor origin at the lateral elbow in padel players all follow the same logic.',
+          'Padel elbow is endemic at the Cambrils and Salou clubs because volume creeps up faster than the wrist extensor tendons can adapt. Two months of three-times-a-week sessions is a sharp load step for any tendon, and the symptoms usually arrive about six weeks in.',
+        ],
+      },
+      {
+        heading: '2. Muscle and its connective sheaths',
+        paragraphs: [
+          'Muscle is the most adaptable of the five tissues. It rebuilds after damaging exercise within days, and the repeated-bout effect means a second exposure produces a fraction of the soreness of the first. The clinically relevant distinction is between DOMS, which is normal post-eccentric soreness, and a strain, which is a structural disruption of fibres at the muscle–tendon junction.',
+          'Hamstring strains in sprinters and footballers are the textbook example. The evidence for Nordic hamstring curls as a preventive measure is among the strongest in the field — multiple controlled trials show roughly halved injury rates in athletes who perform them consistently. The mechanism is straightforward: eccentric strength at long muscle lengths is the specific quality that protects against the late-swing-phase tear.',
+          'For the recreational athlete the lesson generalises: muscles that are exposed to controlled eccentric load at end range tolerate the uncontrolled eccentric load of sport with much higher reliability.',
+        ],
+      },
+      {
+        heading: '3. Bone',
+        paragraphs: [
+          'Wolff\'s law, modernised, says that bone remodels in response to the strains it experiences — but on a timescale of months, not weeks. A muscle can be visibly stronger in eight weeks. A tibia adapts on a roughly three-to-six month curve. That mismatch is why stress reactions and stress fractures occur predominantly in people who increased their running volume sharply.',
+          'The progression goes stress reaction (bone marrow oedema, often invisible on x-ray) to stress fracture (a visible line) to complete fracture. Calcaneal and tibial stress fractures are the most common in recreational runners. The Salou seafront promenade is forgiving terrain, but volume on any surface follows the same rules — the bone needs time.',
+          'Female athletes deserve a specific note. Relative Energy Deficiency in Sport (RED-S) — under-fuelling relative to training load — suppresses oestrogen, impairs bone formation and substantially raises stress fracture risk. If menstrual cycles have become irregular or absent, that is a clinical issue, not a training issue, and it belongs with a doctor before any further volume is added.',
+        ],
+      },
+      {
+        heading: '4. Joint structures: cartilage, capsule, labrum',
+        paragraphs: [
+          'Articular cartilage has no blood supply. It is nourished by synovial fluid that is pumped through it by cyclical compression — which is to say, by walking, squatting and loading the joint. The persistent myth that load wears out joints has the physiology backwards: appropriate cyclical load is what keeps cartilage healthy (Buckwalter and colleagues have written extensively on this).',
+          'Osteoarthritis is correlated more strongly with disuse, obesity and prior joint injury than with athletic loading. Knee meniscal degeneration in middle-aged adults is now considered a normal age-related finding on MRI in many cases, and exercise therapy is at least as effective as arthroscopy for degenerative tears.',
+          'Hip labral irritation and femoroacetabular impingement show up in cyclists and padel players who spend long periods in deep hip flexion. Capsule and labrum respond to the same general principle — graded exposure, with a particular emphasis on building strength in the ranges that the sport actually demands.',
+        ],
+      },
+      {
+        heading: '5. Fascia and peripheral nerve',
+        paragraphs: [
+          'Plantar fasciitis is mostly a misnomer. Histological studies show degenerative change rather than inflammation, so "plantar fasciopathy" is the more accurate term. It behaves like a tendon problem and responds to the same loading logic: progressive calf and intrinsic foot strengthening, not stretching alone.',
+          'Peripheral nerves need mobility through their surrounding tissues. Sciatic nerve irritation in runners and lifters is rarely a structural pinch — more often it is reduced nerve excursion through the posterior hip and hamstring. Nerve gliding work has a role, but the larger answer is usually building hip and posterior chain strength so the nerve sits in a less reactive environment.',
+          'Stretching a fascia or a nerve more aggressively when it is already sensitised is one of the more common mistakes recreational athletes make. The remedy is almost always load-tolerance, not length.',
+        ],
+      },
+      {
+        heading: 'The principle underneath all five',
+        paragraphs: [
+          'Progressive load with adequate recovery beats intensity-by-feel in every tissue category. The old "10% per week" rule is a useful slogan but a clumsy tool — it ignores baseline fitness, prior load, sleep and life stress. A more honest approach is weekly load monitoring: track sessions, perceived effort and how the next morning felt, and let the trend make decisions about progression.',
+          'Most flare-ups are the result of a single sharp jump — a tournament weekend, a holiday catch-up week, a return after illness — landing on a tissue that had not been prepared for it.',
+        ],
+      },
+      {
+        heading: 'How Movement by Design programmes for tissue resilience',
+        paragraphs: [
+          'Assessment starts with history rather than tests. Which tissues have been problematic before? What is the current weekly load across sport and training? What does the next three months look like? From there, the programme runs in phases: an early capacity-building phase that loads the historically vulnerable tissues specifically, a development phase that adds sport-relevant power or endurance qualities, and deload weeks every fourth or fifth week to let slower-adapting tissues catch up to faster ones.',
+          'For padel players that often means dedicated tendon work for the elbow and patellar tendon, single-leg strength for the knee and hip, and rotational power as a separate quality. For runners it means calf and foot loading, gradual mileage progression, and bone-aware deloads.',
+        ],
+      },
+      {
+        heading: 'When to see a coach and when to see a physio',
+        paragraphs: [
+          'A rehabilitation-informed coach can manage most niggles, capacity gaps and returns from old injuries. A physiotherapist or doctor is the right call when pain is unexplained, worsening despite sensible loading, associated with neurological symptoms, linked to trauma, or accompanied by night pain or systemic features.',
+          'The best outcomes usually involve both — a clinician to clarify diagnosis and a coach to turn the advice into a weekly training habit. Plenty of rehab fails not because the diagnosis was wrong but because nobody owned the eight months of progressive loading that came after it.',
+        ],
+      },
+      {
+        heading: 'Putting it together',
+        paragraphs: [
+          'If you train recreationally on the Costa Daurada — running the seafront, lifting at home, or playing padel in Salou and Cambrils — most injury prevention reduces to identifying your historically vulnerable tissues and giving them slightly more attention than the rest. Personal training in Salou that takes a rehabilitation-informed approach should be able to explain, in plain terms, which tissue it is training in any given exercise and on what timeline it expects adaptation. If a coach cannot do that, the programme is guessing.',
+        ],
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string) {
