@@ -15,6 +15,9 @@ export const SITE = {
   locality: 'Salou',
   region: 'Tarragona',
   country: 'Spain',
+  // Salou town centre (Passeig Jaume I area) — used for LocalBusiness geo + hasMap
+  geo: { latitude: 41.0763, longitude: 1.1408 },
+  googleMapsUrl: 'https://maps.google.com/?q=Movement+by+Design+Salou',
   serviceAreas: [
     'Salou',
     'Cambrils',

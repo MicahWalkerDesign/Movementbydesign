@@ -84,7 +84,30 @@ export function localBusinessSchema() {
       addressRegion: SITE.region,
       addressCountry: 'ES',
     },
-    areaServed: SITE.serviceAreas as unknown as string[],
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: SITE.geo.latitude,
+      longitude: SITE.geo.longitude,
+    },
+    hasMap: SITE.googleMapsUrl,
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '07:00',
+        closes: '20:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Saturday',
+        opens: '08:00',
+        closes: '14:00',
+      },
+    ],
+    areaServed: (SITE.serviceAreas as unknown as string[]).map((name) => ({
+      '@type': 'City',
+      name,
+    })),
     availableLanguage: SITE.languages as unknown as string[],
     founder: {
       '@type': 'Person',

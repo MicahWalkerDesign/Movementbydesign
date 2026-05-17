@@ -13,10 +13,9 @@ import { MEDICAL_DISCLAIMER_ES } from '@/lib/strings';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title:
-    'Entrenador Personal Salou | Coaching de Ciencias del Ejercicio para Fuerza, Salud y Longevidad | Movement by Design',
+  title: 'Entrenador Personal Salou y Cambrils | Movement by Design',
   description:
-    'Entrenamiento personal para personas que necesitan algo más que una rutina de gym. Coaching basado en ciencias del ejercicio para fuerza, prevención de lesiones, confianza y salud a largo plazo en Salou, Cambrils, Tarragona y online.',
+    'Entrenador personal en Salou, Cambrils y Tarragona. Coaching basado en ciencias del ejercicio para fuerza, prevención de lesiones, poblaciones especiales y salud a largo plazo. Llamada de orientación gratuita.',
   path: '/es/',
   locale: 'es_ES',
   alternatePath: '/',
@@ -102,7 +101,10 @@ export default function SpanishHome() {
               <h1 className="font-heading font-semibold text-[2.5rem] md:text-[3.4rem] leading-[1.05] tracking-[-0.02em] text-deep-navy max-w-[18ch]">
                 Entrenamiento personal para personas que necesitan algo más que una rutina de gym.
               </h1>
-              <p className="mt-6 text-lg md:text-xl text-deep-navy/80 dark:text-slate-300 max-w-prose leading-relaxed">
+              <h2 className="mt-4 font-heading font-medium text-lg md:text-xl text-deep-navy/80 dark:text-slate-300 max-w-prose">
+                Entrenador personal en Salou, Cambrils y Costa Daurada.
+              </h2>
+              <p className="mt-4 text-base md:text-lg text-deep-navy/80 dark:text-slate-300 max-w-prose leading-relaxed">
                 Coaching basado en ciencias del ejercicio para fuerza, confianza en el movimiento, prevención de lesiones y salud a largo plazo — en Salou, Cambrils, Tarragona y online.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">

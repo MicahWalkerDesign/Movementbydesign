@@ -12,10 +12,9 @@ import { buildMetadata, faqSchema, breadcrumbSchema } from '@/lib/seo';
 import { MEDICAL_DISCLAIMER, SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title:
-    'Personal Trainer Salou | Exercise Science Coaching for Strength, Health & Longevity | Movement by Design',
+  title: 'Personal Trainer Salou & Cambrils | Movement by Design',
   description:
-    'Personal training for people who need more than a workout. Exercise-science led coaching for strength, injury prevention, confidence and long-term health in Salou, Cambrils, Tarragona and online.',
+    'English-speaking personal trainer in Salou, Cambrils and Tarragona. Exercise-science led coaching for strength, injury prevention, special populations and long-term health. Free intro call.',
   path: '/',
   locale: 'en_GB',
   alternatePath: '/es/',
@@ -106,7 +105,10 @@ export default function HomePage() {
               <h1 className="font-heading font-semibold text-[2.5rem] md:text-[3.4rem] leading-[1.05] tracking-[-0.02em] text-deep-navy max-w-[18ch]">
                 Personal training for people who need more than a workout.
               </h1>
-              <p className="mt-6 text-lg md:text-xl text-deep-navy/80 dark:text-slate-300 max-w-prose leading-relaxed">
+              <h2 className="mt-4 font-heading font-medium text-lg md:text-xl text-deep-navy/80 dark:text-slate-300 max-w-prose">
+                English-speaking personal trainer in Salou, Cambrils &amp; Costa Daurada.
+              </h2>
+              <p className="mt-4 text-base md:text-lg text-deep-navy/80 dark:text-slate-300 max-w-prose leading-relaxed">
                 Exercise-science led coaching for strength, movement confidence, injury
                 prevention and long-term health — in Salou, Cambrils, Tarragona and online.
               </p>
