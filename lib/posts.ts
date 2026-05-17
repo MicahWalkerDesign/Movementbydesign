@@ -4,6 +4,8 @@ export type Post = {
   description: string;
   date: string; // ISO
   readingTime: string;
+  /** Topical category shown in listings and post headers (e.g. "Injury Prevention"). */
+  category?: string;
   alternatePath?: string;
   intro: string;
   body: { heading?: string; paragraphs: string[]; bullets?: string[] }[];
@@ -737,6 +739,230 @@ export const POSTS: Post[] = [
         paragraphs: [
           'For players at the Cambrils and Salou clubs, the practical version of all this is two strength sessions a week, scheduled on the days you do not play. If you play three times a week, lift on the two days you do not play. If you play four times, lift on two of the off-days and accept that one of those lifts will be moderate. The gains arrive in the third and fourth months — not the first — and they show up first as fewer niggles, then as a noticeably harder smash and a faster recovery between points.',
           'Strength training for padel is not glamorous and not complicated. Done consistently for a season, it does more for level than any other intervention available to a recreational player.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'active-recovery-vs-rest',
+    title: 'Why "Resting It" Often Makes Injuries Worse: An Exercise Physiologist\'s Guide to Active Recovery',
+    description:
+      'Why the default advice to rest a sore tendon, joint or back for two weeks usually backfires, and what the evidence actually says about active recovery and progressive load.',
+    date: '2026-05-17',
+    readingTime: '8 min read',
+    alternatePath: '/es/blog/recuperacion-activa-vs-reposo/',
+    intro:
+      'The most common advice given for a sore knee, an irritable Achilles or a grumbling lower back is to rest it for a week or two and see how it feels. For genuinely acute, high-grade injuries that advice has a narrow window of utility. For the niggles, recurrences and chronic complaints that make up the bulk of musculoskeletal presentations in adults, it is the wrong default. Tissues do not heal in a vacuum. They remodel in response to load.',
+    body: [
+      {
+        heading: 'What disuse actually does',
+        paragraphs: [
+          'The physiology of unloading is well described. Wall and colleagues (Acta Physiologica, 2014) showed that five days of single-leg immobilisation in healthy young men reduced quadriceps cross-sectional area by around 3.5% and isometric strength by roughly 9%. Fourteen days produced losses closer to 8% in muscle size and 23% in strength. Older adults lose more, faster.',
+          'Aerobic capacity drops faster than strength. A two-week layoff can knock several percent off VO2max in trained individuals. Tendon stiffness declines as well: collagen turnover slows, the tendon becomes less able to tolerate the same load it handled before, and re-introducing activity at the previous volume produces a flare. The "rest until it feels better" loop then repeats.',
+          'This is the mechanism behind the familiar pattern: pain settles with two weeks off, the person returns to the activity that hurt, and within a fortnight the symptoms are back. The tissue was not being healed by the rest. It was being deconditioned.',
+        ],
+      },
+      {
+        heading: 'Relative rest, not absolute rest',
+        paragraphs: [
+          'The concept worth borrowing from sports medicine is relative rest: remove the specific loading vector that is currently aggravating the tissue, and keep the rest of the system working. A runner with reactive patellar tendinopathy does not need to stop training. They need to stop the spikes — hill repeats, deep squats, plyometrics — while continuing cycling, upper-body strength work and isometric quadriceps loading.',
+          'A client with lateral elbow pain from pickleball can train legs, hinge, press overhead within tolerance, and load the wrist extensors isometrically. Sitting on the couch for two weeks gives the elbow nothing useful and removes everything else.',
+        ],
+      },
+      {
+        heading: 'The genuine 48 to 72 hour exception',
+        paragraphs: [
+          'There is a narrow category where short-term protection is appropriate: acute soft-tissue injuries with a clear mechanism and significant tissue disruption — a Grade II hamstring strain after a sprint, a moderate ankle sprain, a sudden calf tear. For these, the current consensus framework is PEACE and LOVE (Dubois and Esculier, British Journal of Sports Medicine, 2020).',
+        ],
+        bullets: [
+          'Protection — unload for the first one to three days, only as long as needed',
+          'Elevation — to assist venous return',
+          'Avoid anti-inflammatories in the early phase — they may impair tissue repair',
+          'Compression — to limit swelling',
+          'Education — set realistic expectations and avoid unnecessary imaging',
+          'Load — reintroduce mechanical stress as symptoms permit',
+          'Optimism — psychological factors meaningfully predict outcome',
+          'Vascularisation — pain-free aerobic activity from early on',
+          'Exercise — restore mobility, strength and proprioception progressively',
+        ],
+      },
+      {
+        heading: 'Subacute and chronic complaints — where most people live',
+        paragraphs: [
+          'The majority of musculoskeletal problems that walk through a coaching door are not in the acute window. They are tendinopathies that have grumbled for months, low backs that flare every few weeks, knees that ache on stairs, shoulders that catch overhead. For these, load is the medicine.',
+          'In tendinopathy, the Cook and Purdam continuum (BJSM, 2009) and subsequent loading work has reframed the problem: tendons respond to progressive mechanical stress through isometric holds, then heavy slow resistance, then energy-storage loading. Rest reduces both pain and capacity in the short term, and capacity does not return on its own.',
+          'In low back pain, graded exposure and progressive loading outperform avoidance in every modern guideline. In knee osteoarthritis, the GLA:D programme (Skou and Roos, BMC Musculoskeletal Disorders, 2017) — eight weeks of supervised neuromuscular exercise and education — produces clinically meaningful improvements in pain and function across thousands of participants, often comparable to surgical alternatives for appropriate candidates. In shoulder impingement, progressive rotator cuff and scapular loading consistently beats passive treatment.',
+        ],
+      },
+      {
+        heading: 'A practical decision tree',
+        paragraphs: [
+          'Most adults do not need a flowchart, but the following four questions cover the great majority of presentations.',
+        ],
+        bullets: [
+          'Is the pain above 7/10, sharp, electric, or accompanied by significant swelling, locking or neurological symptoms? See a clinician before training.',
+          'Did this happen in the last 72 hours with a clear mechanism? Protect briefly, then follow PEACE and LOVE.',
+          'Has it been grumbling, niggling or recurring for weeks or months? The answer is progressive load, not rest.',
+          'Does it hurt during the activity but feel fine after, and not flare the next morning? That is a green light to continue training within that envelope.',
+        ],
+      },
+      {
+        heading: 'The pain monitoring rule',
+        paragraphs: [
+          'The most useful clinical tool for guiding load through symptomatic tissue is the traffic-light system originally described in Silbernagel\'s Achilles tendinopathy work (American Journal of Sports Medicine, 2007). Pain on a 0 to 10 scale during loading is acceptable up to roughly 3 to 5 out of 10, provided two conditions are met: pain returns to baseline within 24 hours, and symptoms do not progressively worsen week to week.',
+          'This rule lets people train through symptomatic tendons and joints without the guesswork. It also disarms the most common psychological trap — the assumption that any pain during exercise means damage.',
+        ],
+      },
+      {
+        heading: 'What active recovery actually looks like',
+        paragraphs: [
+          'Active recovery is not foam rolling and a smoothie. In a structured programme it means specific work that loads the affected tissue at an intensity it can currently tolerate, alongside everything else the person can still do safely.',
+        ],
+        bullets: [
+          'Low-load aerobic work — walking, cycling, swimming — to maintain cardiovascular conditioning and assist tissue perfusion',
+          'Isometric loading of the symptomatic tissue at sub-symptomatic intensities for pain modulation',
+          'Heavy slow resistance work for the surrounding musculature that is not aggravated',
+          'Mobility work where it actually changes symptoms, not as a reflex',
+          'Sleep, protein intake and total weekly load monitored as carefully as the exercises themselves',
+        ],
+      },
+      {
+        heading: 'A few myths worth retiring',
+        paragraphs: [
+          'Inflammation is not the enemy. It is the early phase of the repair process. Routinely suppressing it with NSAIDs in the first 48 hours is associated with impaired tendon and muscle healing in animal models and in some human work — hence its placement in the "avoid" column of PEACE and LOVE.',
+          'Stretching does not prevent injury in any meaningful way for most populations. Multiple systematic reviews have failed to find a protective effect for static stretching prior to activity. It can feel good, and it can help in specific stiffness presentations, but it should not be sold as injury prevention.',
+          'The plan to "start training again when it stops hurting" frequently produces years of inactivity. For chronic tendinopathy and recurrent back pain, the symptom often does not fully resolve until load capacity has been rebuilt. The order of operations is the reverse of what most people assume.',
+        ],
+      },
+      {
+        heading: 'Coach or clinician',
+        paragraphs: [
+          'See a physiotherapist or doctor first when there are red flags — severe pain, neurological signs, significant trauma, suspected fracture, or symptoms that are getting worse rather than better. See a coach with rehabilitation experience when you have a diagnosis or a stable chronic complaint and need someone to build progressive load around it. The two roles complement each other; they are not interchangeable.',
+        ],
+      },
+      {
+        heading: 'Putting it to work',
+        paragraphs: [
+          'If you are in Salou or Cambrils and you have been sitting on a niggling shoulder, knee or Achilles for months, the most likely missing ingredient is structured, progressive loading — not more rest. Personal training in Salou with a rehabilitation-informed approach means we build the plan around what the tissue can currently tolerate, monitor symptoms with the traffic-light rule, and progress load on a timeline that matches biology rather than impatience. Injury prevention and return-to-activity work share the same principles: load, recover, repeat, measure. If you would like to talk through a specific complaint, the contact page is the place to start.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'tendinopathy-loading-protocol',
+    title: 'Achilles, Patellar and Plantar Tendinopathy: A Three-Stage Loading Protocol for Recreational Runners',
+    description:
+      'A practical, evidence-based three-stage loading protocol for Achilles, patellar and plantar tendinopathy in recreational runners — isometrics, heavy slow resistance, and energy storage.',
+    date: '2026-05-17',
+    readingTime: '11 min read',
+    alternatePath: '/es/blog/protocolo-carga-tendinopatia/',
+    intro:
+      'Lower-limb tendinopathy is the single most common reason recreational runners stop running. The evidence base for how to treat it is one of the more robust areas of musculoskeletal medicine, and most of the people suffering from it have never seen the protocol applied properly. This piece lays out the model, the three stages of loading, and how to apply them to the three tendons that account for the bulk of the problem.',
+    body: [
+      {
+        heading: 'Tendon biology in ninety seconds',
+        paragraphs: [
+          'Tendons are not inert ropes. They are metabolically active connective tissues that adapt to mechanical load through a process called mechanotransduction — tenocytes convert strain into biochemical signals that drive collagen synthesis and matrix remodelling (Khan and Scott, BJSM, 2009).',
+          'The adaptation is slow. Magnusson and colleagues (Nature Reviews Rheumatology, 2010) summarised the available isotope work showing that the central, load-bearing portion of an adult tendon turns over on a timescale of years, with measurable structural change in response to a loading programme requiring at least 12 weeks. This is the single most important fact for setting expectations with a runner: the symptom timeline and the structural timeline are not the same.',
+        ],
+      },
+      {
+        heading: 'The Cook and Purdam continuum',
+        paragraphs: [
+          'Cook and Purdam (BJSM, 2009) proposed a three-phase model that remains the most useful clinical framework: reactive tendinopathy, tendon dysrepair, and degenerative tendinopathy. The phases are not strictly discrete, but identifying which one a tendon is in changes the loading prescription.',
+          'Reactive tendinopathy follows a recent overload — a sudden volume spike, a new pair of shoes, a hill session. The tendon is acutely irritable, often warm, swollen and painful at rest. Loading must be reduced in volume but not eliminated.',
+          'Dysrepair is the middle phase, often months in. The tendon is painful with loading but less reactive. This is where the bulk of evidence-based loading work belongs.',
+          'Degenerative tendinopathy is structural — older tendons, recurrent presentations, often with imaging findings. Pain can be intermittent and load tolerance variable. The healthy portions of the tendon respond to loading; the degenerative portions do not, but they do not need to. The healthy tissue compensates.',
+        ],
+      },
+      {
+        heading: 'What rest does to a tendon',
+        paragraphs: [
+          'A short version of the longer argument in the active-recovery piece: unloading reduces tendon stiffness, lowers load tolerance, and increases central sensitisation. The pain settles because nothing is provoking it, and then returns the moment activity resumes because the tissue is now less capable than it was before the layoff. This is the trap most recreational runners fall into. The fix is not less load. It is the right load, applied progressively.',
+        ],
+      },
+      {
+        heading: 'The three-stage protocol — overview',
+        paragraphs: [
+          'The protocol below is synthesised from the loading literature, primarily the work of Cook, Purdam, Rio, Kongsgaard, Alfredson, Silbernagel and Rathleff. Stages are sequential but overlap: stage 1 work continues into stages 2 and 3 as a warm-up and pain modulator.',
+        ],
+        bullets: [
+          'Stage 1 — Isometric loading for pain modulation and early capacity. Rio et al. (BJSM, 2015) demonstrated immediate analgesia and reduced cortical inhibition with 5 sets of 45-second holds at approximately 70% of maximum voluntary contraction, 2 to 3 minutes rest between sets, performed daily or every other day.',
+          'Stage 2 — Heavy slow resistance. Kongsgaard et al. (Scandinavian Journal of Medicine and Science in Sports, 2009) used 3 to 4 sets of 6 to 15 repetitions with a 3-second concentric and 3-second eccentric tempo, 2 to 3 sessions per week, progressed in load over 8 to 12 weeks. Outcomes were equivalent to eccentric-only protocols with better patient adherence.',
+          'Stage 3 — Energy storage and plyometric loading. Sport-specific work that restores the spring-like behaviour of the tendon: bounding, hopping, depth jumps, and progressive running volume. Introduced only once stage 2 capacity is solid.',
+        ],
+      },
+      {
+        heading: 'Achilles tendinopathy',
+        paragraphs: [
+          'Mid-portion Achilles tendinopathy responds well to the protocol above. Insertional Achilles tendinopathy is similar but avoids deep dorsiflexion in the early phases — heel raises are performed from flat ground rather than off a step.',
+        ],
+        bullets: [
+          'Stage 1 — Standing isometric calf raise hold, single leg, on flat ground, 5 sets of 45 seconds at the heaviest load that allows full duration, daily',
+          'Stage 2 — Single-leg calf raise off a step with gastrocnemius emphasis (knee straight) and a second variation with soleus emphasis (knee bent to roughly 60 degrees), 3 to 4 sets of 6 to 15 reps, 3-second up / 3-second down tempo, three times per week',
+          'Stage 2 alternative — the original Alfredson eccentric heel-drop protocol (Alfredson et al., American Journal of Sports Medicine, 1998) — 3 sets of 15 eccentric repetitions, both straight and bent knee, twice daily for 12 weeks — remains a viable option, especially for self-directed cases',
+          'Stage 3 — Pogo hops, single-leg hops in place, then forward and lateral hops, then bounding and short running drills, progressed across several weeks',
+        ],
+      },
+      {
+        heading: 'Patellar tendinopathy',
+        paragraphs: [
+          'Patellar tendinopathy — jumper\'s knee — is the most isometric-responsive of the three. The Rio analgesia effect is often striking in this population.',
+        ],
+        bullets: [
+          'Stage 1 — Spanish squat hold (banded or wall-supported), or a leg-extension machine isometric at roughly 60 degrees of knee flexion, 5 sets of 45 seconds',
+          'Stage 2 — Single-leg decline squat on a 25-degree wedge, 3 to 4 sets of 6 to 8 reps, slow tempo, with load progressed via dumbbells or a weight vest; supplemented by leg press and split squats',
+          'Stage 3 — Box jumps, depth jumps from a low box, then increasing height, then sport-specific cutting and deceleration work',
+        ],
+      },
+      {
+        heading: 'Plantar fasciopathy',
+        paragraphs: [
+          'Plantar fasciopathy is the current preferred term — it is a degenerative, not inflammatory, condition. The most useful loading protocol comes from Rathleff and colleagues (Scandinavian Journal of Medicine and Science in Sports, 2014), who showed that high-load strength training outperformed plantar-specific stretching at three months.',
+        ],
+        bullets: [
+          'The exercise — single-leg heel raise on a step with a rolled towel placed under the toes to dorsiflex them and engage the windlass mechanism',
+          'Load and dose — 3 sets to fatigue, beginning at 12RM and progressing through 10RM, 8RM and so on across 12 weeks, performed every second day, 3-second up / 2-second pause / 3-second down tempo',
+          'This protocol is unusually self-contained — most people can run it without further supervision once the technique is set',
+        ],
+      },
+      {
+        heading: 'Pain monitoring',
+        paragraphs: [
+          'The Silbernagel traffic-light rule applies across all three tendons. Pain up to 5 out of 10 during loading is acceptable. Pain that does not return to baseline within 24 hours, or that increases week over week, means the load is too high. Pain that disappears entirely during a session of stage 1 isometrics is the analgesia effect, not a sign that the tendinopathy has resolved.',
+        ],
+      },
+      {
+        heading: 'Return to running',
+        paragraphs: [
+          'Returning to running is not a single decision. It is a progression that overlaps stages 2 and 3. The usual sequence is walk-run intervals on flat ground (for example, 1 minute run / 2 minutes walk for 20 minutes, three times in the first week), progressing to continuous easy running over several weeks, then reintroducing hills, then tempo work, then downhill running last.',
+          'Downhill running is left until last for a reason: it imposes the highest eccentric demand on the calf-Achilles complex and on the quadriceps-patellar tendon unit. Many recurrences happen when a runner clears the flat-ground build and then runs a hilly course in the third or fourth week of return-to-running.',
+        ],
+      },
+      {
+        heading: 'Common errors',
+        paragraphs: [
+          'A short list of the mistakes that show up repeatedly in practice.',
+        ],
+        bullets: [
+          'Aggressive stretching of the affected tendon — for compressive tendinopathies (insertional Achilles, proximal hamstring) it can worsen symptoms, and it has little effect on tendon structure in any case',
+          'Stopping the programme when symptoms settle — symptoms resolve before structural capacity has been rebuilt, and recurrence rates are high in those who stop early',
+          'Skipping the isometric phase — stage 1 is often the difference between a programme the runner can adhere to and one they cannot, because of its analgesic effect',
+          'Comparing timelines with a friend who recovered in four weeks — most do not, and most who think they did had a milder presentation to begin with',
+          'Adding running volume back faster than strength tolerance is rebuilt',
+        ],
+      },
+      {
+        heading: 'Expected timelines',
+        paragraphs: [
+          'Symptom resolution typically takes 6 to 12 weeks for reactive and dysrepair-phase tendinopathy, longer for degenerative presentations. Measurable structural change in the tendon takes at least 16 to 24 weeks of consistent loading. Returning to pre-injury running volume usually takes 12 to 16 weeks from the start of structured loading, and longer in those who had a long lay-off before starting.',
+          'The single best predictor of outcome is adherence to load — not the choice of protocol, not the use of adjuncts, not imaging findings. Tendons respond to what you do most days for several months.',
+        ],
+      },
+      {
+        heading: 'A note for runners in Salou and Cambrils',
+        paragraphs: [
+          'The terrain on the Costa Daurada is generous for return-to-running work. The Vía Verde de la Costa Daurada offers long, flat, predictable surfaces that suit the early phases of a return-to-running progression. The seafront in Salou and Cambrils is similar. Hills can then be added gradually from the inland routes. If you are working through a stubborn Achilles, patellar or plantar problem and would like the loading programme built and supervised, personal training in Salou with a rehabilitation-informed approach is the format that fits this kind of work. The contact page is the place to start.',
         ],
       },
     ],

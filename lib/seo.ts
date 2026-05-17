@@ -21,7 +21,14 @@ export function buildMetadata({
   alternatePath,
 }: SeoArgs): Metadata {
   const url = `${SITE.url}${path}`;
-  const image = ogImage || `${SITE.url}/og-default.svg`;
+  // If no explicit ogImage is supplied, generate a branded card on the fly
+  // via /api/og. Strips the trailing " | Movement by Design" so the title
+  // reads cleanly on the social card, and uses the meta description as the
+  // subtitle (truncated by the route handler).
+  const ogTitle = title.replace(/\s*\|\s*Movement by Design\s*$/i, '');
+  const ogSubtitle = description.length > 140 ? description.slice(0, 137) + '…' : description;
+  const dynamicOg = `${SITE.url}/api/og?title=${encodeURIComponent(ogTitle)}&subtitle=${encodeURIComponent(ogSubtitle)}`;
+  const image = ogImage || dynamicOg;
 
   const languages: Record<string, string> = {};
   if (alternatePath) {
