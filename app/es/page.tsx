@@ -364,12 +364,18 @@ export default function SpanishHome() {
           </div>
           <div className="md:col-span-7 prose-body max-w-prose">
             <p>
-              Entrenamiento personal presencial en Salou, Cambrils, Tarragona, La Pineda, Vila-seca y Reus. Coaching online disponible internacionalmente.
+              Entrenamiento personal presencial en Salou, Cambrils, Tarragona, La Pineda, Vila-seca, Reus, Miami Platja y Mont-roig. Coaching online disponible internacionalmente.
             </p>
             <ul className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
               {[
                 { label: 'Entrenador Personal Salou', href: '/es/entrenador-personal-salou/' },
                 { label: 'Entrenador Personal Cambrils', href: '/es/entrenador-personal-cambrils/' },
+                { label: 'Entrenador Personal Tarragona', href: '/es/entrenador-personal-tarragona/' },
+                { label: 'Entrenador Personal Reus', href: '/es/entrenador-personal-reus/' },
+                { label: 'Entrenador Personal La Pineda', href: '/es/entrenador-personal-la-pineda/' },
+                { label: 'Entrenador Personal Vila-seca', href: '/es/entrenador-personal-vila-seca/' },
+                { label: 'Entrenador Personal Miami Platja', href: '/es/entrenador-personal-miami-platja/' },
+                { label: 'Entrenador Personal Mont-roig', href: '/es/entrenador-personal-mont-roig/' },
                 { label: 'Grupo Reducido Salou', href: '/es/entrenamiento-grupo-reducido-salou/' },
                 { label: 'Entrenamiento Funcional', href: '/es/entrenamiento-funcional/' },
                 { label: 'Prevención de Lesiones', href: '/es/prevencion-lesiones/' },

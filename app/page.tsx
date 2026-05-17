@@ -402,12 +402,19 @@ export default function HomePage() {
           <div className="md:col-span-7 prose-body max-w-prose">
             <p>
               In-person personal training in Salou, Cambrils, Tarragona, La Pineda,
-              Vila-seca and Reus. Online coaching available internationally.
+              Vila-seca, Reus, Miami Platja and Mont-roig. Online coaching available
+              internationally.
             </p>
             <ul className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
               {[
                 { label: 'Personal Trainer Salou', href: '/personal-training-salou/' },
                 { label: 'Personal Trainer Cambrils', href: '/personal-trainer-cambrils/' },
+                { label: 'Personal Trainer Tarragona', href: '/personal-trainer-tarragona/' },
+                { label: 'Personal Trainer Reus', href: '/personal-trainer-reus/' },
+                { label: 'Personal Trainer La Pineda', href: '/personal-trainer-la-pineda/' },
+                { label: 'Personal Trainer Vila-seca', href: '/personal-trainer-vila-seca/' },
+                { label: 'Personal Trainer Miami Platja', href: '/personal-trainer-miami-platja/' },
+                { label: 'Personal Trainer Mont-roig', href: '/personal-trainer-mont-roig/' },
                 { label: 'English-Speaking Trainer', href: '/english-speaking-personal-trainer-costa-daurada/' },
                 { label: 'Small Group Training', href: '/small-group-training-salou/' },
                 { label: 'Functional Training', href: '/functional-training/' },
