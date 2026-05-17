@@ -13,6 +13,7 @@ const STATIC_PATHS = [
   '/injury-prevention/',
   '/nutrition-habits/',
   '/special-populations-exercise/',
+  '/english-speaking-personal-trainer-costa-daurada/',
   '/about/',
   '/contact/',
   '/blog/',

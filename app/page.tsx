@@ -408,9 +408,9 @@ export default function HomePage() {
               {[
                 { label: 'Personal Trainer Salou', href: '/personal-training-salou/' },
                 { label: 'Personal Trainer Cambrils', href: '/personal-trainer-cambrils/' },
+                { label: 'English-Speaking Trainer', href: '/english-speaking-personal-trainer-costa-daurada/' },
                 { label: 'Small Group Training', href: '/small-group-training-salou/' },
                 { label: 'Functional Training', href: '/functional-training/' },
-                { label: 'Injury Prevention', href: '/injury-prevention/' },
                 { label: 'Online Coaching', href: '/online-coaching/' },
               ].map((l) => (
                 <li key={l.href}>
