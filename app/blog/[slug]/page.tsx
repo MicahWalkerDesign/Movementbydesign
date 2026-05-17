@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Section from '@/components/Section';
 import CtaBlock from '@/components/CtaBlock';
+import RelatedServices from '@/components/RelatedServices';
 import JsonLd from '@/components/JsonLd';
 import {
   buildMetadata,
@@ -122,6 +123,10 @@ export default function BlogPostPage({ params }: { params: Params }) {
       )}
 
       <Section background="warm-white">
+        <RelatedServices excludeHref="" />
+      </Section>
+
+      <Section background="sand">
         <CtaBlock />
       </Section>
 

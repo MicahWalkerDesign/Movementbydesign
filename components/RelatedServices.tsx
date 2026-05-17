@@ -8,11 +8,13 @@ const COPY = {
     learnMore: 'Learn more →',
     items: [
       { en: '/personal-training-salou/', label: 'Personal Training in Salou' },
+      { en: '/personal-trainer-cambrils/', label: 'Personal Trainer in Cambrils' },
+      { en: '/small-group-training-salou/', label: 'Small Group Training' },
       { en: '/online-coaching/', label: 'Online Coaching' },
       { en: '/functional-training/', label: 'Functional Training' },
       { en: '/injury-prevention/', label: 'Injury Prevention' },
-      { en: '/nutrition-habits/', label: 'Nutrition Habits' },
       { en: '/special-populations-exercise/', label: 'Special Populations Exercise' },
+      { en: '/nutrition-habits/', label: 'Nutrition Habits' },
     ],
   },
   es: {
@@ -20,11 +22,13 @@ const COPY = {
     learnMore: 'Más información →',
     items: [
       { en: '/personal-training-salou/', label: 'Entrenador Personal en Salou' },
+      { en: '/personal-trainer-cambrils/', label: 'Entrenador Personal en Cambrils' },
+      { en: '/small-group-training-salou/', label: 'Entrenamiento en Grupo Reducido' },
       { en: '/online-coaching/', label: 'Coaching Online' },
       { en: '/functional-training/', label: 'Entrenamiento Funcional' },
       { en: '/injury-prevention/', label: 'Prevención de Lesiones' },
-      { en: '/nutrition-habits/', label: 'Hábitos de Nutrición' },
       { en: '/special-populations-exercise/', label: 'Ejercicio para Poblaciones Especiales' },
+      { en: '/nutrition-habits/', label: 'Hábitos de Nutrición' },
     ],
   },
 } as const;

@@ -8,6 +8,9 @@
 export const ROUTES = [
   { en: '/', es: '/es/' },
   { en: '/personal-training-salou/', es: '/es/entrenador-personal-salou/' },
+  { en: '/personal-trainer-cambrils/', es: '/es/entrenador-personal-cambrils/' },
+  { en: '/small-group-training-salou/', es: '/es/entrenamiento-grupo-reducido-salou/' },
+  { en: '/english-speaking-personal-trainer-costa-daurada/', es: '/es/' },
   { en: '/online-coaching/', es: '/es/coaching-online/' },
   { en: '/functional-training/', es: '/es/entrenamiento-funcional/' },
   { en: '/injury-prevention/', es: '/es/prevencion-lesiones/' },

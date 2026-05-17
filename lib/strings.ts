@@ -28,7 +28,10 @@ export const UI = {
       copyright: 'All rights reserved.',
     },
     explore: {
-      personalTraining: 'Personal Training',
+      personalTrainingSalou: 'Personal Training Salou',
+      personalTrainerCambrils: 'Personal Trainer Cambrils',
+      smallGroupTraining: 'Small Group Training',
+      englishSpeakingTrainer: 'English-Speaking Trainer',
       functionalTraining: 'Functional Training',
       injuryPrevention: 'Injury Prevention',
       specialPopulations: 'Special Populations',
@@ -66,7 +69,10 @@ export const UI = {
       copyright: 'Todos los derechos reservados.',
     },
     explore: {
-      personalTraining: 'Entrenamiento Personal',
+      personalTrainingSalou: 'Entrenador Personal Salou',
+      personalTrainerCambrils: 'Entrenador Personal Cambrils',
+      smallGroupTraining: 'Grupo Reducido Salou',
+      englishSpeakingTrainer: 'Entrenador en Inglés',
       functionalTraining: 'Entrenamiento Funcional',
       injuryPrevention: 'Prevención de Lesiones',
       specialPopulations: 'Poblaciones Especiales',

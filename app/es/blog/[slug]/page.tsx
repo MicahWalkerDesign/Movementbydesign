@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Section from '@/components/Section';
 import CtaBlock from '@/components/CtaBlock';
+import RelatedServices from '@/components/RelatedServices';
 import JsonLd from '@/components/JsonLd';
 import { buildMetadata, articleSchema, breadcrumbSchema } from '@/lib/seo';
 import { POSTS_ES, getPostEs } from '@/lib/posts-es';
@@ -125,6 +126,10 @@ export default function SpanishBlogPostPage({ params }: { params: Params }) {
       )}
 
       <Section background="warm-white">
+        <RelatedServices excludeHref="" lang="es" />
+      </Section>
+
+      <Section background="sand">
         <CtaBlock lang="es" />
       </Section>
 

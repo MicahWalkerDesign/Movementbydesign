@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Section from '@/components/Section';
 import CtaBlock from '@/components/CtaBlock';
+import RelatedServices from '@/components/RelatedServices';
 import JsonLd from '@/components/JsonLd';
 import { buildMetadata, articleSchema, breadcrumbSchema } from '@/lib/seo';
 import { MEDICAL_DISCLAIMER_ES } from '@/lib/strings';
@@ -236,6 +237,10 @@ export default function EjercicioAutismoNinosPage() {
             {MEDICAL_DISCLAIMER_ES}
           </p>
         </article>
+      </Section>
+
+      <Section background="warm-white">
+        <RelatedServices excludeHref="" lang="es" />
       </Section>
 
       <Section background="sand">

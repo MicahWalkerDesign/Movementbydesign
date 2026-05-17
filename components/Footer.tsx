@@ -14,11 +14,21 @@ export default function Footer() {
   const disclaimer = lang === 'es' ? MEDICAL_DISCLAIMER_ES : MEDICAL_DISCLAIMER;
 
   const exploreLinks: { href: string; label: string }[] = [
-    { href: localised('/personal-training-salou/', lang), label: t.explore.personalTraining },
+    { href: localised('/personal-training-salou/', lang), label: t.explore.personalTrainingSalou },
+    { href: localised('/personal-trainer-cambrils/', lang), label: t.explore.personalTrainerCambrils },
+    { href: localised('/small-group-training-salou/', lang), label: t.explore.smallGroupTraining },
+    ...(lang === 'en'
+      ? [
+          {
+            href: '/english-speaking-personal-trainer-costa-daurada/',
+            label: t.explore.englishSpeakingTrainer,
+          },
+        ]
+      : []),
     { href: localised('/functional-training/', lang), label: t.explore.functionalTraining },
-    { href: localised('/injury-prevention/', lang), label: t.explore.injuryPrevention },
     { href: localised('/special-populations-exercise/', lang), label: t.explore.specialPopulations },
     { href: localised('/online-coaching/', lang), label: t.explore.onlineCoaching },
+    { href: localised('/injury-prevention/', lang), label: t.explore.injuryPrevention },
     { href: localised('/nutrition-habits/', lang), label: t.explore.nutritionHabits },
     { href: localised('/about/', lang), label: t.explore.about },
     { href: localised('/blog/', lang), label: t.explore.blog },
