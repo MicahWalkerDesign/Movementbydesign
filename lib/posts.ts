@@ -750,6 +750,7 @@ export const POSTS: Post[] = [
       'Why the default advice to rest a sore tendon, joint or back for two weeks usually backfires, and what the evidence actually says about active recovery and progressive load.',
     date: '2026-05-17',
     readingTime: '8 min read',
+    category: 'Injury Prevention',
     alternatePath: '/es/blog/recuperacion-activa-vs-reposo/',
     intro:
       'The most common advice given for a sore knee, an irritable Achilles or a grumbling lower back is to rest it for a week or two and see how it feels. For genuinely acute, high-grade injuries that advice has a narrow window of utility. For the niggles, recurrences and chronic complaints that make up the bulk of musculoskeletal presentations in adults, it is the wrong default. Tissues do not heal in a vacuum. They remodel in response to load.',
@@ -844,125 +845,6 @@ export const POSTS: Post[] = [
         heading: 'Putting it to work',
         paragraphs: [
           'If you are in Salou or Cambrils and you have been sitting on a niggling shoulder, knee or Achilles for months, the most likely missing ingredient is structured, progressive loading — not more rest. Personal training in Salou with a rehabilitation-informed approach means we build the plan around what the tissue can currently tolerate, monitor symptoms with the traffic-light rule, and progress load on a timeline that matches biology rather than impatience. Injury prevention and return-to-activity work share the same principles: load, recover, repeat, measure. If you would like to talk through a specific complaint, the contact page is the place to start.',
-        ],
-      },
-    ],
-  },
-  {
-    slug: 'tendinopathy-loading-protocol',
-    title: 'Achilles, Patellar and Plantar Tendinopathy: A Three-Stage Loading Protocol for Recreational Runners',
-    description:
-      'A practical, evidence-based three-stage loading protocol for Achilles, patellar and plantar tendinopathy in recreational runners — isometrics, heavy slow resistance, and energy storage.',
-    date: '2026-05-17',
-    readingTime: '11 min read',
-    alternatePath: '/es/blog/protocolo-carga-tendinopatia/',
-    intro:
-      'Lower-limb tendinopathy is the single most common reason recreational runners stop running. The evidence base for how to treat it is one of the more robust areas of musculoskeletal medicine, and most of the people suffering from it have never seen the protocol applied properly. This piece lays out the model, the three stages of loading, and how to apply them to the three tendons that account for the bulk of the problem.',
-    body: [
-      {
-        heading: 'Tendon biology in ninety seconds',
-        paragraphs: [
-          'Tendons are not inert ropes. They are metabolically active connective tissues that adapt to mechanical load through a process called mechanotransduction — tenocytes convert strain into biochemical signals that drive collagen synthesis and matrix remodelling (Khan and Scott, BJSM, 2009).',
-          'The adaptation is slow. Magnusson and colleagues (Nature Reviews Rheumatology, 2010) summarised the available isotope work showing that the central, load-bearing portion of an adult tendon turns over on a timescale of years, with measurable structural change in response to a loading programme requiring at least 12 weeks. This is the single most important fact for setting expectations with a runner: the symptom timeline and the structural timeline are not the same.',
-        ],
-      },
-      {
-        heading: 'The Cook and Purdam continuum',
-        paragraphs: [
-          'Cook and Purdam (BJSM, 2009) proposed a three-phase model that remains the most useful clinical framework: reactive tendinopathy, tendon dysrepair, and degenerative tendinopathy. The phases are not strictly discrete, but identifying which one a tendon is in changes the loading prescription.',
-          'Reactive tendinopathy follows a recent overload — a sudden volume spike, a new pair of shoes, a hill session. The tendon is acutely irritable, often warm, swollen and painful at rest. Loading must be reduced in volume but not eliminated.',
-          'Dysrepair is the middle phase, often months in. The tendon is painful with loading but less reactive. This is where the bulk of evidence-based loading work belongs.',
-          'Degenerative tendinopathy is structural — older tendons, recurrent presentations, often with imaging findings. Pain can be intermittent and load tolerance variable. The healthy portions of the tendon respond to loading; the degenerative portions do not, but they do not need to. The healthy tissue compensates.',
-        ],
-      },
-      {
-        heading: 'What rest does to a tendon',
-        paragraphs: [
-          'A short version of the longer argument in the active-recovery piece: unloading reduces tendon stiffness, lowers load tolerance, and increases central sensitisation. The pain settles because nothing is provoking it, and then returns the moment activity resumes because the tissue is now less capable than it was before the layoff. This is the trap most recreational runners fall into. The fix is not less load. It is the right load, applied progressively.',
-        ],
-      },
-      {
-        heading: 'The three-stage protocol — overview',
-        paragraphs: [
-          'The protocol below is synthesised from the loading literature, primarily the work of Cook, Purdam, Rio, Kongsgaard, Alfredson, Silbernagel and Rathleff. Stages are sequential but overlap: stage 1 work continues into stages 2 and 3 as a warm-up and pain modulator.',
-        ],
-        bullets: [
-          'Stage 1 — Isometric loading for pain modulation and early capacity. Rio et al. (BJSM, 2015) demonstrated immediate analgesia and reduced cortical inhibition with 5 sets of 45-second holds at approximately 70% of maximum voluntary contraction, 2 to 3 minutes rest between sets, performed daily or every other day.',
-          'Stage 2 — Heavy slow resistance. Kongsgaard et al. (Scandinavian Journal of Medicine and Science in Sports, 2009) used 3 to 4 sets of 6 to 15 repetitions with a 3-second concentric and 3-second eccentric tempo, 2 to 3 sessions per week, progressed in load over 8 to 12 weeks. Outcomes were equivalent to eccentric-only protocols with better patient adherence.',
-          'Stage 3 — Energy storage and plyometric loading. Sport-specific work that restores the spring-like behaviour of the tendon: bounding, hopping, depth jumps, and progressive running volume. Introduced only once stage 2 capacity is solid.',
-        ],
-      },
-      {
-        heading: 'Achilles tendinopathy',
-        paragraphs: [
-          'Mid-portion Achilles tendinopathy responds well to the protocol above. Insertional Achilles tendinopathy is similar but avoids deep dorsiflexion in the early phases — heel raises are performed from flat ground rather than off a step.',
-        ],
-        bullets: [
-          'Stage 1 — Standing isometric calf raise hold, single leg, on flat ground, 5 sets of 45 seconds at the heaviest load that allows full duration, daily',
-          'Stage 2 — Single-leg calf raise off a step with gastrocnemius emphasis (knee straight) and a second variation with soleus emphasis (knee bent to roughly 60 degrees), 3 to 4 sets of 6 to 15 reps, 3-second up / 3-second down tempo, three times per week',
-          'Stage 2 alternative — the original Alfredson eccentric heel-drop protocol (Alfredson et al., American Journal of Sports Medicine, 1998) — 3 sets of 15 eccentric repetitions, both straight and bent knee, twice daily for 12 weeks — remains a viable option, especially for self-directed cases',
-          'Stage 3 — Pogo hops, single-leg hops in place, then forward and lateral hops, then bounding and short running drills, progressed across several weeks',
-        ],
-      },
-      {
-        heading: 'Patellar tendinopathy',
-        paragraphs: [
-          'Patellar tendinopathy — jumper\'s knee — is the most isometric-responsive of the three. The Rio analgesia effect is often striking in this population.',
-        ],
-        bullets: [
-          'Stage 1 — Spanish squat hold (banded or wall-supported), or a leg-extension machine isometric at roughly 60 degrees of knee flexion, 5 sets of 45 seconds',
-          'Stage 2 — Single-leg decline squat on a 25-degree wedge, 3 to 4 sets of 6 to 8 reps, slow tempo, with load progressed via dumbbells or a weight vest; supplemented by leg press and split squats',
-          'Stage 3 — Box jumps, depth jumps from a low box, then increasing height, then sport-specific cutting and deceleration work',
-        ],
-      },
-      {
-        heading: 'Plantar fasciopathy',
-        paragraphs: [
-          'Plantar fasciopathy is the current preferred term — it is a degenerative, not inflammatory, condition. The most useful loading protocol comes from Rathleff and colleagues (Scandinavian Journal of Medicine and Science in Sports, 2014), who showed that high-load strength training outperformed plantar-specific stretching at three months.',
-        ],
-        bullets: [
-          'The exercise — single-leg heel raise on a step with a rolled towel placed under the toes to dorsiflex them and engage the windlass mechanism',
-          'Load and dose — 3 sets to fatigue, beginning at 12RM and progressing through 10RM, 8RM and so on across 12 weeks, performed every second day, 3-second up / 2-second pause / 3-second down tempo',
-          'This protocol is unusually self-contained — most people can run it without further supervision once the technique is set',
-        ],
-      },
-      {
-        heading: 'Pain monitoring',
-        paragraphs: [
-          'The Silbernagel traffic-light rule applies across all three tendons. Pain up to 5 out of 10 during loading is acceptable. Pain that does not return to baseline within 24 hours, or that increases week over week, means the load is too high. Pain that disappears entirely during a session of stage 1 isometrics is the analgesia effect, not a sign that the tendinopathy has resolved.',
-        ],
-      },
-      {
-        heading: 'Return to running',
-        paragraphs: [
-          'Returning to running is not a single decision. It is a progression that overlaps stages 2 and 3. The usual sequence is walk-run intervals on flat ground (for example, 1 minute run / 2 minutes walk for 20 minutes, three times in the first week), progressing to continuous easy running over several weeks, then reintroducing hills, then tempo work, then downhill running last.',
-          'Downhill running is left until last for a reason: it imposes the highest eccentric demand on the calf-Achilles complex and on the quadriceps-patellar tendon unit. Many recurrences happen when a runner clears the flat-ground build and then runs a hilly course in the third or fourth week of return-to-running.',
-        ],
-      },
-      {
-        heading: 'Common errors',
-        paragraphs: [
-          'A short list of the mistakes that show up repeatedly in practice.',
-        ],
-        bullets: [
-          'Aggressive stretching of the affected tendon — for compressive tendinopathies (insertional Achilles, proximal hamstring) it can worsen symptoms, and it has little effect on tendon structure in any case',
-          'Stopping the programme when symptoms settle — symptoms resolve before structural capacity has been rebuilt, and recurrence rates are high in those who stop early',
-          'Skipping the isometric phase — stage 1 is often the difference between a programme the runner can adhere to and one they cannot, because of its analgesic effect',
-          'Comparing timelines with a friend who recovered in four weeks — most do not, and most who think they did had a milder presentation to begin with',
-          'Adding running volume back faster than strength tolerance is rebuilt',
-        ],
-      },
-      {
-        heading: 'Expected timelines',
-        paragraphs: [
-          'Symptom resolution typically takes 6 to 12 weeks for reactive and dysrepair-phase tendinopathy, longer for degenerative presentations. Measurable structural change in the tendon takes at least 16 to 24 weeks of consistent loading. Returning to pre-injury running volume usually takes 12 to 16 weeks from the start of structured loading, and longer in those who had a long lay-off before starting.',
-          'The single best predictor of outcome is adherence to load — not the choice of protocol, not the use of adjuncts, not imaging findings. Tendons respond to what you do most days for several months.',
-        ],
-      },
-      {
-        heading: 'A note for runners in Salou and Cambrils',
-        paragraphs: [
-          'The terrain on the Costa Daurada is generous for return-to-running work. The Vía Verde de la Costa Daurada offers long, flat, predictable surfaces that suit the early phases of a return-to-running progression. The seafront in Salou and Cambrils is similar. Hills can then be added gradually from the inland routes. If you are working through a stubborn Achilles, patellar or plantar problem and would like the loading programme built and supervised, personal training in Salou with a rehabilitation-informed approach is the format that fits this kind of work. The contact page is the place to start.',
         ],
       },
     ],

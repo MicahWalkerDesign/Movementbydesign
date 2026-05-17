@@ -508,6 +508,112 @@ export const POSTS_ES: PostEs[] = [
       },
     ],
   },
+  {
+    slug: 'recuperacion-activa-vs-reposo',
+    title: 'Por qué "guardar reposo" suele empeorar las lesiones: guía de recuperación activa desde la fisiología del ejercicio',
+    description:
+      'Por qué el consejo habitual de descansar dos semanas un tendón irritado, una rodilla dolorosa o una lumbalgia suele ser contraproducente, y qué dice la evidencia sobre la recuperación activa y la carga progresiva.',
+    date: '2026-05-17',
+    readingTime: '8 min de lectura',
+    category: 'Prevención de Lesiones',
+    alternatePath: '/blog/active-recovery-vs-rest/',
+    intro:
+      'El consejo más frecuente ante una rodilla dolorida, un tendón de Aquiles irritable o una lumbalgia recurrente es descansar una o dos semanas y ver cómo evoluciona. Para lesiones agudas de alto grado ese consejo tiene una ventana de utilidad muy limitada. Para las molestias, recurrencias y cuadros crónicos que componen la mayoría de las consultas musculoesqueléticas en adultos, es la opción equivocada por defecto. Los tejidos no curan en el vacío: se remodelan en respuesta a la carga.',
+    body: [
+      {
+        heading: 'Qué hace realmente el desuso',
+        paragraphs: [
+          'La fisiología del desentrenamiento está bien descrita. Wall y colaboradores (Acta Physiologica, 2014) demostraron que cinco días de inmovilización unilateral en hombres jóvenes sanos reducían el área de sección transversal del cuádriceps en torno a un 3,5% y la fuerza isométrica un 9% aproximadamente. A los catorce días, las pérdidas se acercaban al 8% de masa muscular y al 23% de fuerza. En adultos mayores las pérdidas son mayores y más rápidas.',
+          'La capacidad aeróbica cae más rápido aún que la fuerza. Dos semanas de inactividad pueden restar varios puntos porcentuales al VO2máx en personas entrenadas. La rigidez tendinosa también disminuye: el recambio de colágeno se ralentiza, el tendón tolera menos carga de la que toleraba antes, y al volver al volumen previo aparece el rebrote sintomático.',
+          'Ese es el mecanismo detrás del patrón clásico: el dolor cede con dos semanas de reposo, la persona retoma la actividad que dolía, y en quince días los síntomas vuelven. El tejido no se curaba con el reposo. Se estaba desacondicionando.',
+        ],
+      },
+      {
+        heading: 'Reposo relativo, no reposo absoluto',
+        paragraphs: [
+          'El concepto útil que aporta la medicina deportiva es el de reposo relativo: retirar el vector de carga concreto que está irritando el tejido, y mantener el resto del sistema trabajando. Un corredor con tendinopatía rotuliana reactiva no necesita parar de entrenar. Necesita retirar los picos — cuestas, sentadillas profundas, pliometría — y conservar la bicicleta, el trabajo de tren superior y la carga isométrica del cuádriceps.',
+          'Una persona con epicondilalgia por pádel puede entrenar piernas, hacer un patrón de bisagra, presses por encima de la cabeza dentro de la tolerancia, y cargar isométricamente los extensores de muñeca. Quedarse dos semanas en el sofá no aporta nada útil al codo y elimina todo lo demás.',
+        ],
+      },
+      {
+        heading: 'La excepción real: las primeras 48 a 72 horas',
+        paragraphs: [
+          'Existe una categoría estrecha donde la protección a corto plazo sí está justificada: lesiones agudas de tejido blando con un mecanismo claro y disrupción tisular significativa — un grado II de isquiosurales tras un sprint, un esguince moderado de tobillo, una rotura súbita de gemelo. El marco actual de consenso es PEACE & LOVE (Dubois y Esculier, British Journal of Sports Medicine, 2020).',
+        ],
+        bullets: [
+          'Protección — descargar entre uno y tres días, solo lo necesario',
+          'Elevación — para facilitar el retorno venoso',
+          'Evitar antiinflamatorios en la fase inicial — pueden interferir en la reparación tisular',
+          'Compresión — para limitar el edema',
+          'Educación — expectativas realistas y evitar pruebas de imagen innecesarias',
+          'Carga — reintroducir estrés mecánico según lo permitan los síntomas',
+          'Optimismo — los factores psicológicos predicen el pronóstico de forma relevante',
+          'Vascularización — actividad aeróbica indolora desde fases tempranas',
+          'Ejercicio — restaurar movilidad, fuerza y propiocepción de forma progresiva',
+        ],
+      },
+      {
+        heading: 'Cuadros subagudos y crónicos: donde está la mayoría',
+        paragraphs: [
+          'La mayor parte de los problemas musculoesqueléticos que entran por la puerta de un coach no están en la ventana aguda. Son tendinopatías que llevan meses, lumbalgias que recidivan cada pocas semanas, rodillas que duelen al bajar escaleras, hombros que enganchan por encima de la cabeza. En todos esos casos, la carga es la medicina.',
+          'En tendinopatía, el continuum de Cook y Purdam (BJSM, 2009) y la literatura posterior sobre carga han reformulado el problema: el tendón responde al estrés mecánico progresivo — primero isometrías, después carga lenta y pesada, después almacenamiento de energía. El reposo reduce dolor y capacidad a corto plazo, y la capacidad no vuelve sola.',
+          'En lumbalgia, la exposición gradual y la carga progresiva superan al evitamiento en todas las guías modernas. En artrosis de rodilla, el programa GLA:D (Skou y Roos, BMC Musculoskeletal Disorders, 2017) — ocho semanas de ejercicio neuromuscular supervisado y educación — produce mejoras clínicamente significativas en dolor y función en miles de participantes, a menudo comparables a alternativas quirúrgicas en candidatos adecuados. En el síndrome subacromial, la carga progresiva del manguito rotador y la cintura escapular supera de forma consistente al tratamiento pasivo.',
+        ],
+      },
+      {
+        heading: 'Un árbol de decisión práctico',
+        paragraphs: [
+          'La mayoría de las personas no necesita un diagrama, pero estas cuatro preguntas cubren la mayoría de los casos.',
+        ],
+        bullets: [
+          '¿El dolor supera el 7/10, es agudo, eléctrico, o se acompaña de hinchazón importante, bloqueos o síntomas neurológicos? Consulta a un clínico antes de entrenar.',
+          '¿Ocurrió en las últimas 72 horas con un mecanismo claro? Protege brevemente y aplica PEACE & LOVE.',
+          '¿Lleva semanas o meses molestando o recidivando? La respuesta es carga progresiva, no reposo.',
+          '¿Duele durante la actividad pero queda bien después y no se reactiva al día siguiente? Luz verde para seguir entrenando dentro de ese margen.',
+        ],
+      },
+      {
+        heading: 'La regla del semáforo del dolor',
+        paragraphs: [
+          'La herramienta clínica más útil para guiar la carga sobre un tejido sintomático es el sistema del semáforo descrito originalmente por Silbernagel en tendinopatía aquílea (American Journal of Sports Medicine, 2007). El dolor durante la carga, en una escala de 0 a 10, se considera aceptable hasta aproximadamente 3 a 5 sobre 10, siempre que se cumplan dos condiciones: que vuelva al valor basal en 24 horas y que no empeore progresivamente semana tras semana.',
+          'Esta regla permite entrenar a través de tendones y articulaciones sintomáticas sin adivinar. También desactiva la trampa psicológica más habitual: asumir que cualquier dolor durante el ejercicio significa daño.',
+        ],
+      },
+      {
+        heading: 'Cómo es la recuperación activa en la práctica',
+        paragraphs: [
+          'La recuperación activa no es foam roller y batido de proteínas. En un programa estructurado significa trabajo específico que carga el tejido afectado a una intensidad que actualmente tolera, junto con todo lo demás que la persona puede seguir haciendo con seguridad.',
+        ],
+        bullets: [
+          'Trabajo aeróbico de baja carga — caminar, bicicleta, nadar — para mantener el acondicionamiento cardiovascular y favorecer la perfusión tisular',
+          'Carga isométrica del tejido sintomático a intensidades subumbral para modular el dolor',
+          'Carga lenta y pesada de la musculatura adyacente que no se irrita',
+          'Movilidad cuando cambia realmente los síntomas, no como reflejo automático',
+          'Sueño, ingesta proteica y carga semanal total controladas con tanto cuidado como los ejercicios',
+        ],
+      },
+      {
+        heading: 'Algunos mitos que conviene jubilar',
+        paragraphs: [
+          'La inflamación no es el enemigo. Es la fase inicial del proceso de reparación. Suprimirla de forma rutinaria con AINE en las primeras 48 horas se asocia con una reparación tendinosa y muscular alterada en modelos animales y en parte de la literatura humana — por eso aparece en la columna "evitar" de PEACE & LOVE.',
+          'Los estiramientos no previenen lesiones de forma significativa en la mayoría de poblaciones. Múltiples revisiones sistemáticas no encuentran un efecto protector del estiramiento estático previo a la actividad. Pueden sentar bien y ayudar en presentaciones concretas de rigidez, pero no deben venderse como prevención de lesiones.',
+          'El plan de "vuelvo a entrenar cuando deje de doler" produce con frecuencia años de inactividad. En tendinopatías crónicas y lumbalgia recurrente, el síntoma a menudo no desaparece hasta que se ha reconstruido la capacidad de carga. El orden es el inverso al que la mayoría asume.',
+        ],
+      },
+      {
+        heading: 'Coach o fisioterapeuta',
+        paragraphs: [
+          'Acude primero a un fisioterapeuta o médico ante banderas rojas: dolor severo, signos neurológicos, traumatismo importante, sospecha de fractura o síntomas que empeoran en lugar de mejorar. Acude a un coach con experiencia en rehabilitación cuando tienes un diagnóstico o una molestia crónica estable y necesitas a alguien que construya la carga progresiva alrededor. Los dos roles se complementan; no son intercambiables.',
+        ],
+      },
+      {
+        heading: 'Llevarlo a la práctica',
+        paragraphs: [
+          'Si estás en Salou o Cambrils y llevas meses arrastrando un hombro molesto, una rodilla irritable o un Aquiles sensible, lo más probable es que el ingrediente que falta sea carga progresiva estructurada, no más reposo. El entrenamiento personal en Salou con un enfoque orientado a la rehabilitación construye el plan alrededor de lo que el tejido tolera ahora, monitoriza los síntomas con la regla del semáforo y progresa la carga en un calendario biológico, no impaciente. La prevención de lesiones y el retorno a la actividad comparten los mismos principios: cargar, recuperar, repetir, medir. Si quieres comentar un caso concreto, la página de contacto es el sitio para empezar.',
+        ],
+      },
+    ],
+  },
 ];
 
 export function getPostEs(slug: string) {
