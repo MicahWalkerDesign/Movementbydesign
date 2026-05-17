@@ -614,6 +614,126 @@ export const POSTS_ES: PostEs[] = [
       },
     ],
   },
+  {
+    slug: 'protocolo-carga-tendinopatia',
+    title: 'Tendinopatía aquílea, rotuliana y plantar: protocolo de carga en tres fases para corredores recreativos',
+    description:
+      'Protocolo práctico y basado en la evidencia para tendinopatía aquílea, rotuliana y fasciopatía plantar en corredores recreativos: isometrías, carga lenta y pesada, y almacenamiento de energía.',
+    date: '2026-05-17',
+    readingTime: '11 min de lectura',
+    category: 'Prevención de Lesiones',
+    alternatePath: '/blog/tendinopathy-loading-protocol/',
+    intro:
+      'La tendinopatía de miembro inferior es la causa más frecuente por la que un corredor recreativo abandona la carrera. La base de evidencia sobre cómo tratarla es de las más sólidas en patología musculoesquelética, y la mayor parte de las personas que la sufren nunca ha visto aplicado el protocolo correctamente. Este artículo expone el modelo, las tres fases de carga y cómo aplicarlas a los tres tendones que concentran la mayoría de los casos.',
+    body: [
+      {
+        heading: 'Biología tendinosa en noventa segundos',
+        paragraphs: [
+          'Los tendones no son cuerdas inertes. Son tejidos conectivos metabólicamente activos que se adaptan a la carga mecánica mediante mecanotransducción: los tenocitos transforman la deformación en señales bioquímicas que regulan la síntesis de colágeno y la remodelación de la matriz (Khan y Scott, BJSM, 2009).',
+          'La adaptación es lenta. Magnusson y colaboradores (Nature Reviews Rheumatology, 2010) resumieron los estudios con isótopos disponibles, que muestran que la porción central, portadora de carga, del tendón adulto se renueva en una escala de años, con cambios estructurales medibles tras al menos 12 semanas de carga sostenida. Este es el dato más importante para fijar expectativas con un corredor: la línea temporal de los síntomas y la línea temporal de la estructura no coinciden.',
+        ],
+      },
+      {
+        heading: 'El continuum de Cook y Purdam',
+        paragraphs: [
+          'Cook y Purdam (BJSM, 2009) propusieron un modelo en tres fases que sigue siendo el marco clínico más útil: tendinopatía reactiva, dysrepair (alteración de la reparación) y tendinopatía degenerativa. Las fases no son estrictamente discretas, pero identificar en cuál se encuentra un tendón cambia la prescripción de carga.',
+          'La tendinopatía reactiva aparece tras una sobrecarga reciente: un pico súbito de volumen, un cambio de zapatillas, una sesión de cuestas. El tendón está agudamente irritable, a menudo caliente, hinchado y doloroso en reposo. La carga debe reducirse en volumen, pero no eliminarse.',
+          'El dysrepair es la fase intermedia, frecuente a los meses. El tendón duele con la carga pero está menos reactivo. Aquí es donde encaja la mayor parte del trabajo de carga basado en evidencia.',
+          'La tendinopatía degenerativa es estructural — tendones más envejecidos, presentaciones recurrentes, a menudo con hallazgos en imagen. El dolor puede ser intermitente y la tolerancia a la carga variable. Las porciones sanas del tendón responden a la carga; las degeneradas no, pero tampoco lo necesitan. El tejido sano compensa.',
+        ],
+      },
+      {
+        heading: 'Qué hace el reposo en un tendón',
+        paragraphs: [
+          'Versión breve del argumento desarrollado en el artículo sobre recuperación activa: la descarga reduce la rigidez tendinosa, baja la tolerancia a la carga y aumenta la sensibilización central. El dolor cede porque nada lo provoca, y vuelve en cuanto se reanuda la actividad porque el tejido es ahora menos capaz que antes del parón. Esa es la trampa en la que cae la mayoría de los corredores recreativos. La solución no es menos carga. Es la carga adecuada aplicada de forma progresiva.',
+        ],
+      },
+      {
+        heading: 'El protocolo en tres fases — visión general',
+        paragraphs: [
+          'El protocolo que sigue es una síntesis de la literatura sobre carga, basada principalmente en los trabajos de Cook, Purdam, Rio, Kongsgaard, Alfredson, Silbernagel y Rathleff. Las fases son secuenciales pero se solapan: el trabajo de la fase 1 continúa durante las fases 2 y 3 como calentamiento y modulador del dolor.',
+        ],
+        bullets: [
+          'Fase 1 — Carga isométrica para modular el dolor y construir capacidad inicial. Rio et al. (BJSM, 2015) demostraron analgesia inmediata y reducción de la inhibición cortical con 5 series de 45 segundos a aproximadamente el 70% de la contracción voluntaria máxima, 2 a 3 minutos de descanso entre series, a diario o en días alternos.',
+          'Fase 2 — Carga lenta y pesada (heavy slow resistance). Kongsgaard et al. (Scandinavian Journal of Medicine and Science in Sports, 2009) utilizaron 3 a 4 series de 6 a 15 repeticiones con un tempo de 3 segundos concéntrico y 3 segundos excéntrico, 2 a 3 sesiones por semana, progresando la carga durante 8 a 12 semanas. Los resultados fueron equivalentes a los protocolos solo excéntricos, con mejor adherencia.',
+          'Fase 3 — Almacenamiento de energía y pliometría. Trabajo específico del deporte que restaura el comportamiento elástico del tendón: multisaltos, hops, drop jumps y volumen progresivo de carrera. Solo se introduce cuando la capacidad de la fase 2 está consolidada.',
+        ],
+      },
+      {
+        heading: 'Tendinopatía aquílea',
+        paragraphs: [
+          'La tendinopatía aquílea de porción media responde bien al protocolo anterior. La tendinopatía aquílea insercional es similar, pero evita la dorsiflexión profunda en fases iniciales: las elevaciones de talón se realizan desde el suelo y no desde un escalón.',
+        ],
+        bullets: [
+          'Fase 1 — Isometría de elevación de talón a una pierna, en el suelo, 5 series de 45 segundos con la carga más alta que permita completar la duración, diaria',
+          'Fase 2 — Elevación de talón a una pierna desde un escalón con énfasis en gastrocnemios (rodilla extendida) y una segunda variante con énfasis en sóleo (rodilla flexionada unos 60 grados), 3 a 4 series de 6 a 15 repeticiones, tempo 3-3, tres veces por semana',
+          'Fase 2 alternativa — el protocolo excéntrico original de Alfredson (Alfredson et al., American Journal of Sports Medicine, 1998) — 3 series de 15 repeticiones excéntricas, con rodilla extendida y flexionada, dos veces al día durante 12 semanas — sigue siendo una opción válida, sobre todo para casos autogestionados',
+          'Fase 3 — Pogo hops, hops a una pierna en el sitio, después adelante y lateralmente, después multisaltos y técnica de carrera, progresados a lo largo de varias semanas',
+        ],
+      },
+      {
+        heading: 'Tendinopatía rotuliana',
+        paragraphs: [
+          'La tendinopatía rotuliana — rodilla del saltador — es la más sensible al efecto isométrico de los tres tendones. La analgesia descrita por Rio suele ser muy marcada en esta población.',
+        ],
+        bullets: [
+          'Fase 1 — Sentadilla española en isometría (con banda o apoyo en pared), o isometría en máquina de extensión de rodilla a unos 60 grados de flexión, 5 series de 45 segundos',
+          'Fase 2 — Sentadilla en declive a una pierna sobre una cuña de 25 grados, 3 a 4 series de 6 a 8 repeticiones, tempo lento, con carga progresada mediante mancuernas o chaleco; complementada con prensa y zancadas',
+          'Fase 3 — Saltos al cajón, drop jumps desde altura baja y progresivamente mayor, después trabajo de cambios de dirección y deceleración específicos del deporte',
+        ],
+      },
+      {
+        heading: 'Fasciopatía plantar',
+        paragraphs: [
+          'Fasciopatía plantar es el término preferido en la literatura actual: es un cuadro degenerativo, no inflamatorio. El protocolo de carga más útil es el de Rathleff y colaboradores (Scandinavian Journal of Medicine and Science in Sports, 2014), que demostró que el entrenamiento de fuerza con cargas altas supera al estiramiento específico de la fascia a los tres meses.',
+        ],
+        bullets: [
+          'El ejercicio — elevación de talón a una pierna sobre un escalón, con una toalla enrollada bajo los dedos para forzar su dorsiflexión y activar el mecanismo del torno (windlass)',
+          'Carga y dosis — 3 series hasta el fallo, comenzando con 12RM y progresando a 10RM, 8RM y así sucesivamente a lo largo de 12 semanas, cada dos días, tempo 3 segundos subida / 2 segundos pausa / 3 segundos bajada',
+          'Este protocolo es inusualmente autocontenido: la mayoría puede ejecutarlo sin supervisión adicional una vez fijada la técnica',
+        ],
+      },
+      {
+        heading: 'Monitorización del dolor',
+        paragraphs: [
+          'La regla del semáforo de Silbernagel se aplica a los tres tendones. Dolor de hasta 5 sobre 10 durante la carga es aceptable. Un dolor que no vuelve al basal en 24 horas, o que aumenta semana tras semana, indica que la carga es excesiva. Un dolor que desaparece por completo durante una sesión de isometría de fase 1 es el efecto analgésico, no una señal de que la tendinopatía esté resuelta.',
+        ],
+      },
+      {
+        heading: 'Vuelta a la carrera',
+        paragraphs: [
+          'Volver a correr no es una decisión única. Es una progresión que se solapa con las fases 2 y 3. La secuencia habitual es intervalos caminar-correr en terreno llano (por ejemplo, 1 minuto corriendo / 2 caminando durante 20 minutos, tres veces la primera semana), progresando a carrera continua suave en varias semanas, después reintroducir cuestas, después trabajo de ritmo, y dejar para el final las bajadas.',
+          'Las bajadas se dejan para el final por un motivo: imponen la mayor demanda excéntrica al complejo gemelar-aquíleo y al cuádriceps-rotuliano. Muchas recurrencias aparecen cuando un corredor termina la fase de llano y se enfrenta a un recorrido con desnivel en la tercera o cuarta semana del retorno.',
+        ],
+      },
+      {
+        heading: 'Errores frecuentes',
+        paragraphs: [
+          'Una lista breve de los errores que aparecen una y otra vez en la práctica.',
+        ],
+        bullets: [
+          'Estirar agresivamente el tendón afectado — en tendinopatías compresivas (aquílea insercional, isquiosural proximal) puede empeorar los síntomas, y en cualquier caso el estiramiento apenas modifica la estructura del tendón',
+          'Detener el programa al ceder los síntomas — los síntomas se resuelven antes de que se haya reconstruido la capacidad estructural, y la tasa de recurrencia es alta en quienes paran pronto',
+          'Saltarse la fase isométrica — la fase 1 es a menudo la diferencia entre un programa al que el corredor se adhiere y uno al que no, por su efecto analgésico',
+          'Comparar plazos con un amigo que se recuperó en cuatro semanas — la mayoría no lo hace, y los que creen haberlo hecho partían de una presentación más leve',
+          'Añadir volumen de carrera más rápido de lo que se reconstruye la tolerancia de fuerza',
+        ],
+      },
+      {
+        heading: 'Plazos esperables',
+        paragraphs: [
+          'La resolución de los síntomas suele requerir entre 6 y 12 semanas en tendinopatías reactivas y en fase de dysrepair, y más tiempo en presentaciones degenerativas. El cambio estructural medible en el tendón exige al menos 16 a 24 semanas de carga consistente. Volver al volumen previo de carrera lleva habitualmente de 12 a 16 semanas desde el inicio de la carga estructurada, y más en quienes pasaron mucho tiempo sin entrenar antes de empezar.',
+          'El mejor predictor del resultado es la adherencia a la carga — no la elección del protocolo, ni el uso de adyuvantes, ni los hallazgos de imagen. El tendón responde a lo que haces casi todos los días durante varios meses.',
+        ],
+      },
+      {
+        heading: 'Una nota para corredores en Salou y Cambrils',
+        paragraphs: [
+          'El terreno de la Costa Daurada es generoso para el trabajo de retorno a la carrera. La Vía Verde de la Costa Daurada ofrece superficies largas, llanas y predecibles que se ajustan bien a las primeras fases del retorno. El paseo marítimo de Salou y Cambrils es similar. Las cuestas pueden añadirse de forma gradual desde las rutas interiores. Si arrastras un problema persistente en el Aquiles, el tendón rotuliano o la fascia plantar y quieres tener el programa de carga construido y supervisado, el entrenamiento personal en Salou con enfoque rehabilitador es el formato que encaja con este tipo de trabajo. La página de contacto es el sitio para empezar.',
+        ],
+      },
+    ],
+  },
 ];
 
 export function getPostEs(slug: string) {
