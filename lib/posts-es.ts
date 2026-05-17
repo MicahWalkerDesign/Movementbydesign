@@ -398,6 +398,116 @@ export const POSTS_ES: PostEs[] = [
       },
     ],
   },
+  {
+    slug: 'entrenamiento-de-fuerza-padel',
+    title: 'Entrenamiento de Fuerza para Jugadores de Pádel: Las 4 capacidades que importan más que las horas en pista',
+    description:
+      'Potencia rotacional, desaceleración, fuerza unilateral y estabilidad de hombro: las cuatro capacidades físicas que hacen avanzar más rápido a un jugador de pádel que añadir más horas en pista.',
+    date: '2026-05-17',
+    readingTime: '10 min de lectura',
+    category: 'Rendimiento',
+    alternatePath: '/blog/strength-training-for-padel-players/',
+    intro:
+      'El pádel es el deporte que más crece en España, y la Costa Daurada tiene clubes en casi cada pueblo. La historia se repite entre los jugadores de nivel intermedio: estancados, sumando horas en pista, sin avance real y con una acumulación silenciosa de molestias en codo, rodilla y hombro. En la mayoría de estos casos el cuello de botella no es la técnica. Es la capacidad física. Cuatro cualidades bien entrenadas darán a un jugador recreativo más resultados en seis meses que añadir dos horas semanales en la pista.',
+    body: [
+      {
+        heading: 'Capacidad 1: Potencia rotacional',
+        paragraphs: [
+          'El smash, la víbora, la bandeja y la salida de pared se inician en la interfaz cadera-tronco. La potencia se genera en las piernas y la pelvis, se transmite a través de un tronco rígido y se entrega con el brazo. Los jugadores que intentan pegar más fuerte agitando más el brazo suelen perder precisión y desarrollan molestias en el codo en pocos meses.',
+          'El entrenamiento es sencillo pero poco frecuente: lanzamientos rotacionales con balón medicinal contra la pared, wood-chops con polea en ambas direcciones, Pallof press en rodilla para antirrotación, y fuerza de cadera (hip hinge) pesada como base. La tasa de desarrollo de fuerza importa aquí: Suchomel y colaboradores (Sports Medicine, 2016) resumieron que la fuerza marca el techo, pero la intención explosiva con cargas moderadas es lo que convierte esa fuerza en potencia útil.',
+        ],
+        bullets: [
+          'Lanzamiento rotacional con balón medicinal — 4 series de 5 por lado, intención explosiva',
+          'Wood-chop en polea, de alta a baja y de baja a alta — 3 series de 8 por lado',
+          'Pallof press en media rodilla — 3 series de 10 por lado, lento',
+          'Peso muerto con barra hexagonal o hip thrust — 3 series de 5, pesado',
+        ],
+      },
+      {
+        heading: 'Capacidad 2: Fuerza de desaceleración y cambio de dirección',
+        paragraphs: [
+          'El pádel se construye sobre aceleraciones cortas y desaceleraciones más bruscas. El punto se pierde cuando alguien no frena, no cuando alguien no esprinta. La fuerza excéntrica de cuádriceps y glúteo es la cualidad que protege rodilla e isquiotibial en esos frenazos. Bourne y colaboradores (Sports Medicine, 2018) mostraron que la fuerza excéntrica de isquiotibiales es uno de los predictores más consistentes del riesgo de rotura en deportes de campo — la misma lógica vale para el pádel.',
+          'El trabajo consiste en carreras hacia atrás, aterrizajes desde cajón con sostén estable, saltos laterales con frenado controlado y tempo excéntrico lento en split-squats. El objetivo no es ser espectacular en el aire; es aterrizar en silencio y bajo control.',
+        ],
+        bullets: [
+          'Bajada de cajón con 3 segundos excéntricos — 3 series de 6 por pierna',
+          'Salto lateral con aterrizaje estable — 3 series de 4 por lado',
+          'Curl nórdico de isquiotibiales — 3 series de 5, progresando despacio',
+          'Carrera hacia atrás y desplazamientos laterales en el calentamiento',
+        ],
+      },
+      {
+        heading: 'Capacidad 3: Fuerza unilateral y de tobillo',
+        paragraphs: [
+          'La mayoría de lesiones de miembro inferior en pádel ocurren sobre una sola pierna — un lunge hacia la pared lateral, un estiramiento para una bola baja, un deslizamiento que el tobillo no esperaba. La sentadilla bilateral no es un mal ejercicio, pero no prepara al jugador para esos momentos. El trabajo unilateral debe estar en el programa.',
+          'Sentadillas búlgaras, peso muerto rumano a una pierna, step-ups con carga real y elevaciones de gemelo con fase excéntrica deliberada son la base. El gemelo y el tibial anterior reciben un castigo especial por el constante impulso y frenado del pádel — la resistencia de gemelos y las elevaciones de tibial son ejercicios simples, eficaces y casi universalmente olvidados.',
+        ],
+        bullets: [
+          'Sentadilla búlgara — 3 series de 6–8 por pierna',
+          'Peso muerto rumano a una pierna — 3 series de 8 por pierna',
+          'Elevación de gemelo con 3 segundos excéntricos — 3 series de 10',
+          'Elevación de tibial contra pared — 3 series de 15',
+        ],
+      },
+      {
+        heading: 'Capacidad 4: Rotadores externos del hombro y estabilidad escapular',
+        paragraphs: [
+          'La posición de bandeja — brazo por encima de la cabeza, ligeramente atrás, desacelerando — exige mucho al manguito rotador y al hombro posterior. El codo de pádel suele tener su origen más arriba, en un hombro que carece de fuerza en rotación externa y de control escapular suficientes para mantener el codo en buena posición. Cools y colaboradores (BJSM 2014) propusieron un marco razonable para deportistas de gestos por encima de la cabeza que encaja bien con el pádel: primero estabilidad escapular, luego fuerza de rotación externa, después control dinámico en posiciones específicas.',
+          'Los ejercicios no son llamativos y ese es el punto. Hay que hacerlos con constancia.',
+        ],
+        bullets: [
+          'Elevaciones prono Y-T-W — 2 series de 8 de cada',
+          'Rotación externa en decúbito lateral con mancuerna — 3 series de 12',
+          'Push-up de serrato — 3 series de 10',
+          'Face pull con rotación externa — 3 series de 12',
+        ],
+      },
+      {
+        heading: 'Plantilla de dos sesiones a la semana',
+        paragraphs: [
+          'Dos sesiones semanales son suficientes para casi cualquier jugador recreativo si están bien organizadas. La plantilla que sigue es la que utilizan la mayoría de mis clientes de pádel durante los meses competitivos.',
+        ],
+        bullets: [
+          'Día A — Énfasis tren inferior: peso muerto con barra hexagonal 4×5, sentadilla búlgara 3×8, salto lateral 3×4, gemelo 3×10, Pallof press 3×10',
+          'Día B — Tren superior y rotacional: lanzamiento rotacional 4×5, wood-chop 3×8, RDL unilateral 3×8, Y-T-W 2×8, rotación externa 3×12',
+          'Calentamiento ambos días: 5 minutos de movimiento general, después movilidad y activación específicas',
+          'Semana de descarga cada cuatro o cinco semanas — bajan las series, la intensidad se mantiene moderada',
+        ],
+      },
+      {
+        heading: 'Qué hacer con el cardio',
+        paragraphs: [
+          'El pádel es un deporte de esprints repetidos en una pista pequeña. La base aeróbica debe estar — un par de paseos a buen ritmo o sesiones suaves de bici de 30–45 minutos a la semana — porque determina la rapidez con la que recuperas entre puntos y entre partidos. Encima de eso, intervalos cortos de esprint repetido una vez por semana (6–8 esfuerzos de 10–15 segundos con recuperación completa) preparan el sistema para los intercambios más intensos. Las sesiones largas y duras de intervalo no son necesarias y suelen interferir con el trabajo de fuerza.',
+        ],
+      },
+      {
+        heading: 'Recuperación entre partidos',
+        paragraphs: [
+          'El sueño es la variable que más mueve el rendimiento. Siete a nueve horas, de forma constante, ganan a cualquier suplemento. Una ingesta de proteína de aproximadamente 1,6 gramos por kilo de peso al día apoya la recuperación y el mantenimiento del tejido. En fin de semana de torneo, trata los días previo y posterior como descarga — movimiento ligero, movilidad y una reducción deliberada de la carga. Los jugadores que mantienen su semana habitual de entrenamiento durante un torneo son los que arrastran lesiones en la segunda mitad de la temporada.',
+        ],
+      },
+      {
+        heading: 'Errores frecuentes',
+        paragraphs: [
+          'Un puñado de errores explica la mayor parte del esfuerzo desperdiciado en el gimnasio entre jugadores recreativos de pádel.',
+        ],
+        bullets: [
+          'Entrenar como un culturista — mucho volumen de aislamiento que fatiga sin construir potencia',
+          'Saltarse el trabajo unilateral porque la sentadilla bilateral parece productiva',
+          'No levantar lo bastante pesado — la fuerza es el techo de la potencia, y tres series de quince no la construyen',
+          'Tratar el manguito rotador como apéndice del calentamiento en lugar de fuerza programada',
+          'Añadir horas en pista cuando uno está estancado, en vez de añadir la capacidad física que esas horas requieren',
+        ],
+      },
+      {
+        heading: 'Llevarlo al calendario',
+        paragraphs: [
+          'Para los jugadores de los clubes de Cambrils y Salou, la versión práctica de todo esto son dos sesiones de fuerza por semana, en los días en los que no se juega. Si juegas tres veces a la semana, entrena en los dos días libres. Si juegas cuatro, entrena en dos de los días libres y acepta que una de esas sesiones será moderada. Las mejoras llegan en el tercer y cuarto mes — no en el primero — y aparecen primero como menos molestias, después como un smash claramente más duro y una recuperación más rápida entre puntos.',
+          'El entrenamiento de fuerza para pádel no es glamuroso ni complicado. Hecho con constancia durante una temporada hace por el nivel más que cualquier otra intervención disponible para un jugador recreativo.',
+        ],
+      },
+    ],
+  },
 ];
 
 export function getPostEs(slug: string) {
