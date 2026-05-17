@@ -6,6 +6,8 @@ import { POSTS_ES } from '@/lib/posts-es';
 const STATIC_PATHS = [
   '/',
   '/personal-training-salou/',
+  '/personal-trainer-cambrils/',
+  '/small-group-training-salou/',
   '/online-coaching/',
   '/functional-training/',
   '/injury-prevention/',
@@ -19,6 +21,8 @@ const STATIC_PATHS = [
 const ES_STATIC_PATHS = [
   '/es/',
   '/es/entrenador-personal-salou/',
+  '/es/entrenador-personal-cambrils/',
+  '/es/entrenamiento-grupo-reducido-salou/',
   '/es/coaching-online/',
   '/es/entrenamiento-funcional/',
   '/es/prevencion-lesiones/',
