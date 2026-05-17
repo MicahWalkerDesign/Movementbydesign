@@ -19,6 +19,7 @@ export const POSTS: Post[] = [
       'How in-home personal training in Salou works, who it suits, what equipment you need and how to build strength safely without a traditional gym.',
     date: '2026-05-11',
     readingTime: '6 min read',
+    category: 'Coaching',
     alternatePath: '/es/blog/entrenador-personal-a-domicilio-salou/',
     intro:
       'For some people, the barrier to training is not motivation. It is logistics. Work, family, travel, confidence, pain history and the simple friction of getting to a gym can all get in the way. In-home personal training in Salou can be a practical solution when it is structured properly.',
@@ -71,6 +72,7 @@ export const POSTS: Post[] = [
       'A practical guide to training with old injuries, pain history or health considerations with a rehabilitation-informed personal trainer in Salou.',
     date: '2026-05-10',
     readingTime: '7 min read',
+    category: 'Injury Prevention',
     alternatePath: '/es/blog/entrenador-personal-lesiones-salou/',
     intro:
       'Many adults are not looking for the hardest workout in Salou. They are looking for a way to train without flaring up their back, knee, shoulder or hip again. That is a different coaching problem — and it needs a different standard of care.',
@@ -123,6 +125,7 @@ export const POSTS: Post[] = [
       'What a physical preparation coach in Salou actually does: strength, mobility, conditioning and durable performance for sport, work and everyday life.',
     date: '2026-05-09',
     readingTime: '6 min read',
+    category: 'Performance',
     alternatePath: '/es/blog/preparador-fisico-salou/',
     intro:
       '“Physical preparation” sounds like something reserved for athletes. In reality, it describes a useful idea for almost everyone: prepare the body for the demands you actually place on it.',
@@ -175,6 +178,7 @@ export const POSTS: Post[] = [
       'A practical guide to choosing a personal trainer in Salou — what to look for, what questions to ask, and how to know if a coach is genuinely a good fit.',
     date: '2026-04-12',
     readingTime: '6 min read',
+    category: 'Coaching',
     intro:
       'If you are looking for a personal trainer in Salou, the choice can feel surprisingly difficult. Big-box gyms, online coaches, sports clubs and independent trainers all promise results — but the right fit depends much more on your goals, history and personal needs than on a flashy package.',
     body: [
@@ -225,6 +229,7 @@ export const POSTS: Post[] = [
       'What functional training really means, why it matters in Salou and the Costa Daurada, and how to build a body that handles real life.',
     date: '2026-04-05',
     readingTime: '5 min read',
+    category: 'Coaching',
     intro:
       'Functional training has become one of the most over-used words in fitness. Stripped back, it just means training that prepares you for the things you actually do — in life, in sport, in old age, on holiday, with your kids.',
     body: [
@@ -266,6 +271,7 @@ export const POSTS: Post[] = [
       'A guide to finding a personal trainer in Cambrils — including in-person training, outdoor sessions and online coaching options for residents and expats.',
     date: '2026-03-22',
     readingTime: '5 min read',
+    category: 'Coaching',
     alternatePath: '/es/blog/entrenador-personal-cambrils/',
     intro:
       'Cambrils is a beautiful place to train. It is also a relatively small market, which means choosing a personal trainer is partly about availability and partly about finding someone whose approach fits you long-term.',
@@ -302,6 +308,7 @@ export const POSTS: Post[] = [
       'Why working with an English-speaking personal trainer in Salou and Cambrils matters — particularly for expats, professionals and people with complex health histories.',
     date: '2026-03-08',
     readingTime: '4 min read',
+    category: 'Coaching',
     alternatePath: '/es/blog/entrenador-personal-ingles-salou/',
     intro:
       'Salou, Cambrils and the wider Costa Daurada are home to a growing community of English-speaking expats, international families, professionals and long-term visitors. For many of them, a key part of finding the right personal trainer is finding one they can communicate with naturally.',
@@ -339,6 +346,7 @@ export const POSTS: Post[] = [
       'How to train for performance and health without spending your year nursing flare-ups. A practical look at injury prevention and rehabilitation-informed training.',
     date: '2026-02-18',
     readingTime: '6 min read',
+    category: 'Injury Prevention',
     intro:
       'Most adults who train regularly have the same quiet question: how do I keep getting stronger without breaking down? Injury prevention training is not about avoiding effort. It is about distributing effort intelligently.',
     body: [
@@ -381,6 +389,7 @@ export const POSTS: Post[] = [
       'Safe, evidence-based exercise during pregnancy — trimester adaptations, pelvic floor foundations, and what to modify from a personal trainer in Salou.',
     date: '2026-05-01',
     readingTime: '9 min read',
+    category: 'Special Populations',
     intro:
       'Pregnancy does not require you to stop moving. In fact, the evidence strongly supports staying active throughout — with appropriate adaptations and a coach who understands the physiology.',
     body: [
@@ -411,6 +420,7 @@ export const POSTS: Post[] = [
       'Evidence-based guide to returning to exercise after birth — pelvic floor, diastasis recti and progressive return to training with a personal trainer in Salou.',
     date: '2026-05-02',
     readingTime: '10 min read',
+    category: 'Special Populations',
     intro:
       'The six-week clearance from your doctor is a starting point — not a green light to jump back into your previous training. Return to exercise after birth needs to be progressive, pelvic-floor-led and built around your actual recovery.',
     body: [
@@ -441,6 +451,7 @@ export const POSTS: Post[] = [
       'How to exercise safely with meniscal knee damage. Evidence-based guidance from a rehabilitation-informed personal trainer in Salou on the Costa Daurada.',
     date: '2026-05-03',
     readingTime: '9 min read',
+    category: 'Injury Prevention',
     intro:
       'A meniscal tear does not have to end your training life. With a properly adapted programme and a rehabilitation-informed approach, most people with meniscal knee damage can continue exercising, build meaningful strength and maintain long-term joint health.',
     body: [
@@ -469,6 +480,7 @@ export const POSTS: Post[] = [
       'Safe, evidence-based exercise with a herniated disc. Rehabilitation-informed personal training in Salou — build spinal capacity, reduce pain and return to activity.',
     date: '2026-05-04',
     readingTime: '10 min read',
+    category: 'Injury Prevention',
     intro:
       'A herniated disc diagnosis can feel like a sentence. It is not. With the right understanding of spinal mechanics, appropriate exercise selection and progressive loading, most people with a herniated disc can return to meaningful activity.',
     body: [
@@ -497,6 +509,7 @@ export const POSTS: Post[] = [
       'How to exercise safely and effectively with Type 2 diabetes. Evidence-based guidance on insulin sensitivity, blood glucose management and training in Salou.',
     date: '2026-05-05',
     readingTime: '10 min read',
+    category: 'Special Populations',
     intro:
       'Exercise is not a lifestyle add-on for people with Type 2 diabetes. It is a pharmacologically significant intervention — one that improves insulin sensitivity, reduces HbA1c and lowers cardiovascular risk with an effectiveness comparable to medication in many cases.',
     body: [
@@ -525,6 +538,7 @@ export const POSTS: Post[] = [
       'Sensory-friendly movement and exercise for children with autism in Salou. Evidence-based, structured physical activity from a special populations coach on the Costa Daurada.',
     date: '2026-05-06',
     readingTime: '10 min read',
+    category: 'Special Populations',
     intro:
       'Children with autism benefit enormously from structured physical activity — but the standard gym or sports setting is often poorly designed for their sensory and social needs. With the right environment and approach, movement can be transformative.',
     body: [
@@ -554,6 +568,7 @@ export const POSTS: Post[] = [
       'Tendon, muscle, bone, joint and fascia: the five tissue categories behind most recreational injuries, and how to load each one to build genuine resilience.',
     date: '2026-05-17',
     readingTime: '9 min read',
+    category: 'Injury Prevention',
     alternatePath: '/es/blog/cinco-tejidos-prevencion-lesiones/',
     intro:
       'If you ride, run, lift or play padel often enough, you will eventually meet one of five tissues complaining about its workload. Almost every recreational injury — patellar tendon, hamstring, shin, hip, plantar fascia — is a story about a specific tissue that was loaded faster than it could adapt. Knowing which tissue is failing matters, because each one has a different time course and a different loading strategy. Treating a tendon like a muscle, or a bone like a tendon, is one of the most common reasons rehab stalls.',
@@ -641,6 +656,7 @@ export const POSTS: Post[] = [
       'Rotational power, deceleration, single-leg strength and shoulder stability — the four physical capacities that move padel players forward faster than more court hours.',
     date: '2026-05-17',
     readingTime: '10 min read',
+    category: 'Performance',
     alternatePath: '/es/blog/entrenamiento-de-fuerza-padel/',
     intro:
       'Padel is the fastest-growing sport in Spain, and the Costa Daurada has clubs at almost every turn. The common story among intermediate players is the same: stuck at a level, adding more court hours, no real progress, and a slow accumulation of niggles in the elbow, knee and shoulder. In most of these cases the bottleneck is not technique. It is physical capacity. Four qualities, trained properly, will do more for a recreational player in six months than another two hours per week on court.',
