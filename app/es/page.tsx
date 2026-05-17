@@ -44,8 +44,8 @@ const SERVICES = [
     text: 'Entrenamiento funcional en grupo reducido de 3–6 personas. Forma tu propio grupo con amigos, familia o compañeros — o únete a la lista de espera para la próxima plaza disponible.',
     price: '€15–30',
     unit: 'por persona, por hora',
-    href: '/es/contacto/',
-    cta: 'Pregunta por el grupo reducido',
+    href: '/es/entrenamiento-grupo-reducido-salou/',
+    cta: 'Entrenamiento en grupo reducido en Salou',
   },
   {
     title: 'Terapia Manual',
@@ -369,11 +369,11 @@ export default function SpanishHome() {
             <ul className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
               {[
                 { label: 'Entrenador Personal Salou', href: '/es/entrenador-personal-salou/' },
+                { label: 'Entrenador Personal Cambrils', href: '/es/entrenador-personal-cambrils/' },
+                { label: 'Grupo Reducido Salou', href: '/es/entrenamiento-grupo-reducido-salou/' },
                 { label: 'Entrenamiento Funcional', href: '/es/entrenamiento-funcional/' },
                 { label: 'Prevención de Lesiones', href: '/es/prevencion-lesiones/' },
                 { label: 'Coaching Online', href: '/es/coaching-online/' },
-                { label: 'Hábitos de Nutrición', href: '/es/nutricion-habitos/' },
-                { label: 'Poblaciones Especiales', href: '/es/poblaciones-especiales/' },
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="inline-flex items-center gap-2 text-coastal-blue dark:text-sky-400 hover:text-deep-navy dark:hover:text-slate-100 transition-colors">

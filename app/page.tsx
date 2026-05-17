@@ -45,8 +45,8 @@ const SERVICES = [
     text: 'Functional training in a small group of 3–6. Assemble your own group with friends, family or colleagues — or join the waiting list for the next available spot.',
     price: '€15–30',
     unit: 'per person, per hour',
-    href: '/contact/',
-    cta: 'Ask about a small group',
+    href: '/small-group-training-salou/',
+    cta: 'Small group training in Salou',
   },
   {
     title: 'Manual Therapy',
@@ -407,14 +407,11 @@ export default function HomePage() {
             <ul className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
               {[
                 { label: 'Personal Trainer Salou', href: '/personal-training-salou/' },
-                {
-                  label: 'Personal Trainer Cambrils',
-                  href: '/blog/personal-trainer-cambrils/',
-                },
+                { label: 'Personal Trainer Cambrils', href: '/personal-trainer-cambrils/' },
+                { label: 'Small Group Training', href: '/small-group-training-salou/' },
                 { label: 'Functional Training', href: '/functional-training/' },
                 { label: 'Injury Prevention', href: '/injury-prevention/' },
                 { label: 'Online Coaching', href: '/online-coaching/' },
-                { label: 'Nutrition Habits', href: '/nutrition-habits/' },
               ].map((l) => (
                 <li key={l.href}>
                   <Link
